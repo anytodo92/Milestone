@@ -15,4 +15,4 @@ const Home = (): JSX.Element => {
   );
 };
 
-export default Startseite;
+export default Home;

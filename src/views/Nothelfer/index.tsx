@@ -2,7 +2,7 @@ import {
   NothelferWrapper
 } from "./styled";
 
-const Price = () => {
+const Nothelfer = () => {
   return (
     <NothelferWrapper></NothelferWrapper>
   );

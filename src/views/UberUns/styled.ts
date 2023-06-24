@@ -1,4 +1,4 @@
 import styled from "styled-components";
 
-export const UnberUnsWrapper = styled.div`
+export const UberUnsWrapper = styled.div`
 `
