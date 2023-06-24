@@ -21,7 +21,7 @@ export const FooterWrapper = styled.footer`
           font-size: 16px;
           font-weight: 400;
           line-height: 22px;
-          font-family: ${props => props.theme.fonts.open_sans};
+          font-family: ${props => props.theme.fonts.roboto};
           color: ${props => props.theme.colors.white};
         }
 
