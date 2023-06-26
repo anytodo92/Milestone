@@ -13,6 +13,8 @@ import Thumb_6 from "../assets/images/thumb-6.png";
 import Thumb_7 from "../assets/images/thumb-7.png";
 import UnderlineGreen from "../assets/images/underline-green.svg";
 import UnderlineWhite from "../assets/images/underline-white.svg";
+import Bg_1 from "../assets/images/bg-1.png";
+import Bg_2 from "../assets/images/bg-2.png";
 
 import ArrowDown from "../assets/images/arrow-down.svg";
 import ArrowUp from "../assets/images/arrow-up.svg";
@@ -47,6 +49,8 @@ export const Icons = {
 };
 
 export const Images = {
+  Bg_1,
+  Bg_2,
   WhiteLogoUrl,
   LightGreenLogoUrl,
   WhiteFullLogoUrl,

@@ -124,11 +124,10 @@ export const MainHeaderWrapper = styled.nav`
       position: fixed;
       background-color: ${props => props.theme.colors.white};
       margin-top: 0px;
-      height: 90px;
       
       .content {
         .brand {
-          height: 90px;
+          height: 100px;
           img {
             &:nth-child(1),
             &:nth-child(3) {
@@ -142,7 +141,17 @@ export const MainHeaderWrapper = styled.nav`
         }
         .control {
           .menu {
-            height: 90px;            
+            height: 100px;
+
+            > li {
+              > a {
+                color: #3f3f3f;
+              }
+
+              &.active > a {
+                color: ${props => props.theme.colors.green_primary};
+              }
+            }         
           }
           .toggle-btn  {
             > span {
@@ -203,6 +212,16 @@ export const MainHeaderWrapper = styled.nav`
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
     height: 120px;
+    &.sticky-bar {
+      .content {
+        .brand {
+          height: 120px;
+        }
+        .menu {
+          height: 120px;
+        }
+      }
+    }
     .content {
       .brand {
         height: 120px;
@@ -223,6 +242,16 @@ export const MainHeaderWrapper = styled.nav`
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
     height: 138px;
+    &.sticky-bar {
+      .content {
+        .brand {
+          height: 138px;
+        }
+        .menu {
+          height: 138px;
+        }
+      }
+    }
     .content {
       width: ${props => props.theme.maxWidth}px;
       margin: 0 auto;
