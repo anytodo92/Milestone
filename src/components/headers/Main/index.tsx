@@ -20,12 +20,28 @@ const MainHeader: React.FC = () => {
   const [currentPath, setCurrentPath] = useState<string>("/");
   const [linkList, setLinkList] = useState<Array<any>>([
     {
-      title: "Startseite",
-      path: "/",
+      title: "Auto",
+      path: "/auto",
     },
     {
-      title: "Unsere Dienste",
-      path: "/unsere-dienste",
+      title: "Motorrad",
+      path: "/motorrad",
+    },
+    {
+      title: "VKU",
+      path: "/vku",
+    },
+    {
+      title: "Nothelferkurs",
+      path: "/nothelferkurs",
+    },
+    {
+      title: "Preise",
+      path: "/preise",
+    },    
+    {
+      title: "Über Uns",
+      path: "/uber-uns",
     },
     {
       title: "Kontakt",
@@ -55,8 +71,9 @@ const MainHeader: React.FC = () => {
       <div className="content">
         <div className="brand">
           <Link to="/">
-          <img src={Images.GreenLogoIconUrl} />
-          <img src={Images.GrayLogoUrl} />
+          <img src={Images.LightGreenLogoUrl} />
+          <img src={Images.LightGreenFullLogoUrl} />
+          <img src={Images.WhiteFullLogoUrl} />
           </Link>
         </div>
         <div className="control">

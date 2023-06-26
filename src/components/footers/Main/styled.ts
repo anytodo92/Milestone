@@ -12,44 +12,29 @@ export const FooterWrapper = styled.footer`
 
   > section {
     &:first-child {
-      padding: 48px 0 35px;
-      background-color: ${props => props.theme.colors.green_secondary};
+      padding: 40px 0 20px;
+      background-color: #4D4D4D;
 
-      .content {
-        
-        > h5, > p, a.link {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 22px;
-          font-family: ${props => props.theme.fonts.roboto};
-          color: ${props => props.theme.colors.white};
-        }
-
-        a.link {
-          &:hover {
-            color: ${props => props.theme.colors.white};
-            text-decoration: none;
-          }
-        }
-      }
-    }
-
-    &:last-child {
-      background-color: ${props => props.theme.colors.green_primary};
-      
       .content {
         display: flex;
-        height: 76px;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px;
-        justify-content: space-between;
-        align-items: center;
-        font-family: ${props => props.theme.fonts.roboto};
+        flex-direction: column;
+        column-gap: 30px;
+        row-gap: 30px;
+        .col {
+          > h5, > p, a.link {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            font-family: ${props => props.theme.fonts.roboto};
+            color: ${props => props.theme.colors.white};
+          }
 
-        .policy {
-          display: flex;
-          column-gap: 30px;
+          > h5 {
+            font-size: 22px;
+            font-weight: 500;
+            padding-bottom: 17px;
+          }
+
           a.link {
             &:hover {
               color: ${props => props.theme.colors.white};
@@ -57,11 +42,36 @@ export const FooterWrapper = styled.footer`
             }
           }
         }
+        
+      }
+    }
+
+    &:last-child {
+      background-color: #313131;
+      
+      .content {
+        display: flex;
+        height: 54px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        align-items: center;
+        font-family: ${props => props.theme.fonts.roboto};
       }
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    > section {
+      &:first-child {
+        .content {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
     .content {
       margin: 0 auto;
       width: ${props => props.theme.maxWidth}px;
