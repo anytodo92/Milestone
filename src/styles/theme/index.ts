@@ -1,7 +1,7 @@
 import { DefaultTheme } from "styled-components";
 
 const theme: DefaultTheme = {
-  maxWidth: 1165,
+  maxWidth: 1310,
   fonts: {
     roboto: "Roboto",
     roboto_condensend: "Roboto Condensend",

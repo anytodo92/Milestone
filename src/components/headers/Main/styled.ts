@@ -14,7 +14,7 @@ export const MainHeaderWrapper = styled.nav`
   transition: height .5s ease-in-out;
 
   &.open {
-    height: 280px;
+    height: 370px;
   }
   &.normal-bar {
     animation: anim-normal-bar-show;
@@ -37,12 +37,11 @@ export const MainHeaderWrapper = styled.nav`
       img {
         max-width: none;
         &:nth-child(1) {
-          /*width: 59px;
-          height: 59px;*/
+          display: block;
+          height: 90px;
         }
-        &:nth-child(2) {
-          /*width: 308px;
-          height: 62px;*/
+        &:nth-child(2),
+        &:nth-child(3) {
           display: none;
         }
       }
@@ -85,7 +84,10 @@ export const MainHeaderWrapper = styled.nav`
       position: absolute;
       left: 30px;
       top: 30px;
-      color: ${props => props.theme.colors.black};
+      color: #999;
+      > i {
+        font-size: 30px;
+      }
     }
   }
 
@@ -94,25 +96,27 @@ export const MainHeaderWrapper = styled.nav`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    height: 100px;
     &.normal-bar {
       animation: anim-normal-bar-show;
       animation-duration: .1s;
       animation-timing-function: ease-out;
       animation-fill-mode: forwards;
-      /*background-color: transparent;*/
+      background-color: transparent;
       
       .content {
         .brand {
           img {
-            &:nth-child(2) {
+            &:nth-child(3) {
               display: block;
             }
-            &:nth-child(1)
+            &:nth-child(1),
+            &:nth-child(2)
             {
               display: none;
             }
           }
-        }        
+        }   
       }
     }
 
@@ -126,7 +130,8 @@ export const MainHeaderWrapper = styled.nav`
         .brand {
           height: 90px;
           img {
-            &:nth-child(1) {
+            &:nth-child(1),
+            &:nth-child(3) {
               display: none;
             }
             &:nth-child(2)
@@ -154,18 +159,24 @@ export const MainHeaderWrapper = styled.nav`
     .content {
       justify-content: space-between;
       flex-direction: row;
-
+      .brand {
+        height: 100px;
+        img {
+          width: 300px;
+        }
+      }
       .control {
         display: flex;
         align-items: center;
-
+        
         .menu {
           display: flex;
           align-items: center;
           clear: both;
+          height: 100px;
           > li {
             float: left;
-            margin: 0px 28px;
+            margin: 0px 15px;
             border-bottom: none;
             padding: 0;
 
@@ -174,7 +185,7 @@ export const MainHeaderWrapper = styled.nav`
             }
             
             > a {
-              color: ${props => props.theme.colors.black_primary}
+              color: ${props => props.theme.colors.white}
             }
 
             &.active > a {
@@ -191,11 +202,47 @@ export const MainHeaderWrapper = styled.nav`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
+    height: 120px;
+    .content {
+      .brand {
+        height: 120px;
+        img {
+          width: 350px;
+        }
+      }
+      .control {
+        .menu {
+          height: 120px;
+          > li {
+            margin: 0px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
+    height: 138px;
     .content {
       width: ${props => props.theme.maxWidth}px;
       margin: 0 auto;
+      .brand {
+        height: 138px;
+        img {
+          width: unset;
+        }
+      }
+      .control {        
+        .menu {
+          height: 138px;
+          > li {
+            margin: 0px 28px;
+          }
+        }
+      }
     }
   }
+
 
   @keyframes anim-normal-bar-show {
     from {

@@ -44,8 +44,8 @@ const router = () => {
           <Route index element={<Home />} />
           <Route path="/auto" element={<Auto />} />
           <Route path="/motorrad" element={<Motorrad />} />
-          <Route path="/nothelfer" element={<Nothelfer />} />
-          <Route path="/price" element={<Price />} />
+          <Route path="/nothelferkurs" element={<Nothelfer />} />
+          <Route path="/preise" element={<Price />} />
           <Route path="/uber-uns" element={<UberUns />} />
           <Route path="/vku" element={<Vku />} />
           <Route path="/abg" element={<Abg />} />

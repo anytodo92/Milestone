@@ -10,22 +10,40 @@ const Footer = (): JSX.Element => {
     <FooterWrapper>
       <section>
         <div className="content">
-          <img src={Images.WhiteLogoUrl} />
-          <p className="mt-4">Bruggerstrasse 26</p>
-          <p>5400 Baden</p>
-          <p>&nbsp;</p>
-          <p><strong>Kontakt:</strong></p>
-          <p><a className="link" href="mailto:info@dfm-regional.ch">info@dfm-regional.ch</a></p>
-          <p><a className="link" href="tel:056 225 12 12">056 225 12 12</a></p>
+          <div className="col">
+            <h5>Adresse</h5>
+            <p>
+              Fahrschule Milestone<br />
+              Badenerstrasse 1<br />
+              5400 Baden<br />
+            </p>
+          </div>
+          <div className="col">
+            <h5>Kontakt</h5>
+            <p>
+              <a className="link" href="mailto:kontakt@fahrschule-milestone.ch">kontakt@fahrschule-milestone.ch</a>
+            </p>
+            <p>
+              <a className="link" href="tel:T +41 58 123 45 67">T +41 58 123 45 67</a>
+            </p>
+          </div>
+          <div className="col">
+            <h5>Rechtliches</h5>
+            <p>
+              <a className="link" href="/impressum">Impressum</a>
+            </p>
+              <a className="link" href="/datenschutz">Datenschutz</a>
+            <p>
+            </p>
+            <p>
+              <a className="link" href="/abg">Abg</a>
+            </p>
+          </div>
         </div>
       </section>
       <section>
         <div className="content">
-          <div>©Copyright 2023 - DFM Regional AG</div>
-          <div className="policy">
-            <a className="link" href="/impressum">Impressum</a>
-            <a className="link" href="/datenschutz">Datenschutz</a>
-          </div>
+          <p>Copyright 2023 - Fahrschule Milestone GmbH</p>
         </div>
       </section>
     </FooterWrapper>
