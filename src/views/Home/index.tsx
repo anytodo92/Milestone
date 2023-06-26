@@ -1,3 +1,5 @@
+import Banner from "./Banner";
+
 import {
   Images
 } from "../../utils/assets";
@@ -10,7 +12,7 @@ const Home = (): JSX.Element => {
   
   return (
     <HomeWrapper>
-     
+      <Banner />
     </HomeWrapper>
   );
 };

@@ -3,8 +3,8 @@ import { DefaultTheme } from "styled-components";
 const theme: DefaultTheme = {
   maxWidth: 1310,
   fonts: {
-    roboto: "Roboto",
-    roboto_condensend: "Roboto Condensend",
+    roboto: 'Roboto',
+    roboto_condensend: 'Roboto Condensed',
   },
   colors: {
     spinnerBase: "#0000ff",
