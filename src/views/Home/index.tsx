@@ -1,6 +1,7 @@
 import Banner from "./Banner";
 import Intro from "../Common/Intro";
 import ShapeBottom from "../Common/ShapeBottom";
+import Course from "../Common/Course";
 import {
   Images
 } from "../../utils/assets";
@@ -20,6 +21,7 @@ const Home = (): JSX.Element => {
         fillColor="#f8f8f8"
         height={100}
       />
+      <Course />
     </HomeWrapper>
   );
 };

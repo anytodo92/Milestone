@@ -23,7 +23,7 @@ export const DatenschutzWrapper = styled.div`
   }
 
   .divider {
-    background-color: ${props => props.theme.colors.green_primary};
+    background-color: ${props => props.theme.colors.black_primary};
     margin: 30px 0 10px;
     height: 2px;
     max-width: 811px;
