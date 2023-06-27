@@ -1,0 +1,164 @@
+import styled from "styled-components";
+
+export const RecommendWrapper = styled.div`
+  padding: 0 0 120px;
+  background-color: ${props => props.theme.colors.gray_primary};
+  .content {
+    margin: 0 ${props => props.theme.margins.primary};
+  }
+
+  .title {
+    position: relative;
+    display: inline-block;
+    > h1 {
+      font-weight: 700;
+      font-size: 45px;
+      font-family: ${props => props.theme.fonts.roboto_condensend};
+      line-height: 1.2;
+      color: ${props => props.theme.colors.black_primary};
+    }
+
+    > img {
+      position: absolute;
+      right: 0;
+      bottom: -30px;
+    }
+  }
+
+  > p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: ${props => props.theme.colors.black_primary};
+  }
+
+  .list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    .one {
+      border-radius: 10px;
+      background: ${props => props.theme.colors.white};
+      box-shadow: 0px 0px 8px 0px rgba(43, 43, 43, 0.19);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      .pic {
+        position: relative;
+        border-radius: 310px;
+        background-color: ${props => props.theme.colors.green_primary};
+        width: 297px;
+        height: 310px;
+        > img {
+          position: absolute;
+          border-radius: 297px;
+          width: 297px;
+          height: 297px;
+        }
+        .icon {
+          position: absolute;
+          background-color: ${props => props.theme.colors.white};
+          width: 87px;
+          height: 87px;
+          border-radius: 87px;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 50%);
+          box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.10);
+        }
+      }
+
+      .article {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > h2 {
+          position: relative;
+          color: ${props => props.theme.colors.black_primary};
+          font-size: 35px;
+          font-family: ${props => props.theme.fonts.roboto_condensend};
+          font-weight: 700;
+          line-height: 1.5;
+          text-align: center;
+          display: inline-block;
+
+          &::after {
+            content: "";
+            border-bottom: 4px solid ${props => props.theme.colors.black_primary};
+            width: 69px;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+        }
+
+        > p {
+          color: #5E5E5E;
+          text-align: center;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 1.2;
+          margin-top: 10px;
+        }
+
+        .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 10px;
+
+          > button {
+            height: 46px;
+            border-radius: 46px;
+            background-color: ${props => props.theme.colors.green_primary};
+            color: ${props => props.theme.colors.white};
+            font-size: 18px;
+            font-family: ${props => props.theme.fonts.roboto_condensend};
+            font-weight: 700;
+            line-height: 1.2;
+            padding: 0 23px;
+            margin-top: 30px;
+            cursor: pointer;
+            border: 0;
+            outline: 0;
+
+            &.o-line {
+              border: 2px solid ${props => props.theme.colors.green_primary};
+              color: ${props => props.theme.colors.green_primary};
+              background-color: ${props => props.theme.colors.white};
+            }
+          }
+        }
+        
+      }
+    }
+    
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet_md}) {
+    .title {
+      > img {
+        transform: translate(50%);
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    .list {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
+    .content {
+      width: ${props => props.theme.maxWidth}px;
+      margin: 0 auto;
+    }
+  }
+`

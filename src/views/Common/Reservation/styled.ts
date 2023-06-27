@@ -82,6 +82,8 @@ export const ReservationWrapper = styled.div`
       > button {
         height: 46px;
         border-radius: 46px;
+        border: 0;
+        outline: 0;
         background-color: ${props => props.theme.colors.green_primary};
         color: ${props => props.theme.colors.white};
         font-size: 18px;

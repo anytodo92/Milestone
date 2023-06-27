@@ -70,6 +70,8 @@ export const CourseWrapper = styled.div`
           > button {
             position: absolute;
             height: 46px;
+            border: 0;
+            outline: 0;
             border-radius: 46px;
             background-color: ${props => props.theme.colors.green_primary};
             color: ${props => props.theme.colors.white};
