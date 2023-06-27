@@ -2,6 +2,7 @@ import Banner from "./Banner";
 import Intro from "../Common/Intro";
 import ShapeBottom from "../Common/ShapeBottom";
 import Course from "../Common/Course";
+import Reservation from "../Common/Reservation";
 import {
   Images
 } from "../../utils/assets";
@@ -22,6 +23,7 @@ const Home = (): JSX.Element => {
         height={100}
       />
       <Course />
+      <Reservation />
     </HomeWrapper>
   );
 };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const IntroWrapper = styled.div`
-  background-color: #f8f8f8;
+  background-color: ${props => props.theme.colors.gray_primary};
   padding: 140px 0 25px;
 
   .content {
@@ -33,7 +33,7 @@ export const IntroWrapper = styled.div`
       width: 187px;
       height: 273px;
       margin-top: -313px;
-      margin-left: 120px;
+      margin-left: 60px;
     }
   }
 

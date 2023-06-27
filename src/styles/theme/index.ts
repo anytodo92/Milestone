@@ -15,7 +15,7 @@ const theme: DefaultTheme = {
     white: "#ffffff",
 
     green_primary: "#84af8c",
-    gray_primary: "#f6f6f6",
+    gray_primary: "#f8f8f8",
     red_primary: "#ee4141",
   },
   breakpoints: {
