@@ -68,7 +68,6 @@ export const BannerWrapper = styled.div`
 
     .detail {
       font-size: 22px;
-      font-family: ${props => props.theme.fonts.roboto};
       font-weight: 400;
       line-height: 1.2;
       margin-top: 40px;

@@ -25,7 +25,6 @@ export const FooterWrapper = styled.footer`
             font-size: 16px;
             font-weight: 400;
             line-height: 1.5;
-            font-family: ${props => props.theme.fonts.roboto};
             color: ${props => props.theme.colors.white};
           }
 
@@ -56,7 +55,6 @@ export const FooterWrapper = styled.footer`
         font-weight: 400;
         line-height: 1.5;
         align-items: center;
-        font-family: ${props => props.theme.fonts.roboto};
       }
     }
   }

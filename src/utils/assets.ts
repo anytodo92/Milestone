@@ -28,7 +28,7 @@ import Hospital from "../assets/images/hospital.svg";
 import Memo from "../assets/images/memo.svg";
 import Phone from "../assets/images/phone.svg";
 import Play from "../assets/images/play.svg";
-
+import Check from "../assets/images/check.svg";
 export const Backgrounds = {
   
 };
@@ -46,6 +46,7 @@ export const Icons = {
   Memo,
   Phone,
   Play,
+  Check,
 };
 
 export const Images = {

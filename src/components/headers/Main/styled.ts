@@ -66,12 +66,11 @@ export const MainHeaderWrapper = styled.nav`
           border-bottom: 1px solid #eaeaea;
           > a {
             text-decoration: none;
-            font-family: ${props => props.theme.fonts.roboto};
             color: ${props => props.theme.colors.black_primary};
           }
 
           &.active > a {
-            color: ${props => props.theme.colors.green_primary};
+            color: ${props => props.theme.colors.black_primary};
           }
         }
       }
@@ -145,11 +144,11 @@ export const MainHeaderWrapper = styled.nav`
 
             > li {
               > a {
-                color: #3f3f3f;
+                color: ${props => props.theme.colors.black_primary};
               }
 
               &.active > a {
-                color: ${props => props.theme.colors.green_primary};
+                color: ${props => props.theme.colors.black_primary};
               }
             }         
           }
@@ -198,7 +197,7 @@ export const MainHeaderWrapper = styled.nav`
             }
 
             &.active > a {
-              color: ${props => props.theme.colors.green_primary};
+              color: ${props => props.theme.colors.black_primary};
             }
           }
         }

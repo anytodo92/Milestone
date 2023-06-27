@@ -9,10 +9,7 @@ const theme: DefaultTheme = {
   colors: {
     spinnerBase: "#0000ff",
 
-    black_primary: "#5c5c5c",
-
-    green_primary: "#3cc74a",
-    green_secondary: "#32a93e",
+    black_primary: "#3f3f3f",
 
     black: "#000000",
     white: "#ffffff",
