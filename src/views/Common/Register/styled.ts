@@ -188,6 +188,7 @@ export const RegisterWrapper = styled.div`
         .buttons {
           display: flex;
           justify-content: flex-end;
+          align-items: flex-end;
           width: 30%;
           
           > button {
@@ -208,6 +209,31 @@ export const RegisterWrapper = styled.div`
         }
       }
       
+    }
+  }
+
+  .more {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+    > button {
+      display: inline-flex;
+      column-gap: 10px;
+      align-items: center;
+      height: 46px;
+      border-radius: 46px;
+      color: ${props => props.theme.colors.green_primary};
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.4;
+      cursor: pointer;
+      border: 0;
+      outline: 0;
+
+      .icon {
+
+      }
     }
   }
 

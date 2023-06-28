@@ -4,6 +4,7 @@ import Contact from "../Common/Contact";
 import Banner from "../Common/Banner";
 import OurCourse from "../Common/OurCourse";
 import Register from "../Common/Register";
+import Requirement from "../Common/Requirement";
 import {
   VkuWrapper
 } from "./styled";
@@ -22,7 +23,14 @@ const Vku = () => {
       <Banner data={bannerData} />
       <OurCourse />
       <Register />
+      <ShapeTop
+        bgColor="#f8f8f8"
+        fillColor="#fff"
+        height={60}
+      />
+      <Requirement />
       <Contact />
+      
     </VkuWrapper>
   );
 }

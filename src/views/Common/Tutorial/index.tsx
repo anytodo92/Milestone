@@ -49,7 +49,7 @@ const Tutorial = (): JSX.Element => {
           </div>
           <div className="accordion">
           {list.map((data, index) =>
-            <div className="one">
+            <div key={index} className="one">
               <div className="subject">
                 <h5>{data.title}</h5>
                 <span>

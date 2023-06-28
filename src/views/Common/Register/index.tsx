@@ -135,6 +135,14 @@ const Register = (): JSX.Element => {
           </div>
         )}
         </div>
+        <div className="more">
+          <button>
+            Weitere Kurse anzeigen
+            <span className="icon">
+              <img src={Icons.ArrowDown} alt="" />
+            </span>
+          </button>
+        </div>
       </div>
     </RegisterWrapper>
   );
