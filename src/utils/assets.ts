@@ -11,6 +11,7 @@ import Thumb_4 from "../assets/images/thumb-4.png";
 import Thumb_5 from "../assets/images/thumb-5.png";
 import Thumb_6 from "../assets/images/thumb-6.png";
 import Thumb_7 from "../assets/images/thumb-7.png";
+import Thumb_8 from "../assets/images/thumb-8.png";
 import UnderlineGreen from "../assets/images/underline-green.svg";
 import UnderlineWhite from "../assets/images/underline-white.svg";
 import Bg_1 from "../assets/images/bg-1.png";
@@ -66,6 +67,7 @@ export const Images = {
   Thumb_5,
   Thumb_6,
   Thumb_7,
+  Thumb_8,
   UnderlineGreen,
   UnderlineWhite,
   Mask,

@@ -4,7 +4,7 @@ export const RecommendWrapper = styled.div`
   padding: 0 0 120px;
   background-color: ${props => props.theme.colors.gray_primary};
   .content {
-    margin: 0 ${props => props.theme.margins.primary};
+    margin: 0 ${props => props.theme.margins.primary}px;
   }
 
   .title {
@@ -35,7 +35,8 @@ export const RecommendWrapper = styled.div`
   .list {
     margin-top: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 20px;
 
@@ -47,6 +48,7 @@ export const RecommendWrapper = styled.div`
       flex-direction: column;
       align-items: center;
       padding: 30px;
+      max-width: 420px;
       .pic {
         position: relative;
         border-radius: 310px;
@@ -149,9 +151,13 @@ export const RecommendWrapper = styled.div`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+  @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
     .list {
       flex-direction: row;
+      flex-wrap: nowrap;
+      .one {
+        max-width: unset;
+      }
     }
   }
 

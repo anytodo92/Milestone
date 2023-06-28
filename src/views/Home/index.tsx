@@ -5,6 +5,7 @@ import ShapeTop from "../Common/ShapeTop";
 import Course from "../Common/Course";
 import Reservation from "../Common/Reservation";
 import Recommend from "../Common/Recommend";
+import Carousel from "../Common/Carousel";
 import {
   Images
 } from "../../utils/assets";
@@ -32,6 +33,7 @@ const Home = (): JSX.Element => {
         height={70}
       />
       <Recommend />
+      <Carousel />
     </HomeWrapper>
   );
 };
