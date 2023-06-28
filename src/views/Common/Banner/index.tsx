@@ -6,13 +6,20 @@ import {
 
 type BannerPropsType = {
   data: any,
-  page: string,
 }
-const Banner = ({ data, page }: BannerPropsType): JSX.Element => {
+const Banner = ({ data }: BannerPropsType): JSX.Element => {
   
   return (
-    <BannerWrapper className={page}>
-      
+    <BannerWrapper className="hero">
+
+      <div className="content">
+        <div className="summary">
+          <h1 dangerouslySetInnerHTML={{ __html: data.title }}></h1>
+          <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
+          <button>{data.buttonText}</button> 
+        </div>
+      </div>
+      <div className="bg"></div>
     </BannerWrapper>
   );
 };

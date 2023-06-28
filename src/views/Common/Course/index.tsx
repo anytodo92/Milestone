@@ -43,7 +43,7 @@ const Course = (): JSX.Element => {
     },
   ];
   return (
-    <CourseWrapper>
+    <CourseWrapper className="course">
       <div className="content">
         <div className="title">
           <h1>Einzellektionen & Pakete der<br />Fahrschule Milestone</h1>

@@ -67,7 +67,15 @@ const MainHeader: React.FC = () => {
   }
 
   return (
-    <MainHeaderWrapper className={`navbar ${stickyBar ? "sticky-bar" : "normal-bar"} ${toggleStatus ? "open" : ""}`}>
+    <MainHeaderWrapper
+      className={
+        `navbar
+        ${stickyBar ? "sticky-bar" : "normal-bar"}
+        ${toggleStatus ? "open" : ""}
+        ${location.pathname !== '/' ? "reverse" : ""}
+        `
+      }
+    >
       <div className="content">
         <div className="brand">
           <Link to="/">

@@ -5,7 +5,7 @@ import {
 
 const Contact = (): JSX.Element => {
   return (
-    <ContactWrapper>
+    <ContactWrapper className="contact">
       <div className="content">
         <div className="pic">
           <img src={Images.Phone} alt="" />

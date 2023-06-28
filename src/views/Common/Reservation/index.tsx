@@ -5,7 +5,7 @@ import {
 
 const Reservation = (): JSX.Element => {
   return (
-    <ReservationWrapper>
+    <ReservationWrapper className="reservation">
       <div className="content">
         <div className="article">
           <div className="title">

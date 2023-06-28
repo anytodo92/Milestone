@@ -117,7 +117,33 @@ export const MainHeaderWrapper = styled.nav`
           }
         }   
       }
+
+      &.reverse {
+        .content {
+          .brand {
+            img {
+              &:nth-child(2) {
+                display: block;
+              }
+              &:nth-child(1),
+              &:nth-child(3)
+              {
+                display: none;
+              }
+            }
+          }
+
+          .menu {
+            > li {
+              > a {
+                color: ${props => props.theme.colors.black_primary};
+              }
+            }
+          }   
+        }
+      }
     }
+
 
     &.sticky-bar {
       position: fixed;

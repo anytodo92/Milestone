@@ -16,6 +16,7 @@ import UnderlineGreen from "../assets/images/underline-green.svg";
 import UnderlineWhite from "../assets/images/underline-white.svg";
 import Bg_1 from "../assets/images/bg-1.png";
 import Bg_2 from "../assets/images/bg-2.png";
+import Bg_3 from "../assets/images/bg-3.png";
 import Mask from "../assets/images/mask.png";
 
 import ArrowDown from "../assets/images/arrow-down.svg";
@@ -53,6 +54,7 @@ export const Icons = {
 export const Images = {
   Bg_1,
   Bg_2,
+  Bg_3,
   WhiteLogoUrl,
   LightGreenLogoUrl,
   WhiteFullLogoUrl,

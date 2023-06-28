@@ -49,7 +49,7 @@ const Carousel = (): JSX.Element => {
     }
   ];
   return (
-    <CarouselWrapper>
+    <CarouselWrapper className="carousel">
       <div className="content">
         <div className="wrapper">
           <div className="navbtn">
