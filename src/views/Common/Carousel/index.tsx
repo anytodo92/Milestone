@@ -6,12 +6,12 @@ import {
 } from "./styled";
 
 const Carousel = (): JSX.Element => {
-  const elRef = useRef();
+  const elRef = useRef(null);
   const [width, setWidth] = useState(0);
   useEffect(() => {
     if (!elRef.current) return;
     const resizeObserver = new ResizeObserver(() => {
-      setWidth(elRef.current.clientWidth);
+      setWidth((elRef.current as any).clientWidth);
     });
     resizeObserver.observe(elRef.current);
   }, []);

@@ -106,7 +106,7 @@ const Vku = () => {
         height={60}
       />
       <Requirement data={requirementData} />
-      <Contact />      
+      <Contact />
     </VkuWrapper>
   );
 }

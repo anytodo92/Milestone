@@ -57,7 +57,7 @@ const Requirement = ({ data }: RequirementProps): JSX.Element => {
           <div className="desc" dangerouslySetInnerHTML={{ __html: data.description }}>
           </div>
           <div className="accordion">
-          {data.list.map((data1, index) =>
+          {data.list.map((data1: any, index: number) =>
             <div key={index} className="one">
               <div className="subject">
                 <h5>{data1.title}</h5>

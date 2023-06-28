@@ -21,7 +21,7 @@ const OurCourse = ({ data }: OurCourseProps): JSX.Element => {
           <div className="desc" dangerouslySetInnerHTML={{ __html: data.description }}>
           </div>
           <div className="list">
-          {data.list.map((data1, index) =>
+          {data.list.map((data1: any, index: number) =>
             <div key={index} className="one">
               <h5>{data1.title}</h5>
               <div
