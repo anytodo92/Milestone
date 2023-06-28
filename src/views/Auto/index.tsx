@@ -15,7 +15,7 @@ import {
 const Auto = (): JSX.Element => {
   const bannerData = {
     title: 'Faire Preise, Fahrspass und<br />Kompetenz',
-    description: `
+    detail: `
     Unsere erfahreren Fahreler:innen begleiten dich auf dem gesamten Weg zu deinem Führerschein. Ab der ersten Probelektion bis hin zur Prüfung.
     `,
     buttonText: 'Probelektion buchen',

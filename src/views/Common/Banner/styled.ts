@@ -33,7 +33,16 @@ export const BannerWrapper = styled.section`
       line-height: 1.2;
     }
 
-    > p {
+    > p.desc {
+      color: ${props => props.theme.colors.black_primary};
+      font-size: 20px;
+      font-family: ${props => props.theme.fonts.roboto_condensend};
+      font-weight: 700;
+      line-height: 1.2;
+      padding-bottom: 20px;
+    }
+
+    > p.detail {
       color: ${props => props.theme.colors.black_primary};
       font-size: 22px;
       font-weight: 400;

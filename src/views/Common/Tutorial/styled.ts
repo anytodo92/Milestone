@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TutorialWrapper = styled.div`
-padding: 90px 0 20px;
+  padding: 90px 0 20px;
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
 
