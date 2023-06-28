@@ -25,11 +25,12 @@ export const RecommendWrapper = styled.div`
     }
   }
 
-  > p {
+  .desc {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2;
     color: ${props => props.theme.colors.black_primary};
+    margin-top: 50px;
   }
 
   .list {
@@ -157,6 +158,7 @@ export const RecommendWrapper = styled.div`
       flex-wrap: nowrap;
       .one {
         max-width: unset;
+        flex: 1;
       }
     }
   }

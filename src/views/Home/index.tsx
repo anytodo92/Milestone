@@ -6,6 +6,7 @@ import Course from "../Common/Course";
 import Reservation from "../Common/Reservation";
 import Recommend from "../Common/Recommend";
 import Carousel from "../Common/Carousel";
+import Team from "../Common/Team";
 import {
   Images
 } from "../../utils/assets";
@@ -34,6 +35,12 @@ const Home = (): JSX.Element => {
       />
       <Recommend />
       <Carousel />
+      <Team />
+      <ShapeBottom
+        bgColor="#fff"
+        fillColor="#f8f8f8"
+        height={120}
+      />
     </HomeWrapper>
   );
 };
