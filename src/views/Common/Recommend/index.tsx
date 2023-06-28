@@ -40,7 +40,7 @@ const Recommend = (): JSX.Element => {
           <h1>Unser Kursangebot</h1>
           <img src={Images.UnderlineGreen} alt="" />
         </div>
-        <p class="desc">
+        <p className="desc">
         In unserem Kursangebot findest du alle benötigten Kurse die du für den erfolgreichen Abschluss deiner Fahrprüfung benötigst. Alle unsere Kurse finden in kleinen Gruppen statt, damit du maximal profitierst und wir individuell auf dich und deine Fragen eingehen können.
         </p>
         <div className="list">

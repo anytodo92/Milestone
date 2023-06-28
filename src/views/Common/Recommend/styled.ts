@@ -10,6 +10,7 @@ export const RecommendWrapper = styled.div`
   .title {
     position: relative;
     display: inline-block;
+
     > h1 {
       font-weight: 700;
       font-size: 45px;
@@ -36,8 +37,7 @@ export const RecommendWrapper = styled.div`
   .list {
     margin-top: 50px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     column-gap: 20px;
     row-gap: 20px;
 
@@ -49,7 +49,7 @@ export const RecommendWrapper = styled.div`
       flex-direction: column;
       align-items: center;
       padding: 30px;
-      max-width: 420px;
+
       .pic {
         position: relative;
         border-radius: 310px;

@@ -7,6 +7,7 @@ import Reservation from "../Common/Reservation";
 import Recommend from "../Common/Recommend";
 import Carousel from "../Common/Carousel";
 import Team from "../Common/Team";
+import Contact from "../Common/Contact";
 import {
   Images
 } from "../../utils/assets";
@@ -41,6 +42,7 @@ const Home = (): JSX.Element => {
         fillColor="#f8f8f8"
         height={120}
       />
+      <Contact />
     </HomeWrapper>
   );
 };

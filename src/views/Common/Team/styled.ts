@@ -37,6 +37,7 @@ export const TeamWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 80px;
+    row-gap: 50px;
     .one {
       display: flex;
       flex-direction: column;
@@ -110,9 +111,16 @@ export const TeamWrapper = styled.div`
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
+    .list {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
+
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
     .content {

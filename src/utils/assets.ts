@@ -46,7 +46,6 @@ export const Icons = {
   Close_1,
   Hospital,
   Memo,
-  Phone,
   Play,
   Check,
 };
@@ -70,5 +69,6 @@ export const Images = {
   Thumb_8,
   UnderlineGreen,
   UnderlineWhite,
-  Mask,
+  Mask,  
+  Phone,
 }
