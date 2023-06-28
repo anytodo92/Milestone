@@ -3,22 +3,24 @@ import {
   ReservationWrapper
 } from "./styled";
 
-const Reservation = (): JSX.Element => {
+type ReservationProps = {
+  data: any
+}
+
+const Reservation = ({ data }: ReservationProps): JSX.Element => {
   return (
     <ReservationWrapper className="reservation">
       <div className="content">
         <div className="article">
           <div className="title">
-            <h1>Noch nicht überzeugt?<br />Dann buche eine Probelektion!</h1>
+            <h1 dangerouslySetInnerHTML={{ __html: data.title }}></h1>
             <img src={Images.UnderlineGreen} alt="" />
           </div>
           <div className="contt">
-            <p className="desc">Probelektion in deiner Region</p>
-            <h5>Für nur CHF 55.-</h5>
-            <p className="detail">
-              Du hast einmalig die Möglichkeit eine Probelektion zu besuchen. Die Lektion dauert 45 Minuten und es entstehen keine weiteren Kosten
-            </p>
-            <button>Jetzt anfragen</button>
+            <p className="desc">{data.description}</p>
+            <h5>{data.sub_title}</h5>
+            <p className="detail">{data.detail}</p>
+            <button>{data.buttonText}</button>
           </div>
         </div>
         <div className="pic">

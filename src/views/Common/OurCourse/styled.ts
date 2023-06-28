@@ -27,17 +27,16 @@ export const OurCourseWrapper = styled.div`
       > img {
         position: absolute;
         right: 0;
-        bottom: -30px;
+        bottom: -40px;
       }
     }
 
     .desc {
-      padding-bottom: 40px;
       color: ${props => props.theme.colors.black_primary};
       font-size: 18px;
       font-weight: 400;
       line-height: 1.2;
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     .list {
@@ -59,6 +58,12 @@ export const OurCourseWrapper = styled.div`
           font-size: 18px;
           font-weight: 400;
           line-height: 1.4;
+          margin-top: 10px;
+
+          > ul {
+            list-style: disc;
+            margin-left: 20px;
+          }
         }
       }
     }
@@ -73,7 +78,7 @@ export const OurCourseWrapper = styled.div`
   }
 
   .info {
-    margin-top: 10px; 
+    margin-top: 90px; 
     > h4 {
       color: ${props => props.theme.colors.black_primary};
       font-size: 26px;

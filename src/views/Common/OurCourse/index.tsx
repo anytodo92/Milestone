@@ -4,51 +4,29 @@ import {
   OurCourseWrapper
 } from "./styled";
 
-const OurCourse = (): JSX.Element => {
-  const list = [
-    {
-      id: 1,
-      title: 'Abendkurse',
-      description: `
-      <ul><li>4 x 2 Stunden, von 18:00 - 20:00 Uhr</li>
-      <li>Montag - Donnerstag</li></ul>
-      `,
-    },
-    {
-      id: 2,
-      title: 'Intensivkurse',
-      description: `
-      <ul><li>2 x 4 Stunden, von 18:00 - 22:00 Uhr</li>
-      <li>Mittwoch - Donnerstag</li></ul>
-      `,
-    },
-    {
-      id: 3,
-      title: 'Wochenendkurse',
-      description: `
-      <ul><li>2 x 4 Stunden</li>
-      <li>Freitag, 18:00 - 22:00 Uhr & Samstag 08:00 - 12:00 Uhr</li></ul>
-      `,
-    },
-  ];
+type OurCourseProps = {
+  data: any,
+}
+
+const OurCourse = ({ data }: OurCourseProps): JSX.Element => {
+  
   return (
-    <OurCourseWrapper>
+    <OurCourseWrapper className="our-course">
       <div className="content">
         <div className="article">
           <div className="title">
-            <h1>Unsere Kurse</h1>
+            <h1>{data.title}</h1>
             <img src={Images.UnderlineGreen} alt="" />
           </div>
-          <div className="desc">
-            Für jeden das passende Modell - wir bieten unsere Kurse als Abendkurse, am Wochenende oder in Form von Intensivkursen an. Alle Kurse finden ab mind. 6 Teilnehmer:innen statt.
+          <div className="desc" dangerouslySetInnerHTML={{ __html: data.description }}>
           </div>
           <div className="list">
-          {list.map((data, index) =>
+          {data.list.map((data1, index) =>
             <div key={index} className="one">
-              <h5>{data.title}</h5>
+              <h5>{data1.title}</h5>
               <div
                 className="detail"
-                dangerouslySetInnerHTML={{ __html: data.description }}
+                dangerouslySetInnerHTML={{ __html: data1.description }}
               ></div>
             </div>
           )}

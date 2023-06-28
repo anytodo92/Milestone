@@ -17,6 +17,15 @@ import {
 
 const Home = (): JSX.Element => {
   
+  const reservationData = {
+    title: 'Noch nicht überzeugt?<br />Dann buche eine Probelektion!',
+    sub_title: 'Für nur CHF 55.-',
+    description: 'Probelektion in deiner Region',
+    detail: 'Du hast einmalig die Möglichkeit eine Probelektion zu besuchen. Die Lektion dauert 45 Minuten und es entstehen keine weiteren Kosten',
+    buttonText: 'Jetzt anfragen',
+    image1: Images.Thumb_3,
+    image2: Images.Thumb_1,
+  }
   
   return (
     <HomeWrapper>
@@ -28,7 +37,7 @@ const Home = (): JSX.Element => {
         height={100}
       />
       <Course />
-      <Reservation />
+      <Reservation data={reservationData} />
       <ShapeTop
         bgColor="#f8f8f8"
         fillColor="#fff"
