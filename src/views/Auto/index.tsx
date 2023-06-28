@@ -5,6 +5,7 @@ import Reservation from "../Common/Reservation";
 import Carousel from "../Common/Carousel";
 import Contact from "../Common/Contact";
 import Banner from "../Common/Banner";
+import Tutorial from "../Common/Tutorial";
 
 import { Images } from "../../utils/assets";
 import {
@@ -22,6 +23,7 @@ const Auto = (): JSX.Element => {
   return (
     <AutoWrapper>
       <Banner data={bannerData} />
+      <Tutorial />
       <ShapeTop
         bgColor="#f8f8f8"
         fillColor="#fff"
