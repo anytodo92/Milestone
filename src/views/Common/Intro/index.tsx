@@ -36,7 +36,7 @@ const Intro = (): JSX.Element => {
     },
   ]
   return (
-    <IntroWrapper>
+    <IntroWrapper className="intro">
       <div className="content">
         <div className="pic">
           <div className="bg1" style={{ backgroundImage: `url(${Images.Thumb_3})` }}></div>

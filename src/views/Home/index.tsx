@@ -26,6 +26,29 @@ const Home = (): JSX.Element => {
     image1: Images.Thumb_3,
     image2: Images.Thumb_1,
   }
+
+  const teamData = {
+    title: 'Die Profis, die dir zur<br />Seite stehen',
+    description: 'Unser Team aus Fahrlerer:innen und Kursinstruktor:innen die dir bei deiner Ausbildung zur Seite stehen.',
+    buttonText: 'Erfahre mehr Über Uns',
+    list: [
+      {
+        id: 1,
+        image: Images.Thumb_2,
+        name: 'Mateen Saifullah'
+      },
+      {
+        id: 2,
+        image: Images.Thumb_2,
+        name: 'Mateen Saifullah'
+      },
+      {
+        id: 3,
+        image: Images.Thumb_2,
+        name: 'Mateen Saifullah'
+      },
+    ]
+  }
   
   return (
     <HomeWrapper>
@@ -45,7 +68,7 @@ const Home = (): JSX.Element => {
       />
       <Recommend />
       <Carousel />
-      <Team />
+      <Team data={teamData} />
       <ShapeBottom
         bgColor="#fff"
         fillColor="#f8f8f8"

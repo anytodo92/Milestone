@@ -5,6 +5,14 @@ export const TeamWrapper = styled.div`
   background-color: ${props => props.theme.colors.gray_primary};
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
+
+    > .desc {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.2;
+      color: ${props => props.theme.colors.black_primary};
+      margin-top: 80px;
+    }
   }
 
   .title {
@@ -25,14 +33,6 @@ export const TeamWrapper = styled.div`
     }
   }
 
-  .desc {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.2;
-    color: ${props => props.theme.colors.black_primary};
-    margin-top: 80px;
-  }
-
   .list {
     display: grid;
     grid-template-columns: 1fr;
@@ -44,7 +44,7 @@ export const TeamWrapper = styled.div`
       align-items: center;
       .pic {
         position: relative;
-        
+        margin-bottom: 15px;
         > img {
           position: relative;
           width: 343px;
@@ -66,25 +66,57 @@ export const TeamWrapper = styled.div`
         }
       }
 
-      > h1 {
-        position: relative;
-        color: ${props => props.theme.colors.black_primary};
-        font-size: 35px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
-        line-height: 1.5;
-        text-align: center;
-        margin-top: 50px;
+      .wrapper {
+        > h1 {
+          position: relative;
+          color: ${props => props.theme.colors.black_primary};
+          font-size: 35px;
+          font-family: ${props => props.theme.fonts.roboto_condensend};
+          font-weight: 700;
+          line-height: 1.5;
+          margin-top: 20px;
 
-        &::after {
-          position: absolute;
-          width: 69px;
-          border-bottom: 4px solid ${props => props.theme.colors.black_primary};
-          content: '';
-          left: 0;
-          bottom: 0;
+          &::after {
+            position: absolute;
+            width: 69px;
+            border-bottom: 4px solid ${props => props.theme.colors.black_primary};
+            content: '';
+            left: 0;
+            bottom: 0;
+          }
+        }
+
+        > .desc {
+          color: ${props => props.theme.colors.black_primary};
+          font-size: 20px;
+          font-family: ${props => props.theme.fonts.roboto_condensend};
+          font-weight: 500;
+          line-height: 1.2;
+          margin-top: 20px;
+        }
+
+        > .detail {
+          color: ${props => props.theme.colors.black};
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 1.4;
+          margin-top: 30px;
+
+          > ul {
+            list-style: disc;
+            margin-left: 20px;
+          }
+        }
+
+        > .email {
+          color: ${props => props.theme.colors.green_primary};
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.4;
+          margin-top: 30px;
         }
       }
+      
     }
     
   }

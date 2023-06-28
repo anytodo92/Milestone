@@ -3,49 +3,49 @@ import {
   TeamWrapper
 } from "./styled";
 
-const Team = (): JSX.Element => {
-  const list = [
-    {
-      id: 1,
-      image: Images.Thumb_2,
-      name: 'Mateen Saifullah'
-    },
-    {
-      id: 2,
-      image: Images.Thumb_2,
-      name: 'Mateen Saifullah'
-    },
-    {
-      id: 3,
-      image: Images.Thumb_2,
-      name: 'Mateen Saifullah'
-    },
-  ];
+type TeamProps = {
+  data: any;
+}
+const Team = ({ data }: TeamProps): JSX.Element => {
+  
   return (
-    <TeamWrapper>
+    <TeamWrapper className="team">
       <div className="content">
         <div className="title">
-          <h1>Die Profis, die dir zur<br />Seite stehen</h1>
+          <h1 dangerouslySetInnerHTML={{ __html: data.title }}></h1>
           <img src={Images.UnderlineGreen} alt="" />
         </div>
-        <p className="desc">
-        Unser Team aus Fahrlerer:innen und Kursinstruktor:innen die dir bei deiner Ausbildung zur Seite stehen.
-        </p>
+        <p className="desc">{data.description}</p>
         <div className="list">
-        {list.map((data, index) =>
+        {data.list.map((data1: any, index: number) =>
           <div key={index} className="one">
             <div className="pic">
               <div className="bg"></div>
-              <img src={data.image} alt="" />
-              
+              <img src={data1.image} alt="" />              
             </div>
-            <h1>{data.name}</h1>
+            <div className="wrapper">
+              {data1.description&&
+                <p className="desc">{data1.description}</p>
+              }
+              <h1>{data1.name}</h1>
+              {data1.detail&&
+                <div
+                  className="detail"
+                  dangerouslySetInnerHTML={{ __html: data1.detail }}
+                ></div>
+              }
+              {data1.email&&
+                <p className="email">{data1.email}</p>
+              }
+            </div>
           </div>
         )}  
         </div>
-        <div className="buttons">
-          <button>Erfahre mehr Über Uns</button>
-        </div>
+        {data.buttonText&&
+          <div className="buttons">
+            <button>{data.buttonText}</button>
+          </div>
+        }
       </div>
     </TeamWrapper>
   );
