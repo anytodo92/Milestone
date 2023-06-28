@@ -23,6 +23,8 @@ import ArrowDown from "../assets/images/arrow-down.svg";
 import ArrowUp from "../assets/images/arrow-up.svg";
 import ArrowRight from "../assets/images/arrow-right.svg";
 import ArrowLeft from "../assets/images/arrow-left.svg";
+import ArrowRight_2 from "../assets/images/arrow-right-2.svg";
+import ArrowLeft_2 from "../assets/images/arrow-left-2.svg";
 import MapMark from "../assets/images/map-mark.svg";
 import Car from "../assets/images/car.svg";
 import Close from "../assets/images/close.svg";
@@ -41,6 +43,8 @@ export const Icons = {
   ArrowUp,
   ArrowRight,
   ArrowLeft,
+  ArrowLeft_2,
+  ArrowRight_2,
   MapMark,
   Car,
   Close,

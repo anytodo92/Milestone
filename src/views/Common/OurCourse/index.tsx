@@ -63,11 +63,11 @@ const OurCourse = (): JSX.Element => {
             </div>
             <div className="control">
                <div className="left">
-                 <img src={Icons.ArrowLeft} alt="" />
+                 <img src={Icons.ArrowLeft_2} alt="" />
                </div>
                <h5>Badenerstrasse 1, 5400 Baden</h5>
                <div className="right">
-                 <img src={Icons.ArrowRight} alt="" />
+                 <img src={Icons.ArrowRight_2} alt="" />
                </div>
             </div>
           </div>

@@ -3,6 +3,7 @@ import ShapeTop from "../Common/ShapeTop";
 import Contact from "../Common/Contact";
 import Banner from "../Common/Banner";
 import OurCourse from "../Common/OurCourse";
+import Register from "../Common/Register";
 import {
   VkuWrapper
 } from "./styled";
@@ -20,6 +21,7 @@ const Vku = () => {
     <VkuWrapper>
       <Banner data={bannerData} />
       <OurCourse />
+      <Register />
       <Contact />
     </VkuWrapper>
   );

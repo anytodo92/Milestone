@@ -73,7 +73,7 @@ export const OurCourseWrapper = styled.div`
   }
 
   .info {
-    
+    margin-top: 10px; 
     > h4 {
       color: ${props => props.theme.colors.black_primary};
       font-size: 26px;
@@ -85,9 +85,10 @@ export const OurCourseWrapper = styled.div`
     .wrapper {
       position: relative;
       display: inline-block;
+      
       .map {
-        width: 547px;
-        height: 352px;
+        width: 100%;
+        height: auto;
         margin-top: 30px;
       }
 
@@ -95,7 +96,7 @@ export const OurCourseWrapper = styled.div`
         position: absolute;
         left: 50%;
         bottom: 10px;
-        width: 486px;
+        width: 90%;
         height: 68px;
         display: flex;
         justify-content: space-between;
@@ -127,6 +128,15 @@ export const OurCourseWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .content {
       flex-direction: row;
+    }
+
+    .info {
+      .wrapper {
+        .map {
+          width: 547px;
+          height: 352px;
+        }
+      }
     }
   }
 
