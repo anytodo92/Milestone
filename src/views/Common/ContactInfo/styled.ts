@@ -8,6 +8,7 @@ export const ContactInfoWrapper = styled.div`
   .list {
     display: flex;
     flex-direction: column;
+    row-gap: 30px;
     margin-top: 50px;
 
     .one {
@@ -45,7 +46,7 @@ export const ContactInfoWrapper = styled.div`
         font-weight: 300;
         line-height: 28px;
         letter-spacing: -0.4px;
-        margin-top: 50px;
+        margin-top: 30px;
       }
     }
   }
