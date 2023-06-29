@@ -60,7 +60,7 @@ const Course = (): JSX.Element => {
                 </>}
               </div>
               <div className="article">
-                <p className="desc">{data.description}</p>
+                <div className="desc">{data.description}</div>
                 <h5>{data.title}</h5>
                 <div
                   className="detail"

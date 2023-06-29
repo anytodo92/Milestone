@@ -15,9 +15,9 @@ const Contact = (): JSX.Element => {
             <h1>Du möchtest mehr erfahren?<br />Kontaktiere Uns!</h1>
             <img src={Images.UnderlineGreen} alt="" />
           </div>
-          <p>
+          <div className="desc">
           Wir sind für dich da! Melde dich telefonisch oder über unser Kontaktformular.
-          </p>
+          </div>
           <button>Kontaktieren</button>
         </div>
       </div>

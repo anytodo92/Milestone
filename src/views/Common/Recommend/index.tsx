@@ -40,9 +40,9 @@ const Recommend = (): JSX.Element => {
           <h1>Unser Kursangebot</h1>
           <img src={Images.UnderlineGreen} alt="" />
         </div>
-        <p className="desc">
+        <div className="desc">
         In unserem Kursangebot findest du alle benötigten Kurse die du für den erfolgreichen Abschluss deiner Fahrprüfung benötigst. Alle unsere Kurse finden in kleinen Gruppen statt, damit du maximal profitierst und wir individuell auf dich und deine Fragen eingehen können.
-        </p>
+        </div>
         <div className="list">
         {list.map((data, index) =>
           <div key={index} className="one">
@@ -54,7 +54,7 @@ const Recommend = (): JSX.Element => {
             </div>
             <div className="article">
               <h2>{data.title}</h2>
-              <p>{data.description}</p>
+              <div className="desc">{data.description}</div>
               <div className="buttons">
                 <button>{data.buttonText1}</button>
                 <button className="o-line">{data.buttonText1}</button>
