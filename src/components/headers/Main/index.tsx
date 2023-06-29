@@ -87,8 +87,17 @@ const MainHeader: React.FC = () => {
         <div className="control">
           <ul className="menu">
           {linkList.map((data, index) =>
-            <li key={index} className={`${(data.path === location.pathname) ? "active" : ""}`}>
+            <li
+              key={index}
+              className={
+                `${(data.path === location.pathname)
+                  ? "active" : ""}
+                ${data.path === '/preise' ? "spec" : ""}
+                `
+              }
+            >
               <Link to={data.path}>{data.title}</Link>
+              <img className="icon" src={Images.UnderlineGreen} width={105} height={16} />
             </li>
           )}
           </ul>

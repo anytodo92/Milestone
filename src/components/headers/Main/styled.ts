@@ -14,7 +14,7 @@ export const MainHeaderWrapper = styled.nav`
   transition: height .5s ease-in-out;
 
   &.open {
-    height: 370px;
+    height: 420px;
   }
   &.normal-bar {
     animation: anim-normal-bar-show;
@@ -62,15 +62,28 @@ export const MainHeaderWrapper = styled.nav`
         transition: margin-top .4s ease-in-out, opacity .2s ease-in-out;
   
         > li {
+          position: relative;
           padding: 10px 0;
           border-bottom: 1px solid #eaeaea;
+          .icon {
+            display: none;
+            position: absolute;
+            max-width: unset;
+            left: 50%;
+            transform: translateX(-50%);
+          }
           > a {
             text-decoration: none;
             color: ${props => props.theme.colors.black_primary};
           }
 
-          &.active > a {
-            color: ${props => props.theme.colors.black_primary};
+          &.active {
+            > a {
+              color: ${props => props.theme.colors.green_primary};
+            }
+            .icon {
+              display: none;
+            }
           }
         }
       }
@@ -173,8 +186,13 @@ export const MainHeaderWrapper = styled.nav`
                 color: ${props => props.theme.colors.black_primary};
               }
 
-              &.active > a {
-                color: ${props => props.theme.colors.black_primary};
+              &.active {
+                > a {
+                  color: ${props => props.theme.colors.green_primary};
+                }
+                .icon {
+                  display: block;
+                }
               }
             }         
           }
@@ -222,8 +240,13 @@ export const MainHeaderWrapper = styled.nav`
               color: ${props => props.theme.colors.white}
             }
 
-            &.active > a {
-              color: ${props => props.theme.colors.black_primary};
+            &.active {
+              > a {
+                color: ${props => props.theme.colors.green_primary};
+              }
+              .icon {
+                display: block;
+              }
             }
           }
         }
@@ -258,7 +281,10 @@ export const MainHeaderWrapper = styled.nav`
         .menu {
           height: 120px;
           > li {
-            margin: 0px 20px;
+            margin: 0px 28px;
+            &.spec {
+              margin-left: 70px;
+            }
           }
         }
       }
@@ -291,6 +317,9 @@ export const MainHeaderWrapper = styled.nav`
           height: 138px;
           > li {
             margin: 0px 28px;
+            &.spec {
+              margin-left: 70px;
+            }
           }
         }
       }
