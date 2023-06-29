@@ -10,7 +10,7 @@ type PriceProps = {
 const Price1 = ({ data }: PriceProps): JSX.Element => {
 
   return (
-    <PriceWrapper>
+    <PriceWrapper className="price">
       <div className="content">
         <div className="title">
           <h1>{data.title}</h1>

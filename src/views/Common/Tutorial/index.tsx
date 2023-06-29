@@ -35,7 +35,7 @@ const Tutorial = (): JSX.Element => {
     },
   ];
   return (
-    <TutorialWrapper>
+    <TutorialWrapper className="tutorial">
       <div className="content">
         <div className="article">
           <div className="title">
