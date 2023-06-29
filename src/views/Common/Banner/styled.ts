@@ -48,6 +48,11 @@ export const BannerWrapper = styled.section`
       font-weight: 400;
       line-height: 1.2;
       margin-top: 40px;
+
+      > strong {
+        font-weight: 400;
+        color: ${props => props.theme.colors.green_primary};
+      }
     }
 
     > button {

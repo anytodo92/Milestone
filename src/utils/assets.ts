@@ -34,6 +34,9 @@ import Memo from "../assets/images/memo.svg";
 import Phone from "../assets/images/phone.svg";
 import Play from "../assets/images/play.svg";
 import Check from "../assets/images/check.svg";
+import Envelope from "../assets/images/envelope.svg";
+import Phone_2 from "../assets/images/phone-2.svg";
+import Ribbon from "../assets/images/ribbon.svg";
 export const Backgrounds = {
   
 };
@@ -53,6 +56,9 @@ export const Icons = {
   Memo,
   Play,
   Check,
+  Envelope,
+  Phone_2,
+  Ribbon,
 };
 
 export const Images = {
