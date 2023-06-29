@@ -9,15 +9,13 @@ const theme: DefaultTheme = {
   colors: {
     spinnerBase: "#0000ff",
 
-    black_primary: "#5c5c5c",
-
-    green_primary: "#3cc74a",
-    green_secondary: "#32a93e",
+    black_primary: "#3f3f3f",
 
     black: "#000000",
     white: "#ffffff",
 
-    gray_primary: "#f6f6f6",
+    green_primary: "#84af8c",
+    gray_primary: "#f8f8f8",
     red_primary: "#ee4141",
   },
   breakpoints: {

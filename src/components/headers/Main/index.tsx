@@ -67,7 +67,15 @@ const MainHeader: React.FC = () => {
   }
 
   return (
-    <MainHeaderWrapper className={`navbar ${stickyBar ? "sticky-bar" : "normal-bar"} ${toggleStatus ? "open" : ""}`}>
+    <MainHeaderWrapper
+      className={
+        `navbar
+        ${stickyBar ? "sticky-bar" : "normal-bar"}
+        ${toggleStatus ? "open" : ""}
+        ${location.pathname !== '/' ? "reverse" : ""}
+        `
+      }
+    >
       <div className="content">
         <div className="brand">
           <Link to="/">
@@ -79,8 +87,17 @@ const MainHeader: React.FC = () => {
         <div className="control">
           <ul className="menu">
           {linkList.map((data, index) =>
-            <li key={index} className={`${(data.path === location.pathname) ? "active" : ""}`}>
+            <li
+              key={index}
+              className={
+                `${(data.path === location.pathname)
+                  ? "active" : ""}
+                ${data.path === '/preise' ? "spec" : ""}
+                `
+              }
+            >
               <Link to={data.path}>{data.title}</Link>
+              <img className="icon" src={Images.UnderlineGreen} width={105} height={16} />
             </li>
           )}
           </ul>
