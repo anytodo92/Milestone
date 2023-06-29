@@ -41,7 +41,7 @@ const Requirement = ({ data }: RequirementProps): JSX.Element => {
   ];
 
   return (
-    <RequirementWrapper>
+    <RequirementWrapper className="requirement">
       <div className="content">
         <div className="pic">
           <img src={data.image} alt="" />

@@ -5,7 +5,7 @@ import {
 
 const ContactInfo = (): JSX.Element => {
   return (
-    <ContactInfoWrapper>
+    <ContactInfoWrapper className="contact-info">
       <div className="content">
         <div className="list">
           <div className="one">

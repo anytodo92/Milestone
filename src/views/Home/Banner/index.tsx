@@ -4,7 +4,7 @@ import {
 
 const Banner = (): JSX.Element => {
   return (
-    <BannerWrapper>
+    <BannerWrapper className="hero">
       <div className="bg">
         <div className="lt"></div>
         <div className="rt"></div>

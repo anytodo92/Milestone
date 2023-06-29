@@ -34,7 +34,7 @@ const Recommend = (): JSX.Element => {
     },
   ];
   return (
-    <RecommendWrapper>
+    <RecommendWrapper className="recommend">
       <div className="content">
         <div className="title">
           <h1>Unser Kursangebot</h1>

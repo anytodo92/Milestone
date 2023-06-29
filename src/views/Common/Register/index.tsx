@@ -66,7 +66,7 @@ const Register = (): JSX.Element => {
     },
   ]
   return (
-    <RegisterWrapper>
+    <RegisterWrapper className="register">
       <div className="content">
         <div className="title">
           <h1>Termine & Anmeldung</h1>
