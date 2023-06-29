@@ -26,7 +26,7 @@ export const RecommendWrapper = styled.div`
     }
   }
 
-  .desc {
+  > .desc {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2;
@@ -101,7 +101,7 @@ export const RecommendWrapper = styled.div`
           }
         }
 
-        > p {
+        > .desc {
           color: #5E5E5E;
           text-align: center;
           font-size: 18px;

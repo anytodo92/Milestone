@@ -17,9 +17,9 @@ const Reservation = ({ data }: ReservationProps): JSX.Element => {
             <img src={Images.UnderlineGreen} alt="" />
           </div>
           <div className="contt">
-            <p className="desc">{data.description}</p>
+            <div className="desc">{data.description}</div>
             <h5>{data.sub_title}</h5>
-            <p className="detail">{data.detail}</p>
+            <div className="detail">{data.detail}</div>
             <button>{data.buttonText}</button>
           </div>
         </div>

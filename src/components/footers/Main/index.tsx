@@ -32,8 +32,8 @@ const Footer = (): JSX.Element => {
             <p>
               <a className="link" href="/impressum">Impressum</a>
             </p>
-              <a className="link" href="/datenschutz">Datenschutz</a>
             <p>
+              <a className="link" href="/datenschutz">Datenschutz</a>
             </p>
             <p>
               <a className="link" href="/abg">Abg</a>

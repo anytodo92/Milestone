@@ -76,7 +76,7 @@ const Carousel = (): JSX.Element => {
                     <img src={Images.UnderlineGreen} alt="" />
                   </div>
                   <div className="contt">
-                    <p>{data.detail}</p>
+                    <div className="detail">{data.detail}</div>
                     <span>{data.name}</span>
                   </div>
                 </div>

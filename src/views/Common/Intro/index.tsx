@@ -47,9 +47,9 @@ const Intro = (): JSX.Element => {
             <h1>Das erwartet dich bei der<br />Fahrschule Milestone</h1>
             <img src={Images.UnderlineGreen} alt="" />
           </div>
-          <p>
+          <div className="desc">
             Wie begleiten dich von A - Z und kümmern uns um alle Belangen auf dem Weg zu deinem Führerschein. 
-          </p>
+          </div>
           <div className="list">
           {items.map((data, index) =>
             <div key={index} className="one">
@@ -58,7 +58,7 @@ const Intro = (): JSX.Element => {
               </div>
               <div className="contt">
                 <h5 dangerouslySetInnerHTML={{ __html: data.title }}></h5>
-                <p>{data.desc}</p>
+                <div className="desc">{data.desc}</div>
               </div>
             </div>
           )}

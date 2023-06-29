@@ -39,7 +39,7 @@ export const ContactWrapper = styled.div`
       }
     }
 
-    > p {
+    > .desc {
       color: ${props => props.theme.colors.black_primary};
       font-size: 18px;
       font-weight: 400;

@@ -91,7 +91,7 @@ export const CarouselWrapper = styled.div`
               background-color: ${props => props.theme.colors.gray_primary};
               padding: 35px;
 
-              > p {
+              > .detail {
                 color: ${props => props.theme.colors.black_primary};
                 font-size: 18px;
                 line-height: 1.4;
