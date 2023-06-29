@@ -29,7 +29,7 @@ export const ContactInfoWrapper = styled.div`
           letter-spacing: 0.8px;
 
           &::before {
-            content: "",
+            content: "";
             display: inline-block;
             position: absolute;
             left: 0;

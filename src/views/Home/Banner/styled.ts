@@ -10,7 +10,7 @@ export const BannerWrapper = styled.div`
     top: 0;
 
     .lt {
-      postion: absolute;
+      position: absolute;
       left: 0;
       top: 0;
       width: 100%;

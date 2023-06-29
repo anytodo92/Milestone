@@ -5,6 +5,15 @@ export const RecommendWrapper = styled.div`
   background-color: ${props => props.theme.colors.gray_primary};
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
+
+    > .desc {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.2;
+      color: ${props => props.theme.colors.black_primary};
+      margin-top: 50px;
+    }
+
   }
 
   .title {
@@ -26,14 +35,7 @@ export const RecommendWrapper = styled.div`
     }
   }
 
-  > .desc {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.2;
-    color: ${props => props.theme.colors.black_primary};
-    margin-top: 50px;
-  }
-
+  
   .list {
     margin-top: 50px;
     display: flex;
