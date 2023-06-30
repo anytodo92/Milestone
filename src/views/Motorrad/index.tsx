@@ -30,10 +30,7 @@ const Motrrad = () => {
         id: 1,
         title: '12 Stunden Grundkurs',
         description: `
-        <ul><li>Kategorie AM (bis 50ccm, ab 15 Jahren)</li>
-        <li>Kategorie A1 (bis 123ccm, ab 15 Jahren)</li>
-        <li>Kategorie A2 (A beschränkt, über 11kW, max. 35kM, ab 18 Jahren) ohne Ausweis 
-Kat. A1</li></ul>
+        <ul><li>Kategorie AM (bis 50ccm, ab 15 Jahren)</li><li>Kategorie A1 (bis 123ccm, ab 15 Jahren)</li><li>Kategorie A2 (A beschränkt, über 11kW, max. 35kM, ab 18 Jahren) ohne Ausweis Kat. A1</li></ul>
         `,
       },
       {

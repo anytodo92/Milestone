@@ -22,9 +22,7 @@ const Course = (): JSX.Element => {
       title: 'CHF 85 pro Lektion',
       description: '10er Abo für CHF 850.-',
       detail: `
-      <ul><li>10 Fahrstunden</li>
-      <li>CHF 30 Gutschein für VKU oder Nothelfer</li>
-      <li>Fehrlehrer deiner Wahl</li></ul>
+      <ul><li>10 Fahrstunden</li><li>CHF 30 Gutschein für VKU oder Nothelfer</li><li>Fehrlehrer deiner Wahl</li></ul>
       `,
       buttonText: 'Jetzt anfragen',
       image: Images.Thumb_7,
@@ -34,9 +32,7 @@ const Course = (): JSX.Element => {
       title: 'CHF 80 pro Lektion',
       description: '20er Abo für CHF 1600.-',
       detail: `
-      <ul><li>20 Fahrstunden</li>
-      <li>CHF 30 Gutschein für VKU oder Nothelfer</li>
-      <li>Fehrlehrer deiner Wahl</li></ul>
+      <ul><li>20 Fahrstunden</li><li>CHF 30 Gutschein für VKU oder Nothelfer</li><li>Fehrlehrer deiner Wahl</li></ul>
       `,
       buttonText: 'Jetzt anfragen',
       image: '',

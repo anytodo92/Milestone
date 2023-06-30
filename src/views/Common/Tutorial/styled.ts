@@ -66,7 +66,7 @@ export const TutorialWrapper = styled.div`
           }
 
           > span {
-
+            transition: all .5s ease;
           }
         }
 
@@ -75,13 +75,21 @@ export const TutorialWrapper = styled.div`
           font-size: 18px;
           font-weight: 400;
           line-height: 1.2;
-          padding: 10px 0;
-          display: none;
+          padding: 0;
+          height: 0;
+          overflow: hidden;
+          transition: all .5s ease;
         }
 
         &.active {
+          .subject {
+            > span {
+              transform: rotate(180deg);
+            }
+          }
           .detail {
-            display: block;
+            padding: 10px 0;
+            height: auto;
           }
         }
       }

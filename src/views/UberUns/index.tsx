@@ -30,9 +30,7 @@ const UberUns = (): JSX.Element => {
         name: 'Mateen Saifullah',
         description: 'Fahrlerer / Kursinstruktor',
         detail: `
-        <ul><li>Tesla Model S</li>
-        <li>846 abgeschlossene Fahrprüfungen</li>
-        <li>Deutsch / Englisch / Kurdisch</li></ul>
+        <ul><li>Tesla Model S</li><li>846 abgeschlossene Fahrprüfungen</li><li>Deutsch / Englisch / Kurdisch</li></ul>
         `,
         email: 'mateen@milestone-fahrschule.ch',
       },
