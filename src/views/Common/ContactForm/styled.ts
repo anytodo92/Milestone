@@ -45,7 +45,7 @@ export const ContactFormWrapper = styled.div`
             font-size: 18px;
             font-weight: 700;
             line-height: 27px;
-            color: ${props => props.theme.colors.blue_primary};
+            color: ${props => props.theme.colors.black_primary};
 
             > sup {
               font-weight: 700;
