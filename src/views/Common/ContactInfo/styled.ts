@@ -23,6 +23,7 @@ export const ContactInfoWrapper = styled.div`
 
         }
         > h3 {
+          position: relative;
           color: ${props => props.theme.colors.green_primary};
           font-size: 40px;
           font-weight: 700;
@@ -35,7 +36,7 @@ export const ContactInfoWrapper = styled.div`
             left: 0;
             top: 0;
             width: 70px;
-            border: 4px solid ${props => props.theme.colors.green_primary};
+            border-top: 4px solid ${props => props.theme.colors.green_primary};
           }
         }
       }

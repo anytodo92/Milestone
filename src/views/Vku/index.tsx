@@ -29,24 +29,21 @@ const Vku = () => {
         id: 1,
         title: 'Abendkurse',
         description: `
-        <ul><li>4 x 2 Stunden, von 18:00 - 20:00 Uhr</li>
-        <li>Montag - Donnerstag</li></ul>
+        <ul><li>4 x 2 Stunden, von 18:00 - 20:00 Uhr</li><li>Montag - Donnerstag</li></ul>
         `,
       },
       {
         id: 2,
         title: 'Intensivkurse',
         description: `
-        <ul><li>2 x 4 Stunden, von 18:00 - 22:00 Uhr</li>
-        <li>Mittwoch - Donnerstag</li></ul>
+        <ul><li>2 x 4 Stunden, von 18:00 - 22:00 Uhr</li><li>Mittwoch - Donnerstag</li></ul>
         `,
       },
       {
         id: 3,
         title: 'Wochenendkurse',
         description: `
-        <ul><li>2 x 4 Stunden</li>
-        <li>Freitag, 18:00 - 22:00 Uhr & Samstag 08:00 - 12:00 Uhr</li></ul>
+        <ul><li>2 x 4 Stunden</li><li>Freitag, 18:00 - 22:00 Uhr & Samstag 08:00 - 12:00 Uhr</li></ul>
         `,
       },
     ]
