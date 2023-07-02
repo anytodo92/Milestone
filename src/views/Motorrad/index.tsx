@@ -20,6 +20,7 @@ const Motrrad = () => {
     Wir vermitteln dir die nötige Sicherheit, damit du schon bald selbstbewusst mit deinem Motorrad oder Roller in die Kurven liegen kannst. Unsere Fahrlerer:innen stehen dir für Kurse oder Einzellektionen zur Verfügung.
     `,
     buttonText: 'Kursübersicht',
+    link: '/motorrad#termine'
   }
 
   const ourCourseData = {

@@ -20,7 +20,8 @@ const Register = (): JSX.Element => {
           date: 'Donnerstag, 20. Juli 2023',
           time: '18:00 - 20:00 Uhr & 20:00 - 22:00 Uhr',
         },
-      ]
+      ],
+      opened: false,
     },
     {
       id: 2,
@@ -37,7 +38,8 @@ const Register = (): JSX.Element => {
           date: 'Donnerstag, 20. Juli 2023',
           time: '18:00 - 20:00 Uhr & 20:00 - 22:00 Uhr',
         },
-      ]
+      ],
+      opened: false,
     },    
     {
       id: 3,
@@ -62,11 +64,12 @@ const Register = (): JSX.Element => {
           date: 'Donnerstag, 20. Juli 2023',
           time: '18:00 - 20:00 Uhr',
         },        
-      ]
+      ],
+      opened: false,
     },
   ]
   return (
-    <RegisterWrapper className="register">
+    <RegisterWrapper id="termine" className="register">
       <div className="content">
         <div className="title">
           <h1>Termine & Anmeldung</h1>
@@ -96,7 +99,7 @@ const Register = (): JSX.Element => {
         </div>
         <div className="list">
         {list.map((data, index) => 
-          <div key={index} className="one">
+          <div key={index} className={`one ${index === 0 ? 'opened' : ''}`}>
             <div className="row1">
               <div className="col1">
                 <div className="mark">{data.mark}</div>
@@ -110,8 +113,11 @@ const Register = (): JSX.Element => {
                 </div>
               </div>
               <div className="col3">
-                <p className="info1">{data.info1}</p>
-                <p className="info2">{data.info2}</p>
+                <div className="info">
+                  <p className="info1">{data.info1}</p>
+                  <p className="info2">{data.info2}</p>
+                </div>
+                <button className="btn-close"><img src={Icons.Close} /></button>
               </div>
             </div>
             <div className="row2">
@@ -131,6 +137,106 @@ const Register = (): JSX.Element => {
                 <button>Anmelden</button>
               </div>
 
+            </div>
+            <div className="row3">
+              <div className="title">Anmeldung</div>
+              <div className="yform">
+                <form>
+                  <div className="form">
+                    <div className="col">
+                      <div className="group">
+                        <div className="entry-box">
+                          <div className="form-group">
+                            <label className="control-label"></label>
+                            <input type="text" className="form-control" placeholder="Vorname" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="group">
+                        <div className="entry-box">
+                          <div className="form-group">
+                            <label className="control-label"></label>
+                            <input type="text" className="form-control" placeholder="Strasse / Nr." />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="group">
+                        <div className="entry-box">
+                          <div className="form-group">
+                            <label className="control-label"></label>
+                            <input type="text" className="form-control" placeholder="E-Mail" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="group">
+                        <div className="entry-box">
+                          <div className="form-group">
+                            <label className="control-label"></label>
+                            <input type="text" className="form-control" placeholder="Geburtsdatum (TT.MM.JJJJ)" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col">
+                      <div className="group">
+                        <div className="entry-box">
+                          <div className="form-group">
+                            <label className="control-label"></label>
+                            <input type="text" className="form-control" placeholder="Name" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="group">
+                        <div className="entry-box">
+                          <div className="form-group" style={{ width: "50%" }}>
+                            <label className="control-label"></label>
+                            <input type="text" className="form-control" placeholder="PLZ" />
+                          </div>
+                          <div className="form-group">
+                            <label className="control-label"></label>
+                            <input type="text" className="form-control" placeholder="Ort" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="group">
+                        <div className="entry-box">
+                          <div className="form-group">
+                            <label className="control-label"></label>
+                            <input type="text" className="form-control" placeholder="Handynummer" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="group">
+                        <div className="entry-box">
+                          <div className="form-group">
+                            <label className="control-label"></label>
+                            <input type="text" className="form-control" placeholder="Lernfahrausweisnummer" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col">                      
+                    </div>
+                  </div>
+                  <div className="check">
+                    <div className="check-wrapper">
+                      <label className="checkbox-wrapper">
+                        <input type="checkbox" />
+                        <span className="checkmark"></span>
+                      </label>
+                      <div className="txt">
+                        Ich akzeptiere die <a>allgemeinen Geschäftsbedingungen</a>. Die <a>Datenschutzerklärung</a> habe ich gelesen und verstandn
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div className="submit">                    
+                    <div>
+                      <button>Verbindlich anmelden</button>
+                    </div>                    
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         )}

@@ -55,7 +55,10 @@ export const BannerWrapper = styled.section`
       }
     }
 
-    > button {
+    > a {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
       height: 46px;
       border-radius: 46px;
       background-color: ${props => props.theme.colors.green_primary};
@@ -67,8 +70,6 @@ export const BannerWrapper = styled.section`
       padding: 0 40px;
       margin-top: 40px;
       cursor: pointer;
-      border: 0;
-      outline: 0;
     }
   }
 

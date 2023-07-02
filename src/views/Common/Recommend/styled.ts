@@ -118,7 +118,8 @@ export const RecommendWrapper = styled.div`
           justify-content: center;
           column-gap: 10px;
 
-          > button {
+          > a {
+            display: inline-flex;
             height: 46px;
             border-radius: 46px;
             background-color: ${props => props.theme.colors.green_primary};
@@ -130,8 +131,8 @@ export const RecommendWrapper = styled.div`
             padding: 0 23px;
             margin-top: 30px;
             cursor: pointer;
-            border: 0;
-            outline: 0;
+            text-decoration: none;
+            align-items: center;
 
             &.o-line {
               border: 2px solid ${props => props.theme.colors.green_primary};

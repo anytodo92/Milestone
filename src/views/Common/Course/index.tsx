@@ -1,3 +1,6 @@
+import SubmitForm from "../../../components/modals/SubmitForm";
+
+import { useState } from "react";
 import {
   CourseWrapper
 } from "./styled";
@@ -6,6 +9,7 @@ import {
 } from "../../../utils/assets";
 
 const Course = (): JSX.Element => {
+  const [modalType, setModalType] = useState(0);
   const list = [
     {
       id: 1,
@@ -40,6 +44,9 @@ const Course = (): JSX.Element => {
   ];
   return (
     <CourseWrapper className="course">
+      {modalType&&
+        <SubmitForm opened={modalType > 0} onClose={() => setModalType(0)} />
+      }
       <div className="content">
         <div className="title">
           <h1>Einzellektionen & Pakete der<br />Fahrschule Milestone</h1>
@@ -63,7 +70,7 @@ const Course = (): JSX.Element => {
                   dangerouslySetInnerHTML={{ __html: data.detail }}
                 >
                 </div>
-                <button>{data.buttonText}</button>
+                <button onClick={() => setModalType(index + 1)}>{data.buttonText}</button>
               </div>
             </div>
           </div>
