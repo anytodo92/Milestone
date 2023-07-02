@@ -19,6 +19,7 @@ const Nothelfer = () => {
     Obligatorisch und durchaus sinnvoll. Du lernst Leben zu retten - wir vermitteln dir das nötige Selbstvertrauen und geben dir die Wekrzeuge und Techniken an die Hand, damit du schnell und vorallem richtig Handeln lernst.
     `,
     buttonText: 'Kursübersicht',
+    link: '/nothelferkurs#termine'
   }
 
   const ourCourseData = {

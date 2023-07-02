@@ -89,6 +89,24 @@ export const RegisterWrapper = styled.div`
       border-radius: 10px;
       min-width: 1024px;
 
+      &.opened {
+        .row1 {
+          .btn-close {
+            display: block;
+          }
+        }
+        .row2 {
+          .buttons {
+            > button {
+              display: none;
+            }
+          }
+        }
+        .row3 {
+          display: block;
+        }
+      }
+
       .row1 {
         display: flex;
 
@@ -100,6 +118,10 @@ export const RegisterWrapper = styled.div`
         }
         .col3 {
           width: 30%;
+          display: flex;
+          justify-content: flex-end;
+          column-gap: 10px;
+          align-items: center;
         }
         .mark {
           border-radius: 10px;
@@ -145,6 +167,10 @@ export const RegisterWrapper = styled.div`
           font-weight: 400;
           line-height: 1.4;
           text-align: right;
+        }
+
+        .btn-close {
+          display: none;
         }
       }
 
@@ -208,7 +234,18 @@ export const RegisterWrapper = styled.div`
           }
         }
       }
-      
+
+      .row3 {
+        display: none;
+        margin-top: 50px;
+        .title {
+          font-size: 26px;
+          font-family: ${props => props.theme.fonts.roboto_condensend};
+          font-weight: 700;
+          line-height: 1.2;
+          color: ${props => props.theme.colors.green_primary};
+        }
+      }
     }
   }
 
@@ -237,6 +274,40 @@ export const RegisterWrapper = styled.div`
     }
   }
 
+  .yform {
+    margin-top: 10px;
+    .form {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .submit {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .check {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      .check-wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        
+        .txt {
+          color: ${props => props.theme.colors.black_primary};
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 1.4;
+          margin-top: 15px;
+
+          > a {
+            color: ${props => props.theme.colors.green_primary};
+          }
+        }
+      }
+    }
+  }
+
   @media(min-width: ${props => props.theme.breakpoints.tablet_md}) {
     .title {
       > img {
@@ -251,6 +322,12 @@ export const RegisterWrapper = styled.div`
 
       .box {
         width: 527px;
+      }
+    }
+
+    .yform {
+      .form {
+        grid-template-columns: 1fr 1fr 1fr;
       }
     }
   }

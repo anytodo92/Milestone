@@ -11,6 +11,8 @@ const Recommend = (): JSX.Element => {
       description: 'Im Motorrad Grundkurs lernst du die Grundlagen der Fahrzeugbedienung und das Fahren im Verkehr ...',
       buttonText1: 'Jetzt buchen',
       buttonText2: 'Mehr dazu',
+      link1: '/motorrad#termine',
+      link2: '/motorrad',
       image: Images.Thumb_4,
       icon: Icons.Car,
     },
@@ -20,6 +22,8 @@ const Recommend = (): JSX.Element => {
       description: 'Im obligatorischen VKU vermitteln wir dir alle Informationen, damit du dich sicher im Strassenverkehr bewegen kannst ...',
       buttonText1: 'Jetzt buchen',
       buttonText2: 'Mehr dazu',
+      link1: '/vku#termine',
+      link2: '/vku',
       image: Images.Thumb_5,
       icon: Icons.Memo,
     },
@@ -29,6 +33,8 @@ const Recommend = (): JSX.Element => {
       description: 'Um den Auto- oder Motorradführerschein zu machen benötigst du als Erstes einen gültigen Abschluss des Nothelferkurses ...',
       buttonText1: 'Jetzt buchen',
       buttonText2: 'Mehr dazu',
+      link1: '/nothelferkurs#termine',
+      link2: '/nothelferkurs',
       image: Images.Thumb_6,
       icon: Icons.Hospital,
     },
@@ -56,8 +62,8 @@ const Recommend = (): JSX.Element => {
               <h2>{data.title}</h2>
               <div className="desc">{data.description}</div>
               <div className="buttons">
-                <button>{data.buttonText1}</button>
-                <button className="o-line">{data.buttonText1}</button>
+                <a href={data.link1}>{data.buttonText1}</a>
+                <a href={data.link2} className="o-line">{data.buttonText1}</a>
               </div>
             </div>
           </div>

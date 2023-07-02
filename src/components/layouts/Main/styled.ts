@@ -7,5 +7,5 @@ export const MainLayoutWrapper = styled.div`
 `;
 
 export const ContentWrapper = styled.main`
-  
+
 `;

@@ -19,6 +19,7 @@ const Vku = () => {
     Wir legen grossen Wert auf eine entspannte Lernatmosphäre und gestalten unsere Kurse nach den modernsten Methoden und Konzepte. Unsere Instruktor:innen begleiten dich mit einem guten Mix aus Theorie und Praxis durch die Inhalte. Wir freuen uns auf dich!
     `,
     buttonText: 'Kursübersicht',
+    link: '/vku#termine'
   }
 
   const ourCourseData = {
