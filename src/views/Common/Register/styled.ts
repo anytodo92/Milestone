@@ -171,6 +171,15 @@ export const RegisterWrapper = styled.div`
 
         .btn-close {
           display: none;
+          
+          width: auto;
+          height: auto;
+          opacity: 1;
+          background: unset;
+          padding: 0;
+          > img {
+            max-width: unset;
+          }
         }
       }
 
