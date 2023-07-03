@@ -97,6 +97,9 @@ const Register = (): JSX.Element => {
             </div>
           </div>
         </div>
+        <div className="no-list">
+          Zur Zeit sind keine Kurse verfügbar. Bitte schau später nochmals vorbei.
+        </div>
         <div className="list">
         {list.map((data, index) => 
           <div key={index} className={`one ${index === 0 ? 'opened' : ''}`}>
