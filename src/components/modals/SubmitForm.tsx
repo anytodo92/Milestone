@@ -4,8 +4,8 @@ import { Images, Icons } from "../../utils/assets";
 const SubmitFormWrapper = styled.div`
   position: relative;
   z-index: 100;
-  width: 1280px;
-  height: 850px;
+  width: 90%;
+  
   background-color: ${props => props.theme.colors.white};
   border-radius: 30px;
   padding: 58px 43px;
@@ -68,6 +68,9 @@ const SubmitFormWrapper = styled.div`
   
   .yform {
     margin-top: 10px;
+
+    max-height: 420px;
+    overflow-y: auto;
     .form {
       .col {
         .row {
@@ -128,15 +131,26 @@ const SubmitFormWrapper = styled.div`
 
   }
 
-  @media (min-width: 1024px) {
-    .yform {
-      .form {
-        grid-template-columns: 1fr 1fr;
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    .container {
+      .yform {
+        .form {
+          grid-template-columns: 1fr 1fr;
 
-        .col {
-          
+          .col {
+            
+          }
         }
       }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
+    width: 1280px;
+    height: 850px;
+    .yform {
+      max-height: unset;
+      overflow-y: hidden;
     }
   }
 `
@@ -144,8 +158,9 @@ const SubmitFormWrapper = styled.div`
 type SubmitFormPrps = {
   opened: boolean,
   onClose: () => void,
+  onSend: () => void,
 }
-const SubmitForm = ({ opened, onClose }: SubmitFormPrps): JSX.Element => {
+const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element => {
   return (
     <ModalLayout opened={opened} onClose={onClose}>
       <SubmitFormWrapper>
@@ -295,7 +310,7 @@ const SubmitForm = ({ opened, onClose }: SubmitFormPrps): JSX.Element => {
             </div>
           </div>
           <div className="submit">
-            <button type="button">Jetzt anfragen</button>
+            <button type="button" onClick={onSend}>Jetzt anfragen</button>
           </div>
         </div>
       </SubmitFormWrapper>
