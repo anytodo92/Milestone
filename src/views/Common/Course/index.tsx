@@ -1,5 +1,5 @@
 import SubmitForm from "../../../components/modals/SubmitForm";
-
+import Result from "../../../components/modals/Result";
 import { useState } from "react";
 import {
   CourseWrapper
@@ -10,6 +10,7 @@ import {
 
 const Course = (): JSX.Element => {
   const [modalType, setModalType] = useState(0);
+  const [modalResult, setModalResult] = useState(false);
   const list = [
     {
       id: 1,
@@ -45,7 +46,18 @@ const Course = (): JSX.Element => {
   return (
     <CourseWrapper className="course">
       {modalType&&
-        <SubmitForm opened={modalType > 0} onClose={() => setModalType(0)} />
+        <SubmitForm
+          opened={modalType > 0}
+          onSend={() => {
+            setModalType(0);
+            setModalResult(true);
+          }}
+          onClose={() => setModalType(0)} />
+      }
+      {modalResult&&
+        <Result
+          opened={modalResult}
+          onClose={() => setModalResult(false)} />
       }
       <div className="content">
         <div className="title">

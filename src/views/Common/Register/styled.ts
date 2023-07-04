@@ -74,7 +74,17 @@ export const RegisterWrapper = styled.div`
       }
     }
   }
-
+  .no-list {
+    background-color: ${props => props.theme.colors.gray_primary};
+    padding: 28px;
+    border-radius: 10px;
+    font-family: ${props => props.theme.fonts.roboto_condensend};
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    color: ${props => props.theme.colors.black_primary};
+    margin-top: 15px;
+  }
   .list {
     display: flex;
     flex-direction: column;
