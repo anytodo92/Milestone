@@ -122,6 +122,12 @@ const SubmitFormWrapper = styled.div`
       
     }
 
+    .error {
+      font-size: 14px;
+      margin-top: 15px;
+      color: ${props => props.theme.colors.red_primary};
+    }
+
     .submit {
       margin-top: 15px;
       > button {
@@ -132,14 +138,12 @@ const SubmitFormWrapper = styled.div`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
-    .container {
-      .yform {
-        .form {
-          grid-template-columns: 1fr 1fr;
+    .yform {
+      .form {
+        grid-template-columns: 1fr 1fr;
 
-          .col {
-            
-          }
+        .col {
+          
         }
       }
     }
@@ -147,7 +151,7 @@ const SubmitFormWrapper = styled.div`
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
     width: 1280px;
-    height: 850px;
+    min-height: 850px;
     .yform {
       max-height: unset;
       overflow-y: hidden;
@@ -308,6 +312,9 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
                 </label>
               </div>
             </div>
+          </div>
+          <div className="error">
+            Error
           </div>
           <div className="submit">
             <button type="button" onClick={onSend}>Jetzt anfragen</button>
