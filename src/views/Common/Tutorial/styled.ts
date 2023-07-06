@@ -34,9 +34,9 @@ export const TutorialWrapper = styled.div`
     .desc {
       padding-bottom: 40px;
       color: ${props => props.theme.colors.black_primary};
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.2;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.4;
       margin-top: 60px;
 
       strong {
@@ -72,9 +72,9 @@ export const TutorialWrapper = styled.div`
 
         .detail {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 1.2;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 1.4;
           padding: 0;
           height: 0;
           overflow: hidden;
@@ -88,7 +88,7 @@ export const TutorialWrapper = styled.div`
             }
           }
           .detail {
-            padding: 10px 0;
+            padding: 10px 0 25px;
             height: auto;
           }
         }
@@ -119,8 +119,8 @@ export const TutorialWrapper = styled.div`
         }
         
         color: ${props => props.theme.colors.black_primary};
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 300;
         line-height: 1.4;
 
         > a {

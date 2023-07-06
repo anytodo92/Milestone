@@ -174,7 +174,7 @@ export const RegisterWrapper = styled.div`
         .info2 {
           color: ${props => props.theme.colors.black_primary};
           font-size: 16px;
-          font-weight: 400;
+          font-weight: 300;
           line-height: 1.4;
           text-align: right;
         }
@@ -203,7 +203,7 @@ export const RegisterWrapper = styled.div`
           width: 70%;
           display: flex;
           flex-direction: column;
-          row-gap: 20px;
+          row-gap: 30px;
 
           > .one {
             display: flex;
@@ -224,7 +224,7 @@ export const RegisterWrapper = styled.div`
             .time {
               color: ${props => props.theme.colors.black_primary};
               font-size: 18px;
-              font-weight: 400;
+              font-weight: 300;
               line-height: 1.4;
             }
           }
@@ -314,8 +314,8 @@ export const RegisterWrapper = styled.div`
         
         .txt {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 18px;
-          font-weight: 400;
+          font-size: 16px;
+          font-weight: 300;
           line-height: 1.4;
           margin-top: 15px;
 

@@ -21,10 +21,11 @@ export const FooterWrapper = styled.footer`
         column-gap: 30px;
         row-gap: 30px;
         .col {
+          flex: unset;
           > h5, > p, a.link {
             font-size: 16px;
-            font-weight: 400;
-            line-height: 1.5;
+            font-weight: 300;
+            line-height: 1.4;
             color: ${props => props.theme.colors.white};
           }
 
@@ -52,8 +53,8 @@ export const FooterWrapper = styled.footer`
         display: flex;
         height: 54px;
         font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
+        font-weight: 300;
+        line-height: 1.4;
         align-items: center;
       }
     }

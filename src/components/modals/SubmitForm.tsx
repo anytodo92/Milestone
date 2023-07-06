@@ -110,9 +110,9 @@ const SubmitFormWrapper = styled.div`
 
       .checkbox-wrapper {
         color: #838383;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.5;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.4;
       }
 
       .row {

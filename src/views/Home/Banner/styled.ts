@@ -68,7 +68,7 @@ export const BannerWrapper = styled.div`
 
     .detail {
       font-size: 22px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 1.2;
       margin-top: 40px;
       max-width: 500px;

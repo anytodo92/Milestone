@@ -93,6 +93,7 @@ const MainHeader: React.FC = () => {
                 `${(data.path === location.pathname)
                   ? "active" : ""}
                 ${data.path === '/preise' ? "spec" : ""}
+                ${index < 4 ? 'bold' : ''}
                 `
               }
             >

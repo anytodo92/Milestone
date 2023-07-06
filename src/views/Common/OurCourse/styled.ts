@@ -33,9 +33,9 @@ export const OurCourseWrapper = styled.div`
 
     .desc {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.2;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.4;
       margin-top: 50px;
     }
 
@@ -55,8 +55,8 @@ export const OurCourseWrapper = styled.div`
 
         > .detail {
           color: ${props => props.theme.colors.black};
-          font-size: 18px;
-          font-weight: 400;
+          font-size: 16px;
+          font-weight: 300;
           line-height: 1.4;
           margin-top: 10px;
 
@@ -71,7 +71,7 @@ export const OurCourseWrapper = styled.div`
     .txt {
       color: ${props => props.theme.colors.black_primary};
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 1.2;
       margin-top: 30px;
     }

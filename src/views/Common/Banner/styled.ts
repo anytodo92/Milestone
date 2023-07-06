@@ -45,12 +45,12 @@ export const BannerWrapper = styled.section`
     > .detail {
       color: ${props => props.theme.colors.black_primary};
       font-size: 22px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 1.2;
       margin-top: 40px;
 
       > strong {
-        font-weight: 400;
+        font-weight: 300;
         color: ${props => props.theme.colors.green_primary};
       }
     }
@@ -70,6 +70,12 @@ export const BannerWrapper = styled.section`
       padding: 0 40px;
       margin-top: 40px;
       cursor: pointer;
+    }
+  }
+
+  @media(min-width: ${props => props.theme.breakpoints.desktop}) {
+    .summary {
+      margin-left: 100px;
     }
   }
 

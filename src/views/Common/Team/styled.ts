@@ -7,9 +7,9 @@ export const TeamWrapper = styled.div`
     margin: 0 ${props => props.theme.margins.primary}px;
 
     > .desc {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 1.2;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.4;
       color: ${props => props.theme.colors.black_primary};
       margin-top: 80px;
     }
@@ -98,7 +98,7 @@ export const TeamWrapper = styled.div`
         > .detail {
           color: ${props => props.theme.colors.black};
           font-size: 18px;
-          font-weight: 400;
+          font-weight: 300;
           line-height: 1.4;
           margin-top: 30px;
 
