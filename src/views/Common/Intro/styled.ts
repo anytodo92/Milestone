@@ -58,9 +58,9 @@ export const IntroWrapper = styled.div`
 
     > .desc {
       margin-top: 60px;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 1.2;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.4;
       color: ${props => props.theme.colors.black_primary};
     }
 
@@ -90,10 +90,10 @@ export const IntroWrapper = styled.div`
           }
 
           > .desc {
-            font-size: 18px;
-            font-weight: 400;
+            font-size: 16px;
+            font-weight: 300;
             color: ${props => props.theme.colors.black_primary};
-            line-height: 1.4;
+            line-height: 1.2;
             margin-top: 10px;
           }
         }

@@ -7,9 +7,9 @@ export const RecommendWrapper = styled.div`
     margin: 0 ${props => props.theme.margins.primary}px;
 
     > .desc {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 1.2;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.4;
       color: ${props => props.theme.colors.black_primary};
       margin-top: 50px;
     }
@@ -106,9 +106,9 @@ export const RecommendWrapper = styled.div`
         > .desc {
           color: #5E5E5E;
           text-align: center;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 1.2;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 1.4;
           margin-top: 10px;
         }
 

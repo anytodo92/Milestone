@@ -60,8 +60,8 @@ export const CourseWrapper = styled.div`
           }
 
           .detail {
-            font-size: 18px;
-            font-weight: 400;
+            font-size: 16px;
+            font-weight: 300;
             line-height: 1.4;
             margin-top: 25px;
             color: ${props => props.theme.colors.black_primary};
@@ -141,9 +141,9 @@ export const CourseWrapper = styled.div`
 
   .more {
     margin-top: 60px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
     color: ${props => props.theme.colors.black_primary};
 
     .link {

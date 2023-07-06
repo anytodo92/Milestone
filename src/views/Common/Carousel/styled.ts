@@ -93,9 +93,9 @@ export const CarouselWrapper = styled.div`
 
               > .detail {
                 color: ${props => props.theme.colors.black_primary};
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 1.4;
-                font-weight: 400;
+                font-weight: 300;
               }
 
               > span {

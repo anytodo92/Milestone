@@ -42,6 +42,7 @@ export const MainHeaderWrapper = styled.nav`
         }
         &:nth-child(2),
         &:nth-child(3) {
+          height: 90px;
           display: none;
         }
       }
@@ -83,6 +84,12 @@ export const MainHeaderWrapper = styled.nav`
             }
             .icon {
               display: none;
+            }
+          }
+
+          &.bold {
+            > a {
+              font-weight: 700;
             }
           }
         }
@@ -213,9 +220,6 @@ export const MainHeaderWrapper = styled.nav`
       flex-direction: row;
       .brand {
         height: 100px;
-        img {
-          width: 300px;
-        }
       }
       .control {
         display: flex;
@@ -259,27 +263,9 @@ export const MainHeaderWrapper = styled.nav`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
-    height: 120px;
-    &.sticky-bar {
-      .content {
-        .brand {
-          height: 120px;
-        }
-        .menu {
-          height: 120px;
-        }
-      }
-    }
     .content {
-      .brand {
-        height: 120px;
-        img {
-          width: 350px;
-        }
-      }
       .control {
         .menu {
-          height: 120px;
           > li {
             margin: 0px 28px;
             &.spec {
@@ -292,29 +278,16 @@ export const MainHeaderWrapper = styled.nav`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
-    height: 138px;
-    &.sticky-bar {
-      .content {
-        .brand {
-          height: 138px;
-        }
-        .menu {
-          height: 138px;
-        }
-      }
-    }
     .content {
       width: ${props => props.theme.maxWidth}px;
       margin: 0 auto;
       .brand {
-        height: 138px;
         img {
           width: unset;
         }
       }
       .control {        
         .menu {
-          height: 138px;
           > li {
             margin: 0px 28px;
             &.spec {
