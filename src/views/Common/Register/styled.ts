@@ -203,7 +203,7 @@ export const RegisterWrapper = styled.div`
           width: 70%;
           display: flex;
           flex-direction: column;
-          row-gap: 30px;
+          row-gap: 10px;
 
           > .one {
             display: flex;

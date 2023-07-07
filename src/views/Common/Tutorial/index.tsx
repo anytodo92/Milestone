@@ -45,7 +45,7 @@ const Tutorial = (): JSX.Element => {
           <div className="desc">
             <p>Wie begleiten dich von A - Z und kümmern uns um alle Belangen auf dem Weg zu deinem Führerschein. Du musst dir keine Gedanken machen, wie und wo es mit deiner Fahrausbildung weitergeht. Wir übernehmen das für dich und führen dich durch das Fahrschuld-Labyrinth.</p>
             <p><br/></p>
-            <p>Falls du noch Fragen hast, kannst du uns gerne via <strong>WhatsApp</strong> oder per <strong>Telefon</strong> kontaktieren.</p>
+            <p>Falls du noch Fragen hast, kannst du uns gerne via <a href="https://www.whatsapp.com">WhatsApp</a> oder per <a href="tel:123456">Telefon</a> kontaktieren.</p>
           </div>
           <div className="accordion">
           {list.map((data, index) =>

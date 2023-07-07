@@ -57,7 +57,7 @@ const Vku = () => {
     <br />
     <p>In diesem Kurs bereitest du dich durch praxisnahe Beispiele aus echten Fahrsituationen optimal auf den Strassenverkehr vor. Wir empfehlen den Kurs bereits vor deiner ersten Fahrstunden zu absolvieren.</p>
     <br />
-    <p>Hier findest du das Wichtigste in Kürze. Solltest du trotzdem noch Fragen haben, kannst du dich gerne <strong>telefonisch</strong> oder über unser <strong>Kontakt-Formular</strong> bei uns melden.</p>
+    <p>Hier findest du das Wichtigste in Kürze. Solltest du trotzdem noch Fragen haben, kannst du dich gerne <a>telefonisch</a> oder über unser <a>Kontakt-Formular</a> bei uns melden.</p>
     `,
     image: Images.Thumb_5,
     icon: Icons.Memo,
