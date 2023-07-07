@@ -57,7 +57,7 @@ const Nothelfer = () => {
     <br />
     <p>In der Schweiz sind alle aus moralischer wie auch aus gesetzlicher Sicht dazu verpflichtet, Nothilfe zu leisten. In unserem Kurs eignest du dir das nötige Wissen an, um tatsächlich zu helfen und womöglich Leben zu retten.</p>
     <br />
-    <p>Hier findest du das Wichtigste in Kürze. Solltest du trotzdem noch Fragen haben, kannst du dich gerne <strong>telefonisch</strong> oder über unser <strong>Kontakt-Formular</strong> bei uns melden.</p>
+    <p>Hier findest du das Wichtigste in Kürze. Solltest du trotzdem noch Fragen haben, kannst du dich gerne <a>telefonisch</a> oder über unser <a>Kontakt-Formular</a> bei uns melden.</p>
     `,
     image: Images.Thumb_5,
     icon: Icons.Memo,

@@ -67,8 +67,10 @@ export const RequirementWrapper = styled.div`
       line-height: 1.4;
       margin-top: 60px;
 
-      strong {
+      a {
         color: ${props => props.theme.colors.green_primary};
+        text-decoration: none;
+        font-weight: 500;
       }
       border-bottom: 1px solid #c5c5c5;
     }

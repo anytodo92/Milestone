@@ -49,10 +49,14 @@ export const BannerWrapper = styled.section`
       line-height: 1.2;
       margin-top: 40px;
 
-      > strong {
-        font-weight: 300;
-        color: ${props => props.theme.colors.green_primary};
+      > p {
+        > a {
+          font-weight: 500;
+          color: ${props => props.theme.colors.green_primary};
+          text-decoration: none;        
+        }
       }
+      
     }
 
     > a {
