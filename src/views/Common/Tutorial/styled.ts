@@ -100,9 +100,12 @@ export const TutorialWrapper = styled.div`
 
   .location {
     .map {
-      width: 388px;
-      height: 446px;
-
+      .container {
+        width: 388px;
+        height: 446px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
     }
 
     .info {
