@@ -92,9 +92,13 @@ export const OurCourseWrapper = styled.div`
       display: inline-block;
       
       .map {
-        width: 100%;
-        height: auto;
         margin-top: 30px;
+        .container {
+          width: 547px;
+          height: 352px;
+          border-radius: 10px;
+          overflow: hidden;
+        }
       }
 
       .control {
