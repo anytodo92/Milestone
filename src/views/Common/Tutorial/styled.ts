@@ -61,7 +61,7 @@ export const TutorialWrapper = styled.div`
 
           > h5 {
             color: ${props => props.theme.colors.green_primary};
-            font-size: 26px;
+            font-size: 20px;
             font-family: ${props => props.theme.fonts.roboto_condensend};
             font-weight: 700;
             line-height: 1.2;
