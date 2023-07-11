@@ -18,7 +18,7 @@ const Contact = (): JSX.Element => {
           <div className="desc">
           Wir sind für dich da! Melde dich telefonisch oder über unser Kontaktformular.
           </div>
-          <button>Kontaktieren</button>
+          <a>Kontaktieren</a>
         </div>
       </div>
     </ContactWrapper>

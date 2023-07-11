@@ -47,7 +47,7 @@ export const ContactWrapper = styled.div`
       margin-top: 60px;
     }
 
-    > button {
+    > a {
       height: 46px;
       border-radius: 46px;
       background-color: ${props => props.theme.colors.green_primary};
@@ -59,8 +59,9 @@ export const ContactWrapper = styled.div`
       padding: 0 40px;
       margin-top: 30px;
       cursor: pointer;
-      border: 0;
-      outline: 0;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
     }
   }
 

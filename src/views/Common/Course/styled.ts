@@ -65,6 +65,11 @@ export const CourseWrapper = styled.div`
             line-height: 1.4;
             margin-top: 25px;
             color: ${props => props.theme.colors.black_primary};
+
+            > ul {
+              list-style: disc;
+              padding-left: 20px;
+            }
           }
 
           > button {

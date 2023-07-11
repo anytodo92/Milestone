@@ -18,12 +18,12 @@ export const FooterWrapper = styled.footer`
       .content {
         display: flex;
         flex-direction: column;
-        column-gap: 50px;
+        column-gap: 70px;
         row-gap: 30px;
         .col {
           flex: unset;
-          > h5, > p, a.link {
-            font-size: 20px;
+          > p, a.link {
+            font-size: 16px;
             font-weight: 300;
             line-height: 1.4;
             color: ${props => props.theme.colors.white};
@@ -33,6 +33,7 @@ export const FooterWrapper = styled.footer`
             font-size: 22px;
             font-weight: 500;
             padding-bottom: 17px;
+            color: ${props => props.theme.colors.white};
           }
 
           a.link {
@@ -52,7 +53,7 @@ export const FooterWrapper = styled.footer`
       .content {
         display: flex;
         height: 54px;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 300;
         line-height: 1.4;
         align-items: center;
