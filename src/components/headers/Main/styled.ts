@@ -89,7 +89,7 @@ export const MainHeaderWrapper = styled.nav`
 
           &.bold {
             > a {
-              font-weight: 700;
+              font-weight: 500;
             }
           }
         }

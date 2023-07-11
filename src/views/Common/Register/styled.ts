@@ -34,43 +34,103 @@ export const RegisterWrapper = styled.div`
 
     .box {
       max-width: 527px;
-      padding: 15px 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: ${props => props.theme.colors.gray_primary};
-      border-radius: 10px;
 
-      .wrapper {
+      .selected-wrapper {
+        padding: 15px 10px;
         display: flex;
-        flex-wrap: wrap;
-        column-gap: 10px;
-        row-gap: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: ${props => props.theme.colors.gray_primary};
+        border-radius: 10px;
+        position: relative;
+        .tags {
+          display: flex;
+          flex-wrap: wrap;
+          column-gap: 10px;
+          row-gap: 10px;
 
-        > label {
-          color: ${props => props.theme.colors.black_primary};
-          font-size: 20px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
-          font-weight: 700;
-          line-height: 1.2;
-          margin-top: 5px;
+          > label {
+            color: ${props => props.theme.colors.black_primary};
+            font-size: 20px;
+            font-family: ${props => props.theme.fonts.roboto_condensend};
+            font-weight: 700;
+            line-height: 1.2;
+            margin-top: 5px;
+          }
+
+          .item {
+            padding: 7px 40px;
+            border-radius: 10px;
+            background-color: ${props => props.theme.colors.green_primary};
+            color: ${props => props.theme.colors.white};
+            font-size: 18px;
+            font-family: ${props => props.theme.fonts.roboto_condensend};
+            font-weight: 700;
+            line-height: 1.2;
+          }
         }
 
-        .item {
-          padding: 7px 40px;
-          border-radius: 10px;
-          background-color: ${props => props.theme.colors.green_primary};
-          color: ${props => props.theme.colors.white};
-          font-size: 18px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
-          font-weight: 700;
-          line-height: 1.2;
+        .btn {
+          display: flex;
+          align-items:center;
+          cursor: pointer;
+          > svg {
+            transition: all 0.5s ease;
+            > line {
+              stroke: ${props => props.theme.colors.green_primary};
+            }
+          }
         }
       }
 
-      .btn {
-        margin-top: 10px;
-        cursor: pointer;
+      .all-wrapper {
+        display: none;
+        background-color: ${props => props.theme.colors.gray_primary};
+        padding: 30px 10px 3px;
+        border-radius: 10px;
+        margin-top: -15px;
+        .list1 {
+          max-height: 150px;
+          overflow-y: auto;
+          .one {
+            > label {
+              display: inline-flex;
+              align-items: center;
+              color: #838383;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+
+      &.opened {
+        .selected-wrapper {
+          background-color: ${props => props.theme.colors.green_primary};
+
+          .tags {
+            > label {
+              color: ${props => props.theme.colors.white};
+            }
+            .item {
+              background-color: ${props => props.theme.colors.white};
+              color: ${props => props.theme.colors.green_primary};
+            }
+          }
+
+          .btn {
+            > svg {
+              transform: rotate(180deg);
+              > line {
+                stroke: ${props => props.theme.colors.white};
+              }
+            }
+          }
+        }
+        .all-wrapper {
+          display: block;
+        }
       }
     }
   }
@@ -173,7 +233,7 @@ export const RegisterWrapper = styled.div`
 
         .info2 {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 300;
           line-height: 1.4;
           text-align: right;
@@ -314,7 +374,7 @@ export const RegisterWrapper = styled.div`
         
         .txt {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 300;
           line-height: 1.4;
           margin-top: 15px;

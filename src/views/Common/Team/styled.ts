@@ -8,7 +8,7 @@ export const TeamWrapper = styled.div`
 
     > .desc {
       font-weight: 300;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1.4;
       color: ${props => props.theme.colors.black_primary};
       margin-top: 80px;

@@ -76,24 +76,49 @@ const Register = (): JSX.Element => {
           <img src={Images.UnderlineGreen} alt="" />
         </div>
         <div className="filter">
-          <div className="box">
-            <div className="wrapper">
-              <label>Kurstyp:</label>
-              <span className="item">Abendkurse</span>
-              <span className="item">Intensivkurse</span>
+          <div className="box opened">
+            <div className="selected-wrapper">
+              <div className="tags">
+                <label>Kurstyp:</label>
+                <span className="item">Abendkurse</span>
+                <span className="item">Intensivkurse</span>
+              </div>
+              <div className="btn">
+                <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="2.82843" y1="2" x2="14" y2="13.1716" stroke="#84AF8C" stroke-width="4" stroke-linecap="round"/>
+                  <line x1="2" y1="-2" x2="17.799" y2="-2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 28 2)" stroke="#84AF8C" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+
+              </div>
             </div>
-            <div className="btn">
-              <img src={Icons.ArrowDown} alt="" />
+            <div className="all-wrapper">
+              <div className="list1">
+                <div className="one">
+                  <label className="checkbox-wrapper">
+                  Alle
+                    <input type="checkbox" />
+                    <span className="checkmark"></span>
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
           <div className="box">
-            <div className="wrapper">
-              <label>Ort:</label>
-              <span className="item">Baden</span>
-              <span className="item">Zürich</span>
+            <div className="selected-wrapper">
+              <div className="tags">
+                <label>Ort:</label>
+                <span className="item">Baden</span>
+                <span className="item">Zürich</span>
+              </div>
+              <div className="btn">
+                <svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="2.82843" y1="2" x2="14" y2="13.1716" stroke="#84AF8C" stroke-width="4" stroke-linecap="round"/>
+                  <line x1="2" y1="-2" x2="17.799" y2="-2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 28 2)" stroke="#84AF8C" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </div>
             </div>
-            <div className="btn">
-              <img src={Icons.ArrowDown} alt="" />
+            <div className="all-wrapper">
+              
             </div>
           </div>
         </div>
@@ -228,7 +253,7 @@ const Register = (): JSX.Element => {
                         <span className="checkmark"></span>
                       </label>
                       <div className="txt">
-                        Ich akzeptiere die <a>allgemeinen Geschäftsbedingungen</a>. Die <a>Datenschutzerklärung</a> habe ich gelesen und verstandn
+                        Ich akzeptiere die <a href="#">allgemeinen Geschäftsbedingungen</a>. Die <a href="#">Datenschutzerklärung</a> habe ich gelesen und verstandn
                       </div>
                     </div>
                     <div></div>

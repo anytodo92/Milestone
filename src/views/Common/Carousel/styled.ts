@@ -62,6 +62,7 @@ export const CarouselWrapper = styled.div`
           align-items: center;
           column-gap: 50px;
           row-gap: 20px;
+          padding-bottom: 60px;
 
           .article {
             margin-top: 30px;
@@ -93,7 +94,7 @@ export const CarouselWrapper = styled.div`
 
               > .detail {
                 color: ${props => props.theme.colors.black_primary};
-                font-size: 16px;
+                font-size: 18px;
                 line-height: 1.4;
                 font-weight: 300;
               }
