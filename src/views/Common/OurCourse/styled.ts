@@ -33,7 +33,7 @@ export const OurCourseWrapper = styled.div`
 
     .desc {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 300;
       line-height: 1.4;
       margin-top: 50px;
@@ -55,7 +55,7 @@ export const OurCourseWrapper = styled.div`
 
         > .detail {
           color: ${props => props.theme.colors.black};
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 300;
           line-height: 1.4;
           margin-top: 10px;

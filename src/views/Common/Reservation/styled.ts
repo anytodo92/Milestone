@@ -73,8 +73,7 @@ export const ReservationWrapper = styled.div`
         margin-top: 20px;
       }
       .detail {
-        font-size: 16px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
+        font-size: 18px;
         font-weight: 300;
         line-height: 1.4;
         margin-top: 20px;

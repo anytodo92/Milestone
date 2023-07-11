@@ -18,12 +18,12 @@ export const FooterWrapper = styled.footer`
       .content {
         display: flex;
         flex-direction: column;
-        column-gap: 30px;
+        column-gap: 50px;
         row-gap: 30px;
         .col {
           flex: unset;
           > h5, > p, a.link {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 300;
             line-height: 1.4;
             color: ${props => props.theme.colors.white};
@@ -44,7 +44,7 @@ export const FooterWrapper = styled.footer`
         }
         
       }
-    }
+    }20
 
     &:last-child {
       background-color: #313131;
@@ -52,7 +52,7 @@ export const FooterWrapper = styled.footer`
       .content {
         display: flex;
         height: 54px;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 300;
         line-height: 1.4;
         align-items: center;

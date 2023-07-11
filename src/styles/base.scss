@@ -105,6 +105,9 @@ a.anim-link {
 
           .form-group {
             width: 100%;
+            > label {
+              display: inline;
+            }
           }
         }
 
@@ -191,6 +194,7 @@ a.anim-link {
     width: 25px;
     border: 1px solid #cacaca;
     border-radius: 5px;
+    background-color: #fff;
 
     &:after {
       content: "";
