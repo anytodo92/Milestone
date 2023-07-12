@@ -8,14 +8,11 @@ export const MainHeaderWrapper = styled.nav`
 
   height: 100px;
   overflow: hidden;
+
   
   z-index: ${props => props.theme.zIndexes.headerBar};
-  background-color: ${props => props.theme.colors.white};
-  transition: height .5s ease-in-out;
-
-  &.open {
-    height: 420px;
-  }
+  background-color: transparent;
+  
   &.normal-bar {
     animation: anim-normal-bar-show;
     animation-duration: .1s;
@@ -32,17 +29,17 @@ export const MainHeaderWrapper = styled.nav`
     .brand {
       display: flex;
       align-items: center;
-      justify-content: center;
       height: 100px;
       img {
         max-width: none;
-        &:nth-child(1) {
-          display: block;
-          height: 90px;
-        }
-        &:nth-child(2),
+        height: 60px;
+
         &:nth-child(3) {
-          height: 90px;
+          display: block;          
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
           display: none;
         }
       }
@@ -54,7 +51,7 @@ export const MainHeaderWrapper = styled.nav`
     .control {
       .menu {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 23px;
         height: 100px;
         margin: 0;
@@ -65,7 +62,7 @@ export const MainHeaderWrapper = styled.nav`
         > li {
           position: relative;
           padding: 10px 0;
-          border-bottom: 1px solid #eaeaea;
+
           .icon {
             display: none;
             position: absolute;
@@ -75,7 +72,7 @@ export const MainHeaderWrapper = styled.nav`
           }
           > a {
             text-decoration: none;
-            color: ${props => props.theme.colors.black_primary};
+            color: ${props => props.theme.colors.white};
           }
 
           &.active {
@@ -83,7 +80,7 @@ export const MainHeaderWrapper = styled.nav`
               color: ${props => props.theme.colors.green_primary};
             }
             .icon {
-              display: none;
+              display: block;
             }
           }
 
@@ -98,20 +95,167 @@ export const MainHeaderWrapper = styled.nav`
 
     .toggle-btn  {
       cursor: pointer;
-      width: 30px;
-      height: 30px;
       position: absolute;
-      left: 30px;
-      top: 30px;
-      color: #999;
-      > i {
-        font-size: 30px;
+      right: 30px;
+      top: 40px;
+      > svg {
+        > line {
+          stroke: ${props => props.theme.colors.white};
+        }
       }
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.laptop}) {
+  &.open {
+    height: 100vh;
+    background-color: ${props => props.theme.colors.white};
 
+    .content {
+      .brand {
+        img {
+          &:nth-child(1),
+          &:nth-child(3) {
+            display: none;
+          }
+          &:nth-child(2)
+          {
+            display: block;
+          }
+        }
+      }
+
+      .control {
+        margin-top: 30px;
+        .menu {
+          > li {
+            &.spec {
+              margin-top: 30px;
+            }
+            .icon {
+              left: 40px;
+            }
+            > a {
+              color: ${props => props.theme.colors.black_primary}
+            }
+
+            &.active {
+              > a {
+                color: ${props => props.theme.colors.green_primary};
+              }
+              .icon {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+
+      .toggle-btn  {
+        > svg {
+          > line {
+            stroke: ${props => props.theme.colors.green_primary};
+          }
+        } 
+      }
+    }
+  }
+
+  &.reverse {
+    .content {
+      .brand {
+        img {
+          &:nth-child(2) {
+            display: block;
+          }
+          &:nth-child(1),
+          &:nth-child(3)
+          {
+            display: none;
+          }
+        }
+      }
+
+      .control {
+        .menu {
+          > li {
+            > a {
+              color: ${props => props.theme.colors.black_primary};
+            }
+          }
+        } 
+      }
+      
+      .toggle-btn  {
+        > svg {
+          > line {
+            stroke: ${props => props.theme.colors.green_primary};
+          }
+        } 
+      }  
+    }
+  }
+
+  &.sticky-bar {
+    position: fixed;
+    background-color: ${props => props.theme.colors.white};
+    margin-top: 0px;
+    
+    .content {
+      .brand {
+        height: 100px;
+        img {
+          &:nth-child(1),
+          &:nth-child(3) {
+            display: none;
+          }
+          &:nth-child(2)
+          {
+            display: block;
+          }
+        }
+      }
+      .control {
+        .menu {
+          height: 100px;
+
+          > li {
+            > a {
+              color: ${props => props.theme.colors.black_primary};
+            }
+
+            &.active {
+              > a {
+                color: ${props => props.theme.colors.green_primary};
+              }
+              .icon {
+                display: block;
+              }
+            }
+          }         
+        }
+      }
+
+      .toggle-btn  {
+        > svg {
+          > line {
+            stroke: ${props => props.theme.colors.green_primary};
+          }
+        } 
+      }
+    }
+    animation: anim-sticky-bar-show;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.mobile_md}) {
+    .content {
+      .brand {
+        img {
+          height: 90px;
+        }
+      }
+    }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
@@ -121,98 +265,7 @@ export const MainHeaderWrapper = styled.nav`
       animation-duration: .1s;
       animation-timing-function: ease-out;
       animation-fill-mode: forwards;
-      background-color: transparent;
-      
-      .content {
-        .brand {
-          img {
-            &:nth-child(3) {
-              display: block;
-            }
-            &:nth-child(1),
-            &:nth-child(2)
-            {
-              display: none;
-            }
-          }
-        }   
-      }
-
-      &.reverse {
-        .content {
-          .brand {
-            img {
-              &:nth-child(2) {
-                display: block;
-              }
-              &:nth-child(1),
-              &:nth-child(3)
-              {
-                display: none;
-              }
-            }
-          }
-
-          .menu {
-            > li {
-              > a {
-                color: ${props => props.theme.colors.black_primary};
-              }
-            }
-          }   
-        }
-      }
-    }
-
-
-    &.sticky-bar {
-      position: fixed;
-      background-color: ${props => props.theme.colors.white};
-      margin-top: 0px;
-      
-      .content {
-        .brand {
-          height: 100px;
-          img {
-            &:nth-child(1),
-            &:nth-child(3) {
-              display: none;
-            }
-            &:nth-child(2)
-            {
-              display: block;
-            }
-          }
-        }
-        .control {
-          .menu {
-            height: 100px;
-
-            > li {
-              > a {
-                color: ${props => props.theme.colors.black_primary};
-              }
-
-              &.active {
-                > a {
-                  color: ${props => props.theme.colors.green_primary};
-                }
-                .icon {
-                  display: block;
-                }
-              }
-            }         
-          }
-          .toggle-btn  {
-            > span {
-              background-color: ${props => props.theme.colors.black_primary};
-            }   
-          }
-        }
-      }
-      animation: anim-sticky-bar-show;
-      animation-duration: 0.3s;
-      animation-timing-function: ease-out;
+      background-color: transparent;      
     }
 
     .content {
@@ -240,18 +293,6 @@ export const MainHeaderWrapper = styled.nav`
               margin-right: 0;
             }
             
-            > a {
-              color: ${props => props.theme.colors.white}
-            }
-
-            &.active {
-              > a {
-                color: ${props => props.theme.colors.green_primary};
-              }
-              .icon {
-                display: block;
-              }
-            }
           }
         }
       }

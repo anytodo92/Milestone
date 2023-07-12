@@ -12,5 +12,18 @@ export const AutoWrapper = styled.div`
 
   .carousel {
     background-color: ${props => props.theme.colors.gray_primary};
+    .wrapper {
+      .slide {
+        .list {
+          .one {
+            .article {
+              .contt {
+                background-color: ${props => props.theme.colors.white};
+              }
+            }
+          }
+        }
+      }
+    }
   }
 `;

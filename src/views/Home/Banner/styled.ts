@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { Images } from "../../../utils/assets";
 export const BannerWrapper = styled.div`
-  height: 100vh;
+  
+  background-color: ${props => props.theme.colors.green_primary};
   .bg {
+    display: none;
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -38,9 +40,8 @@ export const BannerWrapper = styled.div`
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
     position: relative;
-    display: flex;
-    align-items: center;
-    height: 100vh;
+    padding: 140px 0 30px;
+
   }
 
   .summary {  
@@ -57,12 +58,19 @@ export const BannerWrapper = styled.div`
     }
 
     .title {
+      position: relative;
       margin-top: 15px;
       > h1 {
-        font-size: 45px;
+        font-size: 35px;
         font-family: ${props => props.theme.fonts.roboto_condensend};
         font-weight: 700;
         line-height: 1.2;
+      }
+
+      > svg {
+        position: absolute;
+        left: 90px;
+        bottom: -10px;
       }
     } 
 
@@ -81,8 +89,31 @@ export const BannerWrapper = styled.div`
     }
   }
 
+  @media (min-width: ${props => props.theme.breakpoints.tablet}) {
+    .summary {
+      .title {
+        > h1 {
+          font-size: 45px;
+        }
+        > svg {
+          left: 120px;
+        }
+      }
+    }
+  }
+
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    height: 100vh;
+    background-color: transparent;
+    .content {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
     .bg {
+      display: block;
+
       .lt {
         width: 65%;
       }

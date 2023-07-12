@@ -75,20 +75,24 @@ const SubmitFormWrapper = styled.div`
       .col {
         .row {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           column-gap: 10px;
+          row-gap: 10px;
+          margin: 0;
 
           .wrapper {
             display: flex;
             flex-direction: column;
             row-gap: 10px;
             flex: 1;
+            padding: 0;
           }
         }
         
       }
       .group {
         width: 100%;
+        padding: 0;
         > label {
           color: ${props => props.theme.colors.green_primary};
         }
@@ -117,7 +121,8 @@ const SubmitFormWrapper = styled.div`
 
       .row {
         display: grid!important;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
       }
       
     }
@@ -143,7 +148,15 @@ const SubmitFormWrapper = styled.div`
         grid-template-columns: 1fr 1fr;
 
         .col {
-          
+          .row {
+            flex-direction: row;
+          }
+        }
+      }
+
+      .types {
+        .row {
+          grid-template-columns: 1fr 1fr 1fr;
         }
       }
     }
@@ -246,16 +259,6 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="group">
-                    <label>Nachricht</label>
-                    <div className="entry-box">
-                      <div className="form-group">
-                        <textarea></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </div>
             </div>
             <div className="col types">
               <label className="cate">Verfügbare Tage</label>
@@ -275,8 +278,6 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
                   <input type="checkbox" />
                   <span className="checkmark"></span>
                 </label>
-              </div>
-              <div className="row">
                 <label className="checkbox-wrapper">
                   Donnerstag
                   <input type="checkbox" />
@@ -310,6 +311,16 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
                   <input type="checkbox" />
                   <span className="checkmark"></span>
                 </label>
+              </div>
+            </div>
+            <div className="col">
+              <div className="group">
+                <label>Nachricht</label>
+                <div className="entry-box">
+                  <div className="form-group">
+                    <textarea></textarea>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

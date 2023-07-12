@@ -97,7 +97,9 @@ const MainHeader: React.FC = () => {
                 `
               }
             >
-              <Link to={data.path}>{data.title}</Link>
+              <Link to={data.path}>
+                {data.title}
+              </Link>
               <img className="icon" src={Images.UnderlineGreen} width={105} height={16} />
             </li>
           )}
@@ -107,7 +109,10 @@ const MainHeader: React.FC = () => {
           className="toggle-btn"
           onClick={toggleMenu}
         >
-          <i className="fa fa-bars"></i>
+          <svg width="23" height="11" viewBox="0 0 23 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" y1="1" x2="23" y2="1" stroke="white" stroke-width="2"/>
+            <line x1="0.5" y1="10" x2="23" y2="10" stroke="white" stroke-width="2"/>
+          </svg>
         </div>
       </div>
     </MainHeaderWrapper>

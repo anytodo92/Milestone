@@ -27,6 +27,7 @@ export const CarouselWrapper = styled.div`
     }
 
     .navbtn {
+      display: none;
       position: absolute;
       width: 100%;
       left: 0;
@@ -50,11 +51,10 @@ export const CarouselWrapper = styled.div`
 
     .slide {
       overflow: hidden;
-      margin: 0 50px;
+      margin: 0px;
 
       .list {
         display: flex;
-        padding-bottom: 60px;
 
         .one {
           display: flex;
@@ -62,7 +62,7 @@ export const CarouselWrapper = styled.div`
           align-items: center;
           column-gap: 50px;
           row-gap: 20px;
-          padding-bottom: 60px;
+          padding: 0 5px 60px;
 
           .article {
             margin-top: 30px;
@@ -150,7 +150,11 @@ export const CarouselWrapper = styled.div`
 
   @media (min-width: ${props => props.theme.breakpoints.tablet_md}) {    
     .wrapper {
+      .navbtn {
+        display: block;
+      }
       .slide {
+        margin: 0 50px;
         .list {
           .one {
             .article {
@@ -197,7 +201,6 @@ export const CarouselWrapper = styled.div`
         .list {
           .one {
             flex-direction: row;
-
             .article {
               margin-top: 0px;
             }

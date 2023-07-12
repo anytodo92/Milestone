@@ -25,14 +25,14 @@ export const IntroWrapper = styled.div`
       background-size: cover;
     }
     .bg1 {
-      width: 141px;
-      height: 273px;
+      width: 170px;
+      height: 327px;
     }
 
     .bg2 {
-      width: 187px;
-      height: 273px;
-      margin-top: -313px;
+      width: 225px;
+      height: 327px;
+      margin-top: -360px;
       margin-left: 60px;
     }
   }
