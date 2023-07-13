@@ -47,8 +47,8 @@ export const TeamWrapper = styled.div`
         margin-bottom: 15px;
         > img {
           position: relative;
-          width: 343px;
-          height: 343px;
+          width: 240px;
+          height: 240px;
           border-radius: 100%;
           border: 2px solid ${props => props.theme.colors.green_primary};
           background-color: #fff;
@@ -56,11 +56,11 @@ export const TeamWrapper = styled.div`
 
         .bg {
           position: absolute;
-          top: -30px;
+          top: -20px;
           left: 20px;
-          width: 300px;
-          height: 400px;
-          border-radius: 300px;
+          width: 210px;
+          height: 280px;
+          border-radius: 210px;
           transform: rotate(45deg);
           background-color: ${props => props.theme.colors.green_primary};
         }
@@ -138,6 +138,26 @@ export const TeamWrapper = styled.div`
       cursor: pointer;
       border: 0;
       outline: 0;
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet}) {
+    .list {
+      .one {
+        .pic {
+          > img {
+            width: 343px;
+            height: 343px;
+          }
+          .bg {
+            top: -30px;
+            left: 20px;
+            width: 300px;
+            height: 400px;
+            border-radius: 300px;
+          }
+        }
+      }
     }
   }
 

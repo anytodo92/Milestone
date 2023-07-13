@@ -45,7 +45,7 @@ const Course = (): JSX.Element => {
   ];
   return (
     <CourseWrapper className="course">
-      {modalType&&
+      {modalType > 0&&
         <SubmitForm
           opened={modalType > 0}
           onSend={() => {

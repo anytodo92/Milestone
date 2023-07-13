@@ -2,6 +2,8 @@ import WhiteLogoUrl from "../assets/images/logo-white.png";
 import LightGreenLogoUrl from "../assets/images/logo-light-green.png";
 import WhiteFullLogoUrl from "../assets/images/logo-full-white.png";
 import LightGreenFullLogoUrl from "../assets/images/logo-full-light-green.png";
+import WhiteMobileLogoUrl from "../assets/images/logo-mobile-white.png";
+import LightGreenMobileLogoUrl from "../assets/images/logo-mobile-light-green.png";
 import Map_1 from "../assets/images/map-1.png";
 import Map_2 from "../assets/images/map-2.png";
 import Thumb_1 from "../assets/images/thumb-1.png";
@@ -69,6 +71,8 @@ export const Images = {
   LightGreenLogoUrl,
   WhiteFullLogoUrl,
   LightGreenFullLogoUrl,
+  WhiteMobileLogoUrl,
+  LightGreenMobileLogoUrl,
   Map_1,
   Map_2,
   Thumb_1,

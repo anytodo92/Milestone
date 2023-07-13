@@ -54,15 +54,16 @@ export const RecommendWrapper = styled.div`
 
       .pic {
         position: relative;
-        border-radius: 310px;
+        border-radius: 217px;
         background-color: ${props => props.theme.colors.green_primary};
-        width: 297px;
-        height: 310px;
+        width: 208px;
+        height: 217px;
         > img {
           position: absolute;
-          border-radius: 297px;
-          width: 297px;
-          height: 297px;
+          border-radius: 208px;
+          width: 208px;
+          height: 208px;
+          object-fit: cover;
         }
         .icon {
           position: absolute;
@@ -133,6 +134,8 @@ export const RecommendWrapper = styled.div`
             cursor: pointer;
             text-decoration: none;
             align-items: center;
+            justify-content: center;
+            text-align: center;
 
             &.o-line {
               border: 2px solid ${props => props.theme.colors.green_primary};
@@ -151,6 +154,21 @@ export const RecommendWrapper = styled.div`
     .title {
       > img {
         transform: translate(50%);
+      }
+    }
+    .list {
+      .one {
+        .pic {
+          border-radius: 310px;
+          width: 297px;
+          height: 310px;
+          > img {
+            position: absolute;
+            border-radius: 297px;
+            width: 297px;
+            height: 297px;
+          }
+        }
       }
     }
   }

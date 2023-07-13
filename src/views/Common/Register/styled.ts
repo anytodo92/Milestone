@@ -33,8 +33,7 @@ export const RegisterWrapper = styled.div`
     column-gap: 20px;
 
     .box {
-      max-width: 527px;
-
+      
       .selected-wrapper {
         padding: 15px 10px;
         display: flex;
@@ -157,159 +156,223 @@ export const RegisterWrapper = styled.div`
       background-color: ${props => props.theme.colors.gray_primary};
       padding: 28px;
       border-radius: 10px;
-      min-width: 1024px;
 
       &.opened {
-        .row1 {
-          .btn-close {
-            display: block;
+        .mobile {
+          .row1 {
+            .btn-close {
+              display: block;
+            }
           }
-        }
-        .row2 {
-          .buttons {
-            > button {
-              display: none;
+          .row5 {
+            .buttons {
+              > button {
+                display: none;
+              }
             }
           }
         }
+        .desktop {
+          .row1 {
+            .btn-close {
+              display: block;
+            }
+          }
+          .row2 {
+            .buttons {
+              > button {
+                display: none;
+              }
+            }
+          }
+        }
+
         .row3 {
           display: block;
         }
+        
       }
 
-      .row1 {
-        display: flex;
+      .mark {
+        border-radius: 10px;
+        background-color: ${props => props.theme.colors.green_primary};
+        padding: 7px 30px;
+        color: ${props => props.theme.colors.white};
+        font-size: 18px;
+        font-family: ${props => props.theme.fonts.roboto_condensend};
+        font-weight: 700;
+        line-height: 1.2;
+        display: inline-block;
+      }
 
-        .col1 {
-          width: 30%;
+      .address {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        .icon {
+
         }
-        .col2 {
-          width: 40%;
+
+        .txt {
+          color: ${props => props.theme.colors.green_primary};
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.4;
         }
-        .col3 {
-          width: 30%;
+      }
+
+      .info1 {
+        color: ${props => props.theme.colors.black_primary};
+        font-size: 22px;
+        font-family: ${props => props.theme.fonts.roboto_condensend};
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: right;
+      }
+
+      .info2 {
+        color: ${props => props.theme.colors.black_primary};
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: right;
+      }
+
+      .hist {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        > .one {
           display: flex;
-          justify-content: flex-end;
-          column-gap: 10px;
-          align-items: center;
+
+          .col1 {
+            width: 43%;
+          }
+          .col2 {
+            width: 57%;
+          }
+          .date {
+            color: ${props => props.theme.colors.black_primary};
+            font-size: 22px;
+            font-family: ${props => props.theme.fonts.roboto_condensend};
+            font-weight: 700;
+            line-height: 1.2;
+          }
+          .time {
+            color: ${props => props.theme.colors.black_primary};
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.4;
+          }
         }
-        .mark {
-          border-radius: 10px;
+      }
+
+      .buttons {
+        > button {
+          height: 46px;
+          border-radius: 46px;
           background-color: ${props => props.theme.colors.green_primary};
-          padding: 7px 30px;
           color: ${props => props.theme.colors.white};
           font-size: 18px;
           font-family: ${props => props.theme.fonts.roboto_condensend};
           font-weight: 700;
           line-height: 1.2;
-          display: inline-block;
-        }
-
-        .address {
-          display: flex;
-          align-items: center;
-          column-gap: 20px;
-
-          .icon {
-
-          }
-
-          .txt {
-            color: ${props => props.theme.colors.green_primary};
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 1.4;
-          }
-        }
-
-        .info1 {
-          color: ${props => props.theme.colors.black_primary};
-          font-size: 22px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
-          font-weight: 700;
-          line-height: 1.2;
-          text-align: right;
-        }
-
-        .info2 {
-          color: ${props => props.theme.colors.black_primary};
-          font-size: 18px;
-          font-weight: 300;
-          line-height: 1.4;
-          text-align: right;
-        }
-
-        .btn-close {
-          display: none;
-          
-          width: auto;
-          height: auto;
-          opacity: 1;
-          background: unset;
-          padding: 0;
-          > img {
-            max-width: unset;
-          }
+          padding: 0 60px;
+          margin-top: 30px;
+          cursor: pointer;
+          border: 0;
+          outline: 0;
         }
       }
 
-      .row2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 45px;
-
-        .hist {
-          width: 70%;
+      .mobile {
+        .row1 {
           display: flex;
-          flex-direction: column;
-          row-gap: 10px;
+          justify-content: space-between;
+          .btn-close {
+            display: none;
+            margin-top: -20px;
+            margin-right: -10px;
+            background: unset;
+            opacity: 1;
+          }
+        }
+        .row2 {
+          margin-top: 15px;
+          .hist {
+            width: 100%;
+            .one {
+              flex-direction: column;
+              row-gap: 10px;
 
-          > .one {
+              .col1, .col2 {
+                width: 100%;
+              }
+            }
+          }
+        }
+        .row3 {
+          margin-top: 20px;
+        }
+        .row4 {
+          margin-top: 20px;
+          .info1, .info2 {
+            text-align: left;
+          }
+        }
+        .row5 {
+
+        }
+      }
+
+      .desktop {
+        display: none;
+        .row1 {
+          display: flex;
+
+          .col1 {
+            width: 30%;
+          }
+          .col2 {
+            width: 40%;
+          }
+          .col3 {
+            width: 30%;
             display: flex;
+            justify-content: flex-end;
+            column-gap: 10px;
+            align-items: center;
+          }
+          
 
-            .col1 {
-              width: 43%;
-            }
-            .col2 {
-              width: 57%;
-            }
-            .date {
-              color: ${props => props.theme.colors.black_primary};
-              font-size: 22px;
-              font-family: ${props => props.theme.fonts.roboto_condensend};
-              font-weight: 700;
-              line-height: 1.2;
-            }
-            .time {
-              color: ${props => props.theme.colors.black_primary};
-              font-size: 18px;
-              font-weight: 300;
-              line-height: 1.4;
+          .btn-close {
+            display: none;
+            
+            width: auto;
+            height: auto;
+            opacity: 1;
+            background: unset;
+            padding: 0;
+            > img {
+              max-width: unset;
             }
           }
         }
 
-        .buttons {
+        .row2 {
           display: flex;
-          justify-content: flex-end;
-          align-items: flex-end;
-          width: 30%;
-          
-          > button {
-            height: 46px;
-            border-radius: 46px;
-            background-color: ${props => props.theme.colors.green_primary};
-            color: ${props => props.theme.colors.white};
-            font-size: 18px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
-            font-weight: 700;
-            line-height: 1.2;
-            padding: 0 60px;
-            margin-top: 30px;
-            cursor: pointer;
-            border: 0;
-            outline: 0;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 45px;
+
+          .buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 30%;
           }
         }
       }
@@ -356,16 +419,24 @@ export const RegisterWrapper = styled.div`
   .yform {
     margin-top: 10px;
     .form {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      row-gap: 0px;
+
+      .row10 {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
     }
     .submit {
       margin-top: 10px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
     .check {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1fr;
 
       .check-wrapper {
         display: flex;
@@ -393,6 +464,32 @@ export const RegisterWrapper = styled.div`
         transform: translate(50%);
       }
     }
+    .list {
+      > .one {
+        .mobile {
+          .row2 {
+            .hist {
+              .one {
+                flex-direction: row;
+                .col1 {
+                  width: 43%;
+                }
+                .col2 {
+                  width: 57%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .yform {
+      .form {
+        .row10 {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    }
   }
 
   @media(min-width: ${props => props.theme.breakpoints.desktop}) {
@@ -404,9 +501,29 @@ export const RegisterWrapper = styled.div`
       }
     }
 
+    .list {
+      .one {
+        .mobile {
+          display: none;
+        }
+        .desktop {
+          display: block;
+        }
+      }
+    }
+
     .yform {
       .form {
-        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px;
+        .row10 {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+      .check {
+        grid-template-columns: 2fr 1fr;
+      }
+      .submit {
+        justify-content: flex-end;
       }
     }
   }

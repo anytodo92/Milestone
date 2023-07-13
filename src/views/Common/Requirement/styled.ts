@@ -25,6 +25,7 @@ export const RequirementWrapper = styled.div`
       border-radius: 297px;
       width: 297px;
       height: 297px;
+      object-fit: cover;
     }
     .icon {
       position: absolute;

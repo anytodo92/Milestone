@@ -23,14 +23,14 @@ export const ReservationWrapper = styled.div`
       background-size: cover;
     }
     .bg1 {
-      width: 124px;
-      height: 240px;
+      width: 149px;
+      height: 288px;
     }
 
     .bg2 {
-      width: 164px;
-      height: 219px;
-      margin-top: -266px;
+      width: 197px;
+      height: 263px;
+      margin-top: -320px;
       margin-left: 60px;
     }
   }
