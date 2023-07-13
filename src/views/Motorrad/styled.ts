@@ -15,8 +15,11 @@ export const MotrradWrapper = styled.div`
     .article {
       .title {
         > img {
-          bottom: -20px;
-          transform: translate(40%);
+          bottom: -30px;
+          @media (min-width: 660px) {
+            bottom: -20px;
+            transform: translate(40%);
+          }
         }
       }
     }

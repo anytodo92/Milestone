@@ -63,6 +63,7 @@ export const RecommendWrapper = styled.div`
           border-radius: 208px;
           width: 208px;
           height: 208px;
+          object-fit: cover;
         }
         .icon {
           position: absolute;

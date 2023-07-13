@@ -8,7 +8,6 @@ export const MainHeaderWrapper = styled.nav`
 
   height: 100px;
   overflow: hidden;
-
   
   z-index: ${props => props.theme.zIndexes.headerBar};
   background-color: transparent;
@@ -32,14 +31,14 @@ export const MainHeaderWrapper = styled.nav`
       height: 100px;
       img {
         max-width: none;
-        height: 60px;
 
-        &:nth-child(3) {
+        &:nth-child(2) {
           display: block;          
         }
 
         &:nth-child(1),
-        &:nth-child(2) {
+        &:nth-child(3),
+        &:nth-child(4) {
           display: none;
         }
       }
@@ -51,7 +50,7 @@ export const MainHeaderWrapper = styled.nav`
     .control {
       .menu {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 23px;
         height: 100px;
         margin: 0;
@@ -113,11 +112,12 @@ export const MainHeaderWrapper = styled.nav`
     .content {
       .brand {
         img {
-          &:nth-child(1),
-          &:nth-child(3) {
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
             display: none;
           }
-          &:nth-child(2)
+          &:nth-child(1)
           {
             display: block;
           }
@@ -164,11 +164,12 @@ export const MainHeaderWrapper = styled.nav`
     .content {
       .brand {
         img {
-          &:nth-child(2) {
+          &:nth-child(1) {
             display: block;
           }
-          &:nth-child(1),
-          &:nth-child(3)
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4)
           {
             display: none;
           }
@@ -204,11 +205,12 @@ export const MainHeaderWrapper = styled.nav`
       .brand {
         height: 100px;
         img {
-          &:nth-child(1),
-          &:nth-child(3) {
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
             display: none;
           }
-          &:nth-child(2)
+          &:nth-child(1)
           {
             display: block;
           }
@@ -248,11 +250,83 @@ export const MainHeaderWrapper = styled.nav`
     animation-timing-function: ease-out;
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.mobile_md}) {
+  @media (min-width: ${props => props.theme.breakpoints.laptop}) {
     .content {
       .brand {
         img {
-          height: 90px;
+          height: 60px;
+        }
+      }
+    }
+
+    &.normal-bar {
+      .content {
+        .brand {
+          img {
+            &:nth-child(4) {
+              display: block;
+            }
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3)
+            {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &.open {
+      .content {
+        .brand {
+          img {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(4) {
+              display: none;
+            }
+            &:nth-child(3)
+            {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    
+    &.reverse {
+      .content {
+        .brand {
+          img {
+            &:nth-child(3) {
+              display: block;
+            }
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(4)
+            {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &.sticky-bar {
+      .content {
+        .brand {
+          img {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(4) {
+              display: none;
+            }
+            &:nth-child(3)
+            {
+              display: block;
+            }
+          }
         }
       }
     }
@@ -260,12 +334,13 @@ export const MainHeaderWrapper = styled.nav`
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     height: 100px;
+
     &.normal-bar {
       animation: anim-normal-bar-show;
       animation-duration: .1s;
       animation-timing-function: ease-out;
       animation-fill-mode: forwards;
-      background-color: transparent;      
+      background-color: transparent;
     }
 
     .content {
@@ -273,6 +348,9 @@ export const MainHeaderWrapper = styled.nav`
       flex-direction: row;
       .brand {
         height: 100px;
+        img {
+          height: 90px;
+        }
       }
       .control {
         display: flex;

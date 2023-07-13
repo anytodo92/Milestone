@@ -78,7 +78,7 @@ export const OurCourseWrapper = styled.div`
   }
 
   .info {
-    margin-top: 90px; 
+    margin-top: 20px; 
     > h4 {
       color: ${props => props.theme.colors.black_primary};
       font-size: 26px;
@@ -94,8 +94,8 @@ export const OurCourseWrapper = styled.div`
       .map {
         margin-top: 30px;
         .container {
-          width: 547px;
-          height: 352px;
+          width: 273px;
+          height: 176px;
           border-radius: 10px;
           overflow: hidden;
         }
@@ -120,6 +120,32 @@ export const OurCourseWrapper = styled.div`
           height: 28px;
           cursor: pointer;
         }
+
+        > h5 {
+          color: ${props => props.theme.colors.black_primary};
+          text-align: center;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet}) {
+    .info {
+      .wrapper {
+        .map {
+          .container {
+            width: 383px;
+            height: 246px;
+          }
+        }
+        .control {
+          > h5 {
+            font-size: 18px;
+          }
+        }
       }
     }
   }
@@ -140,6 +166,7 @@ export const OurCourseWrapper = styled.div`
     }
 
     .info {
+      margin-top: 90px; 
       .wrapper {
         .map {
           width: 547px;

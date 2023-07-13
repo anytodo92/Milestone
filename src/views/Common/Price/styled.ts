@@ -20,7 +20,7 @@ export const PriceWrapper = styled.div`
 
     > img {
       position: absolute;
-      right: 0;
+      left: 0;
       bottom: -30px;
       max-width: unset;
     }

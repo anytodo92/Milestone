@@ -79,7 +79,8 @@ const MainHeader: React.FC = () => {
       <div className="content">
         <div className="brand">
           <Link to="/">
-          <img src={Images.LightGreenLogoUrl} />
+          <img src={Images.LightGreenMobileLogoUrl} />
+          <img src={Images.WhiteMobileLogoUrl} />
           <img src={Images.LightGreenFullLogoUrl} />
           <img src={Images.WhiteFullLogoUrl} />
           </Link>

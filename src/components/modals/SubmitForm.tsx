@@ -73,7 +73,7 @@ const SubmitFormWrapper = styled.div`
     overflow-y: auto;
     .form {
       .col {
-        .row {
+        .row1 {
           display: flex;
           flex-direction: column;
           column-gap: 10px;
@@ -119,7 +119,7 @@ const SubmitFormWrapper = styled.div`
         line-height: 1.4;
       }
 
-      .row {
+      .row1 {
         display: grid!important;
         grid-template-columns: 1fr 1fr;
         row-gap: 15px;
@@ -148,14 +148,14 @@ const SubmitFormWrapper = styled.div`
         grid-template-columns: 1fr 1fr;
 
         .col {
-          .row {
+          .row1 {
             flex-direction: row;
           }
         }
       }
 
       .types {
-        .row {
+        .row1 {
           grid-template-columns: 1fr 1fr 1fr;
         }
       }
@@ -198,63 +198,63 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
         <div className="yform">
           <div className="form">
             <div className="col">
-              <div className="row">
-                <div className="wrapper">
-                  <div className="group">
-                    <label>Vorname / Nachname <sup>*</sup></label>
-                    <div className="entry-box">
-                      <div className="form-group">
-                        <input type="text" />
-                      </div>
-                      <div className="form-group">
-                        <input type="text" />
-                      </div>
+              <div className="row1">
+                <div className="group">
+                  <label>Vorname / Nachname <sup>*</sup></label>
+                  <div className="entry-box">
+                    <div className="form-group">
+                      <input type="text" />
                     </div>
-                  </div>
-                  <div className="group">
-                    <label>Geburtsdatum <sup>*</sup></label>
-                    <div className="entry-box">
-                      <div className="form-group">
-                        <input type="text" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="group">
-                    <label>Was möchtest du fahren?</label>
-                    <div className="entry-box">
-                      <div className="form-group">
-                        <select>
-                          <option></option>
-                        </select>
-                      </div>
+                    <div className="form-group">
+                      <input type="text" />
                     </div>
                   </div>
                 </div>
-                <div className="wrapper">
-                  <div className="group">
-                    <label>E-Mail <sup>*</sup></label>
-                    <div className="entry-box">
-                      <div className="form-group">
-                        <input type="text" />
-                      </div>
+                <div className="group">
+                  <label>E-Mail <sup>*</sup></label>
+                  <div className="entry-box">
+                    <div className="form-group">
+                      <input type="text" />
                     </div>
                   </div>
-                  <div className="group">
-                    <label>Telefon <sup>*</sup></label>
-                    <div className="entry-box">
-                      <div className="form-group">
-                        <input type="text" />
-                      </div>
+                </div>
+              </div>
+              <div className="row1">
+                <div className="group">
+                  <label>Geburtsdatum <sup>*</sup></label>
+                  <div className="entry-box">
+                    <div className="form-group">
+                      <input type="text" />
                     </div>
                   </div>
-                  <div className="group">
-                    <label>Kategorie <sup>*</sup></label>
-                    <div className="entry-box">
-                      <div className="form-group">
-                        <select>
-                          <option></option>
-                        </select>
-                      </div>
+                </div>
+                <div className="group">
+                  <label>Telefon <sup>*</sup></label>
+                  <div className="entry-box">
+                    <div className="form-group">
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row1">
+                <div className="group">
+                  <label>Was möchtest du fahren?</label>
+                  <div className="entry-box">
+                    <div className="form-group">
+                      <select>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <label>Kategorie <sup>*</sup></label>
+                  <div className="entry-box">
+                    <div className="form-group">
+                      <select>
+                        <option></option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -262,7 +262,7 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
             </div>
             <div className="col types">
               <label className="cate">Verfügbare Tage</label>
-              <div className="row">
+              <div className="row1">
                 <label className="checkbox-wrapper">
                   Montag
                   <input type="checkbox" />
@@ -295,7 +295,7 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
                 </label>
               </div>
               <label className="cate">Zeiten</label>
-              <div className="row">
+              <div className="row1">
                 <label className="checkbox-wrapper">
                   Donnerstag<br/>(08:00 - 12:00)
                   <input type="checkbox" />
