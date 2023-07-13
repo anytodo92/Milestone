@@ -39,7 +39,6 @@ export const BannerWrapper = styled.section`
       font-family: ${props => props.theme.fonts.roboto_condensend};
       font-weight: 700;
       line-height: 1.2;
-      padding-bottom: 20px;
     }
 
     > .detail {

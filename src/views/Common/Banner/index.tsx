@@ -18,7 +18,9 @@ const Banner = ({ data }: BannerPropsType): JSX.Element => {
             <div className="desc">{data.description}</div>
           }
           <h1 dangerouslySetInnerHTML={{ __html: data.title }}></h1>
-          <div className="detail" dangerouslySetInnerHTML={{ __html: data.detail }}></div>
+          {data.detail&&
+            <div className="detail" dangerouslySetInnerHTML={{ __html: data.detail }}></div>
+          }
           {data.buttonText&&
             <a href={data.link}>{data.buttonText}</a> 
           }

@@ -1,38 +1,40 @@
 import styled from "styled-components";
 
 export const DatenschutzWrapper = styled.div`
-  background-color: ${props => props.theme.colors.gray_primary};
-  .content {
-    margin: 0 ${props => props.theme.margins.primary}px;
-    &.txt-wrapper {
-      padding: 60px 0 30px;
-      font-size: 18px;
-      color: $color-black;
-      font-weight: 300;
+  .hero {
+    .summary {
+      padding-top: 215px;
+      padding-bottom: 60px;
+    }
+    .bg {
+      background-position: 0 0;
     }
   }
 
-  .txt {
-    max-width: 880px;
-    letter-spacing: 0.6px;
-    color: ${props => props.theme.colors.black_primary};
-    font-family: ${props => props.theme.fonts.roboto};
-    strong {
-      font-weight: 700;
-    }
-  }
+  .rich-text {
+    background-color: ${props => props.theme.colors.white};
 
-  .divider {
-    background-color: ${props => props.theme.colors.black_primary};
-    margin: 30px 0 10px;
-    height: 2px;
-    max-width: 811px;
-  }
-
-  @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
     .content {
-      width: ${props => props.theme.maxWidth}px;
-      margin: 0 auto;  
+      margin: 0 ${props => props.theme.margins.primary}px;
+      padding: 60px 0 200px;
+
+      .txt {
+        font-size: 16px;
+        color: ${props => props.theme.colors.black_primary};
+        font-weight: 300;
+        line-height: 1.2;
+        max-width: 1230px;
+        strong {
+          font-weight: 700;
+        }
+      }
+    }
+
+    @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
+      .content {
+        width: ${props => props.theme.maxWidth}px;
+        margin: 0 auto;  
+      }
     }
   }
 `;

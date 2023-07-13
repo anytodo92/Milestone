@@ -56,7 +56,7 @@ export const TutorialWrapper = styled.div`
           display: flex;
           justify-content: space-between;
           align-items: center;
-          height: 60px;
+          padding: 15px 0;
           cursor: pointer;
 
           > h5 {
