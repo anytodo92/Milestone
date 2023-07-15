@@ -44,7 +44,7 @@ const Intro = (): JSX.Element => {
         </div>
         <div className="article">
           <div className="title">
-            <h1>Das erwartet dich bei der<br />Fahrschule Milestone</h1>
+            <h2>Das erwartet dich bei der<br />Fahrschule Milestone</h2>
             <img src={Images.UnderlineGreen} alt="" />
           </div>
           <div className="desc">

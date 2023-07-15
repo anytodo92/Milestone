@@ -12,7 +12,7 @@ const Team = ({ data }: TeamProps): JSX.Element => {
     <TeamWrapper className="team">
       <div className="content">
         <div className="title">
-          <h1 dangerouslySetInnerHTML={{ __html: data.title }}></h1>
+          <h2 dangerouslySetInnerHTML={{ __html: data.title }}></h2>
           <img src={Images.UnderlineGreen} alt="" />
         </div>
         <p className="desc">{data.description}</p>
@@ -27,7 +27,7 @@ const Team = ({ data }: TeamProps): JSX.Element => {
               {data1.description&&
                 <p className="desc">{data1.description}</p>
               }
-              <h1>{data1.name}</h1>
+              <h2>{data1.name}</h2>
               {data1.detail&&
                 <div
                   className="detail"

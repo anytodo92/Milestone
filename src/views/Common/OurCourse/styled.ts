@@ -16,9 +16,9 @@ export const OurCourseWrapper = styled.div`
       position: relative;
       display: inline-block;
 
-      > h1 {
+      > h2 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 45px;
+        font-size: 35px;
         font-family: ${props => props.theme.fonts.roboto_condensend};
         font-weight: 700;
         line-height: 1.2;
@@ -89,15 +89,15 @@ export const OurCourseWrapper = styled.div`
 
     .wrapper {
       position: relative;
-      display: inline-block;
       
       .map {
         margin-top: 30px;
         .container {
-          width: 273px;
-          height: 176px;
+          width: 100%;
+          height: 352px;
           border-radius: 10px;
           overflow: hidden;
+          max-width: unset;
         }
       }
 
@@ -135,12 +135,6 @@ export const OurCourseWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
     .info {
       .wrapper {
-        .map {
-          .container {
-            width: 383px;
-            height: 246px;
-          }
-        }
         .control {
           > h5 {
             font-size: 18px;
@@ -165,12 +159,22 @@ export const OurCourseWrapper = styled.div`
       flex-direction: row;
     }
 
+    .article {
+      .title {
+        > h2 {
+          font-size: 45px;
+        }
+      }
+    }
+
     .info {
       margin-top: 90px; 
       .wrapper {
         .map {
-          width: 547px;
-          height: 352px;
+          .container {
+            width: 547px;
+            height: 352px;
+          }
         }
       }
     }

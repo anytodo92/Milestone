@@ -20,9 +20,9 @@ export const RecommendWrapper = styled.div`
     position: relative;
     display: inline-block;
 
-    > h1 {
+    > h2 {
       font-weight: 700;
-      font-size: 45px;
+      font-size: 35px;
       font-family: ${props => props.theme.fonts.roboto_condensend};
       line-height: 1.2;
       color: ${props => props.theme.colors.black_primary};
@@ -169,6 +169,14 @@ export const RecommendWrapper = styled.div`
             height: 297px;
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    .title {
+      > h2 {
+        font-size: 45px;
       }
     }
   }

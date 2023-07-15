@@ -12,7 +12,7 @@ const Contact = (): JSX.Element => {
         </div>
         <div className="article">
           <div className="title">
-            <h1>Du möchtest mehr erfahren?<br />Kontaktiere Uns!</h1>
+            <h2>Du möchtest mehr erfahren?<br />Kontaktiere Uns!</h2>
             <img src={Images.UnderlineGreen} alt="" />
           </div>
           <div className="desc">

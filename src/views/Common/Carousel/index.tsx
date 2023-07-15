@@ -72,7 +72,7 @@ const Carousel = (): JSX.Element => {
                 </div>
                 <div className="article">
                   <div className="title">
-                    <h1 dangerouslySetInnerHTML={{ __html: data.title }}></h1>
+                    <h2 dangerouslySetInnerHTML={{ __html: data.title }}></h2>
                     <img src={Images.UnderlineGreen} alt="" />
                   </div>
                   <div className="contt">

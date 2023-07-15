@@ -10,8 +10,8 @@ export const CourseWrapper = styled.div`
   .title {
     position: relative;
     display: inline-block;
-    > h1 {
-      font-size: 45px;
+    > h2 {
+      font-size: 35px;
       font-weight: 700;
       font-family: ${props => props.theme.fonts.roboto_condensend};
       line-height: 1.2;
@@ -158,6 +158,11 @@ export const CourseWrapper = styled.div`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    .title {
+      > h2 {
+        font-size: 45px;
+      }
+    }
     .list {
       grid-template-columns: 1fr 1fr 1fr;
 

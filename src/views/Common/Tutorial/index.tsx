@@ -39,7 +39,7 @@ const Tutorial = (): JSX.Element => {
       <div className="content">
         <div className="article">
           <div className="title">
-            <h1>Milestone - Deine Fahrschule<br />von A bis Z</h1>
+            <h2>Milestone - Deine Fahrschule<br />von A bis Z</h2>
             <img src={Images.UnderlineGreen} alt="" />
           </div>
           <div className="desc">

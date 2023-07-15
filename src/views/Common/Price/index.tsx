@@ -13,7 +13,7 @@ const Price1 = ({ data }: PriceProps): JSX.Element => {
     <PriceWrapper className="price">
       <div className="content">
         <div className="title">
-          <h1>{data.title}</h1>
+          <h2>{data.title}</h2>
           <img src={Images.UnderlineGreen} alt="" />
         </div>
         <div className="list">

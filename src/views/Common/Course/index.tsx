@@ -61,7 +61,7 @@ const Course = (): JSX.Element => {
       }
       <div className="content">
         <div className="title">
-          <h1>Einzellektionen & Pakete der<br />Fahrschule Milestone</h1>
+          <h2>Einzellektionen & Pakete der<br />Fahrschule Milestone</h2>
           <img src={Images.UnderlineGreen} alt="" />
         </div>
         <div className="list">
