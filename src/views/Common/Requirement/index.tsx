@@ -51,7 +51,7 @@ const Requirement = ({ data }: RequirementProps): JSX.Element => {
         </div>
         <div className="article">
           <div className="title">
-            <h1>{data.title}</h1>
+            <h2>{data.title}</h2>
             <img src={Images.UnderlineGreen} alt="" />
           </div>
           <div className="desc" dangerouslySetInnerHTML={{ __html: data.description }}>

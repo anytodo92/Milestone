@@ -27,7 +27,7 @@ export const BannerWrapper = styled.section`
     max-width: 877px;
     > h1 {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 45px;
+      font-size: 35px;
       font-family: ${props => props.theme.fonts.roboto_condensend};
       font-weight: 700;
       line-height: 1.2;
@@ -79,6 +79,9 @@ export const BannerWrapper = styled.section`
   @media(min-width: ${props => props.theme.breakpoints.desktop}) {
     .summary {
       margin-left: 100px;
+      > h1 {
+        font-size: 45px;
+      }
     }
   }
 

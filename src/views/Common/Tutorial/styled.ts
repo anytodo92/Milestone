@@ -16,9 +16,9 @@ export const TutorialWrapper = styled.div`
       position: relative;
       display: inline-block;
 
-      > h1 {
+      > h2 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 45px;
+        font-size: 35px;
         font-family: ${props => props.theme.fonts.roboto_condensend};
         font-weight: 700;
         line-height: 1.2;
@@ -99,12 +99,14 @@ export const TutorialWrapper = styled.div`
   }
 
   .location {
+    flex-shrink: 0;
     .map {
       .container {
-        width: 388px;
+        width: 100%;
         height: 446px;
         border-radius: 10px;
         overflow: hidden;
+        max-width: unset;
       }
     }
 
@@ -138,6 +140,23 @@ export const TutorialWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .content {
       flex-direction: row;
+    }
+
+    .article {
+      .title {
+        > h2 {
+          font-size: 45px;
+        }
+      }
+    }
+
+    .location {
+      .map {
+        .container {
+          width: 388px;
+        }
+      }
+      
     }
   }
 

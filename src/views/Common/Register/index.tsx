@@ -72,7 +72,7 @@ const Register = (): JSX.Element => {
     <RegisterWrapper id="termine" className="register">
       <div className="content">
         <div className="title">
-          <h1>Termine & Anmeldung</h1>
+          <h2>Termine & Anmeldung</h2>
           <img src={Images.UnderlineGreen} alt="" />
         </div>
         <div className="filter">

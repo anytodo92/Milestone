@@ -8,7 +8,7 @@ const ContactForm = (): JSX.Element => {
     <ContactFormWrapper>
       <div className="content">
         <div className="title">
-          <h1>Sende uns eine<br/>Nachricht</h1>
+          <h2>Sende uns eine<br/>Nachricht</h2>
           <img src={Images.UnderlineGreen} alt="" />
         </div>
         <div className="yform">

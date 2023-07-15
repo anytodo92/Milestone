@@ -10,9 +10,9 @@ export const ContactFormWrapper = styled.div`
     position: relative;
     display: inline-block;
 
-    > h1 {
+    > h2 {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 45px;
+      font-size: 35px;
       font-family: ${props => props.theme.fonts.roboto_condensend};
       font-weight: 700;
       line-height: 1.2;
@@ -66,6 +66,12 @@ export const ContactFormWrapper = styled.div`
     .yform {
       .form {
         grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .title {
+      > h2 {
+        font-size: 45px;
       }
     }
   }

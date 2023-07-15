@@ -41,9 +41,9 @@ export const IntroWrapper = styled.div`
     > .title {
       position: relative;
       display: inline-block;
-      > h1 {
+      > h2 {
         font-weight: 700;
-        font-size: 45px;
+        font-size: 35px;
         font-family: ${props => props.theme.fonts.roboto_condensend};
         line-height: 1.2;
         color: ${props => props.theme.colors.black_primary};
@@ -133,6 +133,16 @@ export const IntroWrapper = styled.div`
       .list {
         grid-template-columns: 1fr 1fr;
       }  
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    .article {
+      > .title {
+        > h2 {
+          font-size: 45px;
+        }
+      }
     }
   }
   

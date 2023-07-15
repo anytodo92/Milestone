@@ -24,9 +24,9 @@ export const ContactWrapper = styled.div`
       position: relative;
       display: inline-block;
 
-      > h1 {
+      > h2 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 45px;
+        font-size: 35px;
         font-family: ${props => props.theme.fonts.roboto_condensend};
         font-weight: 700;
         line-height: 1.2;
@@ -78,6 +78,14 @@ export const ContactWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .content {
       flex-direction: row;
+    }
+
+    .article {
+      .title {
+        > h2 {
+          font-size: 45px;
+        }
+      }
     }
   }
 

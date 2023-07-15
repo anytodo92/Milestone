@@ -43,7 +43,7 @@ const Recommend = (): JSX.Element => {
     <RecommendWrapper className="recommend">
       <div className="content">
         <div className="title">
-          <h1>Unser Kursangebot</h1>
+          <h2>Unser Kursangebot</h2>
           <img src={Images.UnderlineGreen} alt="" />
         </div>
         <div className="desc">
