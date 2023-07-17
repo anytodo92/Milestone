@@ -8,7 +8,7 @@ const SubmitFormWrapper = styled.div`
   
   background-color: ${props => props.theme.colors.white};
   border-radius: 30px;
-  padding: 58px 43px;
+  padding: 30px 40px;
 
   > .header{
     position: relative;
@@ -39,7 +39,7 @@ const SubmitFormWrapper = styled.div`
     .btn-close {
       position: absolute;
       cursor: pointer;
-      top: -20px;
+      top: 0px;
       right: -10px;
 
       width: auto;
@@ -169,7 +169,6 @@ const SubmitFormWrapper = styled.div`
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
     width: 1280px;
-    min-height: 850px;
     .yform {
       max-height: unset;
       overflow-y: hidden;
