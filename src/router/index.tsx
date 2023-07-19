@@ -23,6 +23,8 @@ const KontaktPage = lazy(() => import("../views/Kontakt"));
 const ImpressumPage = lazy(() => import("../views/Impressum"));
 const DatenschutzPage = lazy(() => import("../views/Datenschutz"));
 const AbgPage = lazy(() => import("../views/Abg"));
+const AdminLoginPage = lazy(() => import("../views/Admin/Login"));
+const AdminCourseOverviewPage = lazy(() => import("../views/Admin/CourseOverview"));
 
 const Home = withLoading(HomePage);
 const Auto = withLoading(AutoPage);
@@ -35,6 +37,8 @@ const Abg = withLoading(AbgPage);
 const Kontakt = withLoading(KontaktPage);
 const Impressum = withLoading(ImpressumPage);
 const Datenschutz = withLoading(DatenschutzPage);
+const AdminLogin = withLoading(AdminLoginPage);
+const AdminCourseOverview = withLoading(AdminCourseOverviewPage);
 
 const router = () => {
   return (
@@ -52,6 +56,8 @@ const router = () => {
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/course-overview" element={<AdminCourseOverview />} />
         </Route>
       </Routes>
     </BrowserRouter>
