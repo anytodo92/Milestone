@@ -27,6 +27,7 @@ export const ContactFormWrapper = styled.div`
 
   .yform {
     margin-top: 50px;
+    max-width: 1046px;
     .form {
       .col {
         > .group {
@@ -34,7 +35,7 @@ export const ContactFormWrapper = styled.div`
             display: inline;
           }
           textarea {
-            height: 187px;
+            height: 248px;
             padding: 15px;
           }
         }
@@ -42,7 +43,7 @@ export const ContactFormWrapper = styled.div`
     }
 
     .submit {
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     .desc {
@@ -65,7 +66,7 @@ export const ContactFormWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .yform {
       .form {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
       }
     }
 

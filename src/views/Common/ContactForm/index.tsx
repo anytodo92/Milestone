@@ -27,7 +27,7 @@ const ContactForm = (): JSX.Element => {
                   <div className="entry-box">
                     <div className="form-group">
                       <label className="control-label"></label>
-                      <input type="text" className="form-control" placeholder="Strasse / Nr." />
+                      <input type="text" className="form-control" placeholder="Name" />
                     </div>
                   </div>
                 </div>
@@ -36,28 +36,6 @@ const ContactForm = (): JSX.Element => {
                     <div className="form-group">
                       <label className="control-label"></label>
                       <input type="text" className="form-control" placeholder="E-Mail" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="group">
-                  <div className="entry-box">
-                    <div className="form-group">
-                      <label className="control-label"></label>
-                      <input type="text" className="form-control" placeholder="Name" />
-                    </div>
-                  </div>
-                </div>
-                <div className="group">
-                  <div className="entry-box">
-                    <div className="form-group" style={{ width: "50%" }}>
-                      <label className="control-label"></label>
-                      <input type="text" className="form-control" placeholder="PLZ" />
-                    </div>
-                    <div className="form-group">
-                      <label className="control-label"></label>
-                      <input type="text" className="form-control" placeholder="Ort" />
                     </div>
                   </div>
                 </div>

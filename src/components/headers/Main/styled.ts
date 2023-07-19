@@ -29,6 +29,7 @@ export const MainHeaderWrapper = styled.nav`
       display: flex;
       align-items: center;
       height: 100px;
+      position: relative;
       img {
         max-width: none;
 
@@ -44,6 +45,19 @@ export const MainHeaderWrapper = styled.nav`
       }
       .bold {
         font-weight: 600;
+      }
+      .link-admin {
+        position: absolute;
+        left: 37px;
+        bottom: 5px;
+        width: 119px;
+        height: 25px;
+        border-radius: 15px;
+        background-color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: ${props => props.theme.colors.green_primary};
       }
     }
 
@@ -174,6 +188,10 @@ export const MainHeaderWrapper = styled.nav`
             display: none;
           }
         }
+        .link-admin {
+          background-color: ${props => props.theme.colors.green_primary};
+          color: #fff;
+        }
       }
 
       .control {
@@ -215,6 +233,10 @@ export const MainHeaderWrapper = styled.nav`
             display: block;
           }
         }
+        .link-admin {
+          background-color: ${props => props.theme.colors.green_primary};
+          color: #fff;
+        }
       }
       .control {
         .menu {
@@ -255,6 +277,9 @@ export const MainHeaderWrapper = styled.nav`
       .brand {
         img {
           height: 60px;
+        }
+        .link-admin {
+          left: 70px;
         }
       }
     }
@@ -350,6 +375,9 @@ export const MainHeaderWrapper = styled.nav`
         height: 100px;
         img {
           height: 90px;
+        }
+        .link-admin {
+          left: 35%;
         }
       }
       .control {

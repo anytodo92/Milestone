@@ -8,7 +8,7 @@ const SubmitFormWrapper = styled.div`
   
   background-color: ${props => props.theme.colors.white};
   border-radius: 30px;
-  padding: 58px 43px;
+  padding: 30px 40px;
 
   > .header{
     position: relative;
@@ -39,7 +39,7 @@ const SubmitFormWrapper = styled.div`
     .btn-close {
       position: absolute;
       cursor: pointer;
-      top: -20px;
+      top: 0px;
       right: -10px;
 
       width: auto;
@@ -80,6 +80,9 @@ const SubmitFormWrapper = styled.div`
           row-gap: 10px;
           margin: 0;
 
+          select {
+            color: #999;
+          }
           .wrapper {
             display: flex;
             flex-direction: column;
@@ -150,6 +153,8 @@ const SubmitFormWrapper = styled.div`
         .col {
           .row1 {
             flex-direction: row;
+
+            
           }
         }
       }
@@ -164,7 +169,6 @@ const SubmitFormWrapper = styled.div`
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
     width: 1280px;
-    min-height: 850px;
     .yform {
       max-height: unset;
       overflow-y: hidden;
@@ -194,70 +198,54 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
             <img src={Icons.Close_1} alt="" />
           </button>
         </div>
-        <p className="help-text"><sup>*</sup> Pflichtfelder</p>
+        <p className="help-text"></p>
         <div className="yform">
           <div className="form">
             <div className="col">
               <div className="row1">
                 <div className="group">
-                  <label>Vorname / Nachname <sup>*</sup></label>
                   <div className="entry-box">
                     <div className="form-group">
-                      <input type="text" />
-                    </div>
-                    <div className="form-group">
-                      <input type="text" />
+                      <input type="text" placeholder="Vorname" />
                     </div>
                   </div>
                 </div>
                 <div className="group">
-                  <label>E-Mail <sup>*</sup></label>
                   <div className="entry-box">
                     <div className="form-group">
-                      <input type="text" />
+                      <input type="text" placeholder="Name" />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="row1">
                 <div className="group">
-                  <label>Geburtsdatum <sup>*</sup></label>
                   <div className="entry-box">
                     <div className="form-group">
-                      <input type="text" />
+                      <input type="text" placeholder="E-Mail" />
                     </div>
                   </div>
                 </div>
                 <div className="group">
-                  <label>Telefon <sup>*</sup></label>
                   <div className="entry-box">
                     <div className="form-group">
-                      <input type="text" />
+                      <input type="text" placeholder="Handynummer" />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="row1">
                 <div className="group">
-                  <label>Was möchtest du fahren?</label>
                   <div className="entry-box">
                     <div className="form-group">
                       <select>
+                        <option value="" disabled selected>Categorie</option>
                         <option></option>
                       </select>
                     </div>
                   </div>
                 </div>
-                <div className="group">
-                  <label>Kategorie <sup>*</sup></label>
-                  <div className="entry-box">
-                    <div className="form-group">
-                      <select>
-                        <option></option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
+                <div className="group"></div>
               </div>
             </div>
             <div className="col types">
