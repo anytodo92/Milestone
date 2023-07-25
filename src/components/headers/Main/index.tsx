@@ -84,7 +84,10 @@ const MainHeader: React.FC = () => {
           <img src={Images.LightGreenFullLogoUrl} />
           <img src={Images.WhiteFullLogoUrl} />
           </Link>
-          <Link className="link-admin" to="/admin/login">Admin</Link>
+          <div className="admin-link-wrapper">
+            <Link to="/admin">Admin</Link>
+            <Link to="/admin/logout">Logout</Link>
+          </div>
         </div>
         <div className="control">
           <ul className="menu">
