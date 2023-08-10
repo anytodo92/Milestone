@@ -15,7 +15,7 @@ const Login = (): JSX.Element => {
       <LoginFormWrapper>
         <div className="content">
           <div className="yform">
-            <form action="" enctype="application/x-www-form-urlencoded">
+            <form action="" encType="application/x-www-form-urlencoded">
               <div className="form">
                 <div className="col">
                   <div className="group">

@@ -47,6 +47,11 @@ const Home = (): JSX.Element => {
         image: Images.Thumb_2,
         name: 'Mateen Saifullah'
       },
+      {
+        id: 4,
+        image: Images.Thumb_2,
+        name: 'Mateen Saifullah'
+      },
     ]
   }
   

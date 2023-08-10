@@ -30,9 +30,11 @@ const UberUns = (): JSX.Element => {
         name: 'Mateen Saifullah',
         description: 'Fahrlerer / Kursinstruktor',
         detail: `
-        <ul><li>Tesla Model S</li><li>846 abgeschlossene Fahrprüfungen</li><li>Deutsch / Englisch / Kurdisch</li></ul>
+        <ul><li>Tesla Model S</li><li>846 abgeschlossene Fahrprüfungen</li><li>Deutsch / Englisch / Kurdisch</li><li>Deutsch / Englisch / Kurdisch</li></ul>
         `,
         email: 'mateen@milestone-fahrschule.ch',
+        phone: '079 601 88 88',
+        buttonText: 'Mehr anzeigen'
       },
       {
         id: 2,
@@ -45,6 +47,8 @@ const UberUns = (): JSX.Element => {
         <li>Deutsch / Englisch / Kurdisch</li></ul>
         `,
         email: 'mateen@milestone-fahrschule.ch',
+        phone: '079 601 88 88',
+        buttonText: 'Mehr anzeigen'
       },
       {
         id: 3,
@@ -57,6 +61,22 @@ const UberUns = (): JSX.Element => {
         <li>Deutsch / Englisch / Kurdisch</li></ul>
         `,
         email: 'mateen@milestone-fahrschule.ch',
+        phone: '079 601 88 88',
+        buttonText: 'Mehr anzeigen'
+      },
+      {
+        id: 4,
+        image: Images.Thumb_2,
+        name: 'Mateen Saifullah',
+        description: 'Fahrlerer / Kursinstruktor',
+        detail: `
+        <ul><li>Tesla Model S</li>
+        <li>846 abgeschlossene Fahrprüfungen</li>
+        <li>Deutsch / Englisch / Kurdisch</li></ul>
+        `,
+        email: 'mateen@milestone-fahrschule.ch',
+        phone: '079 601 88 88',
+        buttonText: 'Mehr anzeigen'
       },
     ]
   }
