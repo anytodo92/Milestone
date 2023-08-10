@@ -15,6 +15,10 @@ export const TeamWrapper = styled.div`
     }
   }
 
+  .content1 {
+    margin: 0 ${props => props.theme.margins.primary}px;
+  }
+
   .title {
     position: relative;
     display: inline-block;
@@ -52,6 +56,7 @@ export const TeamWrapper = styled.div`
           border-radius: 100%;
           border: 2px solid ${props => props.theme.colors.green_primary};
           background-color: #fff;
+          max-width: unset;
         }
 
         .bg {
@@ -67,6 +72,18 @@ export const TeamWrapper = styled.div`
       }
 
       .wrapper {
+        max-width: 360px;
+        &.full {
+          .detail {
+            height: auto;
+          }
+          
+          > button {
+            > svg {
+              transform: rotate(180deg);
+            }
+          }
+        }
         > h2 {
           position: relative;
           color: ${props => props.theme.colors.black_primary};
@@ -88,11 +105,10 @@ export const TeamWrapper = styled.div`
 
         > .desc {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 20px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
-          font-weight: 500;
-          line-height: 1.2;
-          margin-top: 20px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 25px;
+          text-align: left;
         }
 
         > .detail {
@@ -100,12 +116,16 @@ export const TeamWrapper = styled.div`
           font-size: 18px;
           font-weight: 300;
           line-height: 1.4;
-          margin-top: 30px;
+          margin-top: 15px;
+          height: 96px;
+          overflow: hidden;
 
           > ul {
             list-style: disc;
             margin-left: 20px;
           }
+
+          
         }
 
         > .email {
@@ -113,7 +133,32 @@ export const TeamWrapper = styled.div`
           font-size: 18px;
           font-weight: 700;
           line-height: 1.4;
-          margin-top: 30px;
+          margin-top: 5px;
+        }
+
+        > .phone {
+          color: ${props => props.theme.colors.green_primary};
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.4;
+        }
+
+        > button {
+          color: ${props => props.theme.colors.green_primary};
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.4;
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          margin-top: 15px;
+          border: 0;
+          ouline: 0;
+          cursor: pointer;
+
+          > svg {
+            transition: all .3s ease;
+          }
         }
       }
       
@@ -124,7 +169,9 @@ export const TeamWrapper = styled.div`
   .buttons {
     display: flex;
     justify-content: center;
-    > button {
+    > a {
+      display: flex;
+      align-items: center;
       height: 46px;
       border-radius: 46px;
       background-color: ${props => props.theme.colors.green_primary};
@@ -180,7 +227,7 @@ export const TeamWrapper = styled.div`
 
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
-    .content {
+    .content, .content1 {
       width: ${props => props.theme.maxWidth}px;
       margin: 0 auto;
     }
