@@ -10,30 +10,33 @@ export const BannerWrapper = styled.div`
     height: 100vh;
     left: 0;
     top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
-    .lt {
+    .mask {
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
-      background-image: url(${Images.Bg_1});
+      background-image: url(${Images.Bg_6});
       background-position: 0 0;
       background-repeat: no-repeat;
       background-size: cover;
     }
 
-    .rt {
+    .lt {
       display: none;
       position: absolute;
-      right: 0;
+      left: 0;
       top: 0;
       width: 35%;
       height: 100%;
-      background-image: url(${Images.Bg_2});
+      background-image: url(${Images.Bg_7});
       background-position: 0 0;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% 100%;
     }
   }
 
@@ -52,7 +55,6 @@ export const BannerWrapper = styled.div`
     align-items: center;
     .desc {
       font-size: 20px;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
       font-weight: 700;
       line-height: 1.2;
     }
@@ -61,29 +63,28 @@ export const BannerWrapper = styled.div`
       position: relative;
       margin-top: 15px;
       > h1 {
-        font-size: 35px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
+        font-size: 40px;
+        font-weight: 800;
         line-height: 1.2;
       }
 
       > svg {
         position: absolute;
-        left: 90px;
+        left: 150px;
         bottom: -10px;
       }
     } 
 
     .detail {
-      font-size: 22px;
-      font-weight: 300;
+      font-size: 16px;
+      font-weight: 400;
       line-height: 1.2;
       margin-top: 40px;
-      max-width: 500px;
+      max-width: 529px;
     }
 
     .icon {
-      margin-top: 40px;
+      margin-top: 50px;
       display: flex;
       justify-content: center;
     }
@@ -92,11 +93,9 @@ export const BannerWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
     .summary {
       .title {
-        > h1 {
-          font-size: 45px;
-        }
         > svg {
-          left: 120px;
+          left: 150px;
+          top: 60px;
         }
       }
     }
@@ -116,8 +115,6 @@ export const BannerWrapper = styled.div`
 
       .lt {
         width: 65%;
-      }
-      .rt {
         display: block;
       }
     }

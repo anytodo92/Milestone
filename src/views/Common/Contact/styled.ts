@@ -2,49 +2,28 @@ import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
   padding: 75px 0;
+  background-color: ${props => props.theme.colors.gray_primary};
+
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
 
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    column-gap: 60px;
+    column-gap: 70px;
   }
 
   .pic {
     align-self: center;
-    > img {
-      margin-top: 10px;
-    }
   }
 
   .article {
-
-    .title {
-      position: relative;
-      display: inline-block;
-
-      > h2 {
-        color: ${props => props.theme.colors.black_primary};
-        font-size: 35px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
-        line-height: 1.2;
-      }
-
-      > img {
-        position: absolute;
-        right: 0;
-        bottom: -30px;
-      }
-    }
-
     > .desc {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
-      line-height: 1.4;
-      margin-top: 60px;
+      line-height: 1.2;
+      margin-top: 30px;
     }
 
     > a {
@@ -52,9 +31,8 @@ export const ContactWrapper = styled.div`
       border-radius: 46px;
       background-color: ${props => props.theme.colors.green_primary};
       color: ${props => props.theme.colors.white};
-      font-size: 18px;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
-      font-weight: 700;
+      font-size: 16px;
+      font-weight: 600;
       line-height: 1.2;
       padding: 0 40px;
       margin-top: 30px;

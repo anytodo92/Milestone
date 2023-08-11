@@ -44,7 +44,7 @@ export const MainHeaderWrapper = styled.nav`
         }
       }
       .bold {
-        font-weight: 600;
+        font-weight: 700;
       }
       .admin-link-wrapper {
         position: absolute;
@@ -69,8 +69,8 @@ export const MainHeaderWrapper = styled.nav`
     .control {
       .menu {
         font-weight: 400;
-        font-size: 16px;
-        line-height: 23px;
+        font-size: 18px;
+        line-height: 1.5;
         height: 100px;
         margin: 0;
         list-style: none;
@@ -104,7 +104,7 @@ export const MainHeaderWrapper = styled.nav`
 
           &.bold {
             > a {
-              font-weight: 500;
+              font-weight: 600;
             }
           }
         }

@@ -1,3 +1,4 @@
+import { Images } from "../../../utils/assets";
 import {
   BannerWrapper
 } from "./styled";
@@ -5,16 +6,13 @@ import {
 const Banner = (): JSX.Element => {
   return (
     <BannerWrapper className="hero">
-      <div className="bg">
+      <div className="bg" style={{backgroundImage: `url(${Images.Bg_5})`}}>
+        <div className="mask"></div>
         <div className="lt"></div>
-        <div className="rt"></div>
       </div>
       <div className="content">
         <div className="summary">
           <div className="contt">
-            <p className="desc">
-            Fahrspass garantiert - Kompetent und auf dich zugeschnitten
-            </p>
             <div className="title">
               <h1>Deine Fahrschule in der<br />Region</h1>
               <svg width="241" height="39" viewBox="0 0 241 39" fill="none" xmlns="http://www.w3.org/2000/svg">

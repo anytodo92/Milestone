@@ -19,6 +19,10 @@ import UnderlineWhite from "../assets/images/underline-white.svg";
 import Bg_1 from "../assets/images/bg-1.png";
 import Bg_2 from "../assets/images/bg-2.png";
 import Bg_3 from "../assets/images/bg-3.png";
+import Bg_4 from "../assets/images/bg-4.png";
+import Bg_5 from "../assets/images/bg-5.png";
+import Bg_6 from "../assets/images/bg-6.png";
+import Bg_7 from "../assets/images/bg-7.png";
 import Mask from "../assets/images/mask.png";
 
 import ArrowDown from "../assets/images/arrow-down.svg";
@@ -67,6 +71,10 @@ export const Images = {
   Bg_1,
   Bg_2,
   Bg_3,
+  Bg_4,
+  Bg_5,
+  Bg_6,
+  Bg_7,
   WhiteLogoUrl,
   LightGreenLogoUrl,
   WhiteFullLogoUrl,

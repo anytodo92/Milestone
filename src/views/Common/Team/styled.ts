@@ -1,40 +1,23 @@
 import styled from "styled-components";
 
 export const TeamWrapper = styled.div`
-  padding: 40px 0 0;
-  background-color: ${props => props.theme.colors.gray_primary};
+  padding: 78px 0 0;
+  background-color: ${props => props.theme.colors.white};
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
 
     > .desc {
       font-weight: 300;
       font-size: 18px;
-      line-height: 1.4;
+      line-height: 1.2;
       color: ${props => props.theme.colors.black_primary};
-      margin-top: 80px;
+      margin-top: 20px;
     }
   }
 
   .content1 {
     margin: 0 ${props => props.theme.margins.primary}px;
-  }
-
-  .title {
-    position: relative;
-    display: inline-block;
-    > h2 {
-      font-weight: 700;
-      font-size: 35px;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
-      line-height: 1.2;
-      color: ${props => props.theme.colors.black_primary};
-    }
-
-    > img {
-      position: absolute;
-      right: 0;
-      bottom: -30px;
-    }
+    overflow: hidden;
   }
 
   .list {
@@ -87,9 +70,8 @@ export const TeamWrapper = styled.div`
         > h2 {
           position: relative;
           color: ${props => props.theme.colors.black_primary};
-          font-size: 35px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
-          font-weight: 700;
+          font-size: 24px;
+          font-weight: 600;
           line-height: 1.5;
           margin-top: 20px;
 
@@ -176,12 +158,11 @@ export const TeamWrapper = styled.div`
       border-radius: 46px;
       background-color: ${props => props.theme.colors.green_primary};
       color: ${props => props.theme.colors.white};
-      font-size: 18px;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
-      font-weight: 700;
+      font-size: 16px;
+      font-weight: 600;
       line-height: 1.2;
       padding: 0 23px;
-      margin-top: 30px;
+      margin-top: 60px;
       cursor: pointer;
       border: 0;
       outline: 0;
@@ -215,21 +196,103 @@ export const TeamWrapper = styled.div`
       }
     }
     .list {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      .one {
+        .pic {
+          > img {
+            width: 216px;
+            height: 216px;
+          }
+
+          .bg {
+            top: -18px;
+            left: 18px;
+            width: 189px;
+            height: 252px;
+            border-radius: 189px;
+          }
+        }
+        .wrapper {
+          max-width: 220px;
+          > h2 {
+            font-size: 30px;
+          }
+        }
+      }
     }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
     .list {
-      grid-template-columns: 1fr 1fr 1fr;
+      .one {
+        .pic {
+          > img {
+            width: 240px;
+            height: 240px;
+          }
+
+          .bg {
+            top: -20px;
+            left: 20px;
+            width: 210px;
+            height: 280px;
+            border-radius: 210px;
+          }
+        }
+        .wrapper {
+          max-width: 260px;
+          > h2 {
+            font-size: 35px;
+          }
+        }
+      }
     }
   }
 
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
-    .content, .content1 {
+    .content {
       width: ${props => props.theme.maxWidth}px;
       margin: 0 auto;
     }
+
+    .content1 {
+      width: auto;
+      margin: 0 ${props => props.theme.margins.primary}px;
+    }
+
+    .list {
+      .one {
+        .pic {            
+          > img {
+            width: 298px;
+            height: 298px;
+          }
+
+          .bg {
+            top: -27px;
+            left: 18px;
+            width: 270px;
+            height: 350px;
+            border-radius: 270px;
+          }
+        }
+        .wrapper {
+          max-width: 324px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1780px) {
+    .content1 {
+      width: 1740px;
+      margin: 0 auto;
+    }
+
+    .list {
+      margin-left:160px;
+    }      
   }
 `
