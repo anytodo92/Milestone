@@ -60,14 +60,16 @@ const Course = (): JSX.Element => {
           onClose={() => setModalResult(false)} />
       }
       <div className="content">
-        <div className="title">
-          <h2>Einzellektionen & Pakete der<br />Fahrschule Milestone</h2>
-          <img src={Images.UnderlineGreen} alt="" />
-        </div>
+        <h2 className="title">Einzellektionen & Pakete der<br />Fahrschule Milestone</h2>
         <div className="list">
         {list.map((data, index) =>
           <div key={index} className={`one ${index === 1 ? 'spec' : ''}`}>
             <div className="wrapper">
+              {index !== 1&&
+                <div className={`bg ${index === 2? "reverse" : ""}`}>
+                  <img src={Images.Bg_4} alt="" />
+                </div>
+              }
               <div className="pic">
                 {index === 1&& <>
                   <img src={data.image} alt="" />

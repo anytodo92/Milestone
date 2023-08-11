@@ -11,10 +11,7 @@ const Team = ({ data }: TeamProps): JSX.Element => {
   return (
     <TeamWrapper className="team">
       <div className="content">
-        <div className="title">
-          <h2 dangerouslySetInnerHTML={{ __html: data.title }}></h2>
-          <img src={Images.UnderlineGreen} alt="" />
-        </div>
+        <h2 className="title" dangerouslySetInnerHTML={{ __html: data.title }}></h2>
         <p className="desc">{data.description}</p>
       </div>
       <div className="content1">

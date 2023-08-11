@@ -18,21 +18,21 @@ export const FooterWrapper = styled.footer`
       .content {
         display: flex;
         flex-direction: column;
-        column-gap: 70px;
+        column-gap: 25px;
         row-gap: 30px;
         .col {
           flex: unset;
           > p, a.link {
             font-size: 16px;
             font-weight: 300;
-            line-height: 1.4;
+            line-height: 1.5;
             color: ${props => props.theme.colors.white};
           }
 
           > h5 {
             font-size: 22px;
-            font-weight: 500;
-            padding-bottom: 17px;
+            font-weight: 600;
+            padding-bottom: 20px;
             color: ${props => props.theme.colors.white};
           }
 
@@ -45,17 +45,17 @@ export const FooterWrapper = styled.footer`
         }
         
       }
-    }20
+    }
 
     &:last-child {
       background-color: #313131;
       
       .content {
         display: flex;
-        height: 54px;
+        height: 60px;
         font-size: 16px;
         font-weight: 300;
-        line-height: 1.4;
+        line-height: 1.5;
         align-items: center;
       }
     }
@@ -66,6 +66,11 @@ export const FooterWrapper = styled.footer`
       &:first-child {
         .content {
           flex-direction: row;
+          .col {
+            &:last-child {
+              margin-left: 13px;
+            }
+          }
         }
       }
     }

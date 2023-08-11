@@ -42,10 +42,7 @@ const Recommend = (): JSX.Element => {
   return (
     <RecommendWrapper className="recommend">
       <div className="content">
-        <div className="title">
-          <h2>Unser Kursangebot</h2>
-          <img src={Images.UnderlineGreen} alt="" />
-        </div>
+        <h2 className="title">Unser Kursangebot</h2>
         <div className="desc">
         In unserem Kursangebot findest du alle benötigten Kurse die du für den erfolgreichen Abschluss deiner Fahrprüfung benötigst. Alle unsere Kurse finden in kleinen Gruppen statt, damit du maximal profitierst und wir individuell auf dich und deine Fragen eingehen können.
         </div>

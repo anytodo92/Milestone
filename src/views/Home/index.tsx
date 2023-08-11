@@ -61,23 +61,29 @@ const Home = (): JSX.Element => {
       <Intro />
       <ShapeBottom
         bgColor="#fff"
-        fillColor="#f8f8f8"
-        height={100}
+        fillColor="#f4f4f4"
+        height={120}
       />
       <Course />
       <Reservation data={reservationData} />
-      <ShapeTop
-        bgColor="#f8f8f8"
+      <ShapeBottom
+        bgColor="#f4f4f4"
         fillColor="#fff"
-        height={70}
+        height={120}
       />
       <Recommend />
-      <Carousel />
-      <Team data={teamData} />
+      {/*<Carousel />*/}
       <ShapeBottom
         bgColor="#fff"
-        fillColor="#f8f8f8"
-        height={120}
+        fillColor="#f4f4f4"
+        height={94}
+      />
+      <Team data={teamData} />
+
+      <ShapeBottom
+        bgColor="#f4f4f4"
+        fillColor="#fff"
+        height={55}
       />
       <Contact />
     </HomeWrapper>

@@ -7,23 +7,6 @@ export const CourseWrapper = styled.div`
     margin: 0 ${props => props.theme.margins.primary}px;
   }         
 
-  .title {
-    position: relative;
-    display: inline-block;
-    > h2 {
-      font-size: 35px;
-      font-weight: 700;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
-      line-height: 1.2;
-
-    }
-    > img {
-      position: absolute;
-      right: 0;
-      bottom: -40px;
-    }
-  }
-
   .list {
     display: grid;
     grid-template-columns: 1fr;
@@ -37,30 +20,48 @@ export const CourseWrapper = styled.div`
         
         display: flex;
         flex-direction: column;
+        position: relative;
+        overflow: hidden;
+
+        .bg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: .4;
+
+          &.reverse {
+            right: 0;
+            bottom: 0;
+
+
+            transform: rotate(180deg)
+          }
+        }
+
         .pic {
           height: 200px;
         }
         .article {
+          position: relative;
           padding: 35px 35px 130px;
+
           > h5 {
-            font-size: 26px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
-            font-weight: 700;
+            font-size: 24px;
+            font-weight: 800;
             line-height: 1.2;
-            margin-top: 25px;
+            margin-top: 15px;
             color: ${props => props.theme.colors.black_primary};
           }
 
           .desc {
-            font-size: 20px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
+            font-size: 18px;
             font-weight: 700;
             line-height: 1.2;
             color: ${props => props.theme.colors.black_primary};
           }
 
           .detail {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 300;
             line-height: 1.4;
             margin-top: 25px;
@@ -80,12 +81,11 @@ export const CourseWrapper = styled.div`
             border-radius: 46px;
             background-color: ${props => props.theme.colors.green_primary};
             color: ${props => props.theme.colors.white};
-            font-size: 18px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 600;
             line-height: 1.2;
             padding: 0 23px;
-            margin-top: 30px;
+            margin-top: 35px;
             cursor: pointer;
           }
         }
@@ -94,6 +94,7 @@ export const CourseWrapper = styled.div`
 
       &.spec {
         position: relative;
+        z-index:1;
         .wrapper {
           flex-direction: column-reverse;
           
@@ -126,7 +127,7 @@ export const CourseWrapper = styled.div`
             }
 
             > h5 {
-              margin-top: 30px;
+              margin-top: 25px;
             }
 
             .detail {

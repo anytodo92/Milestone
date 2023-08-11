@@ -7,12 +7,14 @@ declare module 'styled-components' {
     fonts: {
       roboto: string;
       roboto_condensend: string;
+      iter: string;
     };
 
     colors: {
       spinnerBase: string;
       
       black_primary: string;
+      black_secondary: string;
       
       white: string;
       black: string;

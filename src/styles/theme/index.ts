@@ -5,17 +5,19 @@ const theme: DefaultTheme = {
   fonts: {
     roboto: 'Roboto',
     roboto_condensend: 'Roboto Condensed',
+    iter: 'Inter',
   },
   colors: {
     spinnerBase: "#0000ff",
 
-    black_primary: "#3f3f3f",
+    black_primary: "#0c0c0c",
+    black_secondary: "#3f3f3f",
 
     black: "#000000",
     white: "#ffffff",
 
     green_primary: "#84af8c",
-    gray_primary: "#f8f8f8",
+    gray_primary: "#f4f4f4",
     red_primary: "#ee4141",
   },
   breakpoints: {
