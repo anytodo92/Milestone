@@ -14,10 +14,7 @@ const OurCourse = ({ data }: OurCourseProps): JSX.Element => {
     <OurCourseWrapper className="our-course">
       <div className="content">
         <div className="article">
-          <div className="title">
-            <h2>{data.title}</h2>
-            <img src={Images.UnderlineGreen} alt="" />
-          </div>
+          <h2 className="title">{data.title}</h2>
           <div className="desc" dangerouslySetInnerHTML={{ __html: data.description }}>
           </div>
           <div className="list">
@@ -37,7 +34,9 @@ const OurCourse = ({ data }: OurCourseProps): JSX.Element => {
           <h4>Kursorte</h4>
           <div className="wrapper">
             <div className="map">
+              <div className="container">
               <img src={Images.Map_2} alt="" />
+              </div>
             </div>
             <div className="control">
                <div className="left">

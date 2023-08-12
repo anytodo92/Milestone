@@ -7,6 +7,15 @@ export const CourseWrapper = styled.div`
     margin: 0 ${props => props.theme.margins.primary}px;
   }         
 
+  .desc {
+    max-width: 1052px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: ${props => props.theme.colors.black_primary};
+    margin-top: 10px;
+  }
+
   .list {
     display: grid;
     grid-template-columns: 1fr;
@@ -147,7 +156,7 @@ export const CourseWrapper = styled.div`
 
   .more {
     margin-top: 60px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
     color: ${props => props.theme.colors.black_primary};

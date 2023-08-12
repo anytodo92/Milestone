@@ -81,7 +81,7 @@ export const ReservationWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.tablet_md}) {
     .pic {
       position: relative;
-      margin-top: 70px;
+      margin-top: 40px;
       
       .bg1 {
         width: 304px;

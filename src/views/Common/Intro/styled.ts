@@ -55,7 +55,7 @@ export const IntroWrapper = styled.div`
       //max-width: 747px;
       .list {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         row-gap: 30px;
         column-gap: 30px;
         
@@ -63,31 +63,37 @@ export const IntroWrapper = styled.div`
         border-radius: 30px 30px 0 0;
         padding: 40px 50px 0;
 
-        .one {
-          display: flex;
-          column-gap: 20px;
-          .icon {
-            margin-top: 3px;
-            > img {
-              max-width: unset;
-            }
-          }
 
-          > .contt {
+        .one {
+          .top {
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+
+            .icon {
+              margin-top: 3px;
+              > img {
+                max-width: unset;
+              }
+            }
+
             > h5 {
               font-size: 24px;
               font-weight: 600;
               color: ${props => props.theme.colors.black_primary};
               line-height: 1.2;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
-
-            > .desc {
-              font-size: 16px;
-              font-weight: 300;
-              color: ${props => props.theme.colors.black_primary};
-              line-height: 1.4;
-              margin-top: 10px;
-            }
+          }
+          
+          > .desc {
+            font-size: 16px;
+            font-weight: 300;
+            color: ${props => props.theme.colors.black_primary};
+            line-height: 1.4;
+            margin-top: 10px;
           }
         }
       }
@@ -125,7 +131,7 @@ export const IntroWrapper = styled.div`
     .article {
       .panel {
         .list {
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 50% 50%;
         }  
       }
     }

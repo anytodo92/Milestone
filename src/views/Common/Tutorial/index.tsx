@@ -38,10 +38,7 @@ const Tutorial = (): JSX.Element => {
     <TutorialWrapper className="tutorial">
       <div className="content">
         <div className="article">
-          <div className="title">
-            <h2>Milestone - Deine Fahrschule<br />von A bis Z</h2>
-            <img src={Images.UnderlineGreen} alt="" />
-          </div>
+          <h2 className="title">Milestone - Deine Fahrschule<br />von A bis Z</h2>
           <div className="desc">
             <p>Wie begleiten dich von A - Z und kümmern uns um alle Belangen auf dem Weg zu deinem Führerschein. Du musst dir keine Gedanken machen, wie und wo es mit deiner Fahrausbildung weitergeht. Wir übernehmen das für dich und führen dich durch das Fahrschuld-Labyrinth.</p>
             <p><br/></p>
@@ -70,7 +67,7 @@ const Tutorial = (): JSX.Element => {
           </div>
           <div className="info">
             <h5>Fahrschule Milestone</h5>
-            <p className="mt-20">Badenerstrasse 1<br />5400 Baden</p>
+            <p>Badenerstrasse 1<br />5400 Baden</p>
             <p className="mt-20">
               <a href="mailto:info@milestone-fahrschule.ch">info@milestone-fahrschule.ch</a>
             </p>

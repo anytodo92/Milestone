@@ -1,32 +1,13 @@
 import styled from "styled-components";
 
 export const ContactFormWrapper = styled.div`
-  padding: 60px 0 70px;
+  padding: 40px 0 10px;
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
   }
 
-  .title {
-    position: relative;
-    display: inline-block;
-
-    > h2 {
-      color: ${props => props.theme.colors.black_primary};
-      font-size: 35px;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    > img {
-      position: absolute;
-      right: 0;
-      bottom: -30px;
-    }
-  }
-
   .yform {
-    margin-top: 50px;
+    margin-top: 25px;
     max-width: 1046px;
     .form {
       .col {
@@ -49,7 +30,7 @@ export const ContactFormWrapper = styled.div`
     .desc {
       color: #646464;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 22px;
       margin-top: 20px;
     }

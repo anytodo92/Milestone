@@ -85,12 +85,17 @@ const UberUns = (): JSX.Element => {
     <UberUnsWrapper>
       <Banner data={bannerData} />
       <Intro />
-      <ShapeTop
-        bgColor="#f8f8f8"
+      <ShapeBottom
+        bgColor="#f4f4f4"
         fillColor="#fff"
         height={120}
       />
       <Team data={teamData} />
+      <ShapeBottom
+        bgColor="#fff"
+        fillColor="#f4f4f4"
+        height={74}
+      />
       <Contact />
     </UberUnsWrapper>
   );

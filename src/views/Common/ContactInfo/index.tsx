@@ -22,7 +22,7 @@ const ContactInfo = (): JSX.Element => {
               <span className="icon">
                 <img src={Icons.Phone_2} alt="" />
               </span>
-              <h3>Whats App</h3>
+              <h3>Telefon</h3>
             </div>
             <p>044 586 70 71</p>
           </div>

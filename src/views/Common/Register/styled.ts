@@ -1,32 +1,13 @@
 import styled from "styled-components";
 
 export const RegisterWrapper = styled.div`
-  padding: 30px 0 ;
+  padding: 30px 0 15px;
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
   }
 
-  .title {
-    position: relative;
-    display: inline-block;
-
-    > h2 {
-      color: ${props => props.theme.colors.black_primary};
-      font-size: 35px;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    > img {
-      position: absolute;
-      right: 0;
-      bottom: -40px;
-    }
-  }
-
   .filter {
-    margin-top: 60px;
+    margin-top: 35px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -45,14 +26,13 @@ export const RegisterWrapper = styled.div`
         .tags {
           display: flex;
           flex-wrap: wrap;
-          column-gap: 10px;
-          row-gap: 10px;
+          column-gap: 15px;
+          row-gap: 15px;
 
           > label {
             color: ${props => props.theme.colors.black_primary};
-            font-size: 20px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 600;
             line-height: 1.2;
             margin-top: 5px;
           }
@@ -62,9 +42,8 @@ export const RegisterWrapper = styled.div`
             border-radius: 10px;
             background-color: ${props => props.theme.colors.green_primary};
             color: ${props => props.theme.colors.white};
-            font-size: 18px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 600;
             line-height: 1.2;
           }
         }
@@ -137,18 +116,17 @@ export const RegisterWrapper = styled.div`
     background-color: ${props => props.theme.colors.gray_primary};
     padding: 28px;
     border-radius: 10px;
-    font-family: ${props => props.theme.fonts.roboto_condensend};
     font-size: 22px;
     font-weight: 700;
     line-height: 26px;
     color: ${props => props.theme.colors.black_primary};
-    margin-top: 15px;
+    margin-top: 35px;
   }
   .list {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    margin-top: 15px;
+    margin-top: 35px;
     
     overflow-x: auto;
 
@@ -198,9 +176,8 @@ export const RegisterWrapper = styled.div`
         background-color: ${props => props.theme.colors.green_primary};
         padding: 7px 30px;
         color: ${props => props.theme.colors.white};
-        font-size: 18px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 600;
         line-height: 1.2;
         display: inline-block;
       }
@@ -216,24 +193,23 @@ export const RegisterWrapper = styled.div`
 
         .txt {
           color: ${props => props.theme.colors.green_primary};
-          font-size: 18px;
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 600;
           line-height: 1.4;
         }
       }
 
       .info1 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 22px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 800;
         line-height: 1.2;
         text-align: right;
       }
 
       .info2 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 300;
         line-height: 1.4;
         text-align: right;
@@ -256,14 +232,13 @@ export const RegisterWrapper = styled.div`
           }
           .date {
             color: ${props => props.theme.colors.black_primary};
-            font-size: 22px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: 800;
             line-height: 1.2;
           }
           .time {
             color: ${props => props.theme.colors.black_primary};
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 300;
             line-height: 1.4;
           }
@@ -276,11 +251,10 @@ export const RegisterWrapper = styled.div`
           border-radius: 46px;
           background-color: ${props => props.theme.colors.green_primary};
           color: ${props => props.theme.colors.white};
-          font-size: 18px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 600;
           line-height: 1.2;
-          padding: 0 60px;
+          padding: 0 40px;
           margin-top: 30px;
           cursor: pointer;
           border: 0;
@@ -366,7 +340,7 @@ export const RegisterWrapper = styled.div`
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          margin-top: 45px;
+          margin-top: 35px;
 
           .buttons {
             display: flex;
@@ -379,10 +353,9 @@ export const RegisterWrapper = styled.div`
 
       .row3 {
         display: none;
-        margin-top: 50px;
+        margin-top: 35px;
         .title {
-          font-size: 26px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
+          font-size: 24px;
           font-weight: 700;
           line-height: 1.2;
           color: ${props => props.theme.colors.green_primary};
@@ -398,13 +371,16 @@ export const RegisterWrapper = styled.div`
 
     > button {
       display: inline-flex;
-      column-gap: 10px;
+
+      flex-direction: column;
       align-items: center;
+      row-gap: 8px;
+
       height: 46px;
       border-radius: 46px;
       color: ${props => props.theme.colors.green_primary};
-      font-size: 22px;
-      font-weight: 700;
+      font-size: 16px;
+      font-weight: 600;
       line-height: 1.4;
       cursor: pointer;
       border: 0;
@@ -433,6 +409,10 @@ export const RegisterWrapper = styled.div`
       margin-top: 10px;
       display: flex;
       justify-content: flex-start;
+
+      button {
+        padding: 0 35px;
+      }
     }
     .check {
       display: grid;
@@ -445,13 +425,14 @@ export const RegisterWrapper = styled.div`
         
         .txt {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 300;
           line-height: 1.4;
           margin-top: 15px;
 
           > a {
             color: ${props => props.theme.colors.green_primary};
+            font-weight: 600;
           }
         }
       }
@@ -521,7 +502,7 @@ export const RegisterWrapper = styled.div`
       .form {
         row-gap: 10px;
         .row10 {
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 0.8fr 0.8fr 1fr;
         }
       }
       .check {

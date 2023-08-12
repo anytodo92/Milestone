@@ -1,6 +1,7 @@
 import Banner from "../Common/Banner";
 import Contact from "../Common/Contact";
 import Price1 from "../Common/Price";
+import ShapeBottom from "../Common/ShapeBottom";
 
 import { Images, Icons } from "../../utils/assets";
 import {
@@ -91,6 +92,12 @@ const Price = () => {
       <Price1 data={priceData1} />
       <Price1 data={priceData2} />
       <Price1 data={priceData3} />
+      <div style={{ height: 50 }}></div>
+      <ShapeBottom
+        bgColor="#f4f4f4"
+        fillColor="#fff"
+        height={77}
+      />
       <Contact />
     </PriceWrapper>
   );

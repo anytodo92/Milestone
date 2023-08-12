@@ -42,7 +42,7 @@ const Team = ({ data }: TeamProps): JSX.Element => {
               {data1.buttonText&&
                 <button className="btn-view-mode">
                 {data1.buttonText}
-                <svg width="25" height="14" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="22" height="11" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="2.82843" y1="2" x2="14" y2="13.1716" stroke="#84AF8C" stroke-width="4" stroke-linecap="round"/>
                 <line x1="2" y1="-2" x2="17.799" y2="-2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 28 2)" stroke="#84AF8C" stroke-width="4" stroke-linecap="round"/>
                 </svg>

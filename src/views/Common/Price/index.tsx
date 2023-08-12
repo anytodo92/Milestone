@@ -12,16 +12,13 @@ const Price1 = ({ data }: PriceProps): JSX.Element => {
   return (
     <PriceWrapper className="price">
       <div className="content">
-        <div className="title">
-          <h2>{data.title}</h2>
-          <img src={Images.UnderlineGreen} alt="" />
-        </div>
+        <h2 className="title">{data.title}</h2>
         <div className="list">
         {data.list.map((data1: any, index: number) =>
           <div key={index} className="one">
-            <h5>{data1.description}</h5>
+            <p className="desc">{data1.description}</p>
             <div className="info">
-              <p>{data1.info1}</p>
+              <h5>{data1.info1}</h5>
               <p>{data1.info2}</p>
             </div>
           </div>
