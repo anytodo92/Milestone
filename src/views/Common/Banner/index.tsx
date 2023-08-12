@@ -14,9 +14,9 @@ const Banner = ({ data }: BannerPropsType): JSX.Element => {
 
       <div className="content">
         <div className="summary">
-          {data.description&&
+          {/*data.description&&
             <div className="desc">{data.description}</div>
-          }
+          */}
           <h1 dangerouslySetInnerHTML={{ __html: data.title }}></h1>
           {data.detail&&
             <div className="detail" dangerouslySetInnerHTML={{ __html: data.detail }}></div>

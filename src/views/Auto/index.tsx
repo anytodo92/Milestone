@@ -35,24 +35,19 @@ const Auto = (): JSX.Element => {
     <AutoWrapper>
       <Banner data={bannerData} />
       <Tutorial />
-      <ShapeTop
-        bgColor="#f8f8f8"
+      <ShapeBottom
+        bgColor="#f4f4f4"
         fillColor="#fff"
-        height={90}
+        height={77}
       />
       <Course />
+      <Reservation data={reservationData} />      
       <ShapeBottom
         bgColor="#fff"
-        fillColor="#f8f8f8"
-        height={70}
+        fillColor="#f4f4f4"
+        height={115}
       />
-      <Reservation data={reservationData} />
-      <ShapeTop
-        bgColor="#f8f8f8"
-        fillColor="#fff"
-        height={50}
-      />
-      <Carousel />
+      {/*<Carousel />*/}
       <Contact />
     </AutoWrapper>
   );

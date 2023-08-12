@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const ContactInfoWrapper = styled.div`
+  padding: 54px 0 58px;
+
+  background-color: ${props => props.theme.colors.gray_primary};
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
   }
@@ -9,11 +12,14 @@ export const ContactInfoWrapper = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    margin-top: 50px;
-
+    column-gap: 45px;
+    
     .one {
       flex: 1;
-      
+      background-color: ${props => props.theme.colors.white};
+      border-radius: 30px;
+      padding: 30px;
+
       .title {
         display: flex;
         align-items: center;
@@ -28,33 +34,23 @@ export const ContactInfoWrapper = styled.div`
           font-size: 40px;
           font-weight: 700;
           letter-spacing: 0.8px;
-
-          &::before {
-            content: "";
-            display: inline-block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 70px;
-            border-top: 4px solid ${props => props.theme.colors.green_primary};
-          }
         }
       }
 
       > p {
         color: ${props => props.theme.colors.black};
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 300;
         line-height: 28px;
         letter-spacing: -0.4px;
-        margin-top: 30px;
+        margin-top: 10px;
       }
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+  @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
     .content {
-      width: 990px;
+      width: 1052px;
       margin: 0 auto;
     }
     

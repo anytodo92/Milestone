@@ -98,12 +98,17 @@ const Vku = () => {
       <Banner data={bannerData} />
       <OurCourse data={ourCourseData} />
       <Register />
-      <ShapeTop
-        bgColor="#f8f8f8"
+      <ShapeBottom
+        bgColor="#f4f4f4"
         fillColor="#fff"
         height={60}
       />
       <Requirement data={requirementData} />
+      <ShapeBottom
+        bgColor="#fff"
+        fillColor="#f4f4f4"
+        height={60}
+      />
       <Contact />
     </VkuWrapper>
   );

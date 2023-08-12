@@ -2,6 +2,7 @@ import Banner from "../Common/Banner";
 import ContactInfo from "../Common/ContactInfo";
 import ContactForm from "../Common/ContactForm";
 import Map from "../Common/Map";
+import ShapeBottom from "../Common/ShapeBottom";
 
 import { Images, Icons } from "../../utils/assets";
 
@@ -22,8 +23,13 @@ const Kontakt = (): JSX.Element => {
   return (
     <KontaktWrapper>
       <Banner data={bannerData} />
-      <ContactInfo />
       <ContactForm />
+      <ShapeBottom
+        bgColor="#f4f4f4"
+        fillColor="#fff"
+        height={25}
+      />
+      <ContactInfo />
       <Map />
     </KontaktWrapper>
   );

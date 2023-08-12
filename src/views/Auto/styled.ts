@@ -3,11 +3,28 @@ import styled from "styled-components";
 export const AutoWrapper = styled.div`
   .course {
     background-color: ${props => props.theme.colors.gray_primary};
-    padding: 0;
   }
 
   .reservation {
-    padding-bottom: 50px;
+    background-color: ${props => props.theme.colors.gray_primary};
+    padding: 50px 0 30px;
+
+    .article {
+      .panel {
+        .contt {
+          background-color: ${props => props.theme.colors.white};
+        }
+        > svg {
+          > path {
+            fill: ${props => props.theme.colors.white};
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    background-color: ${props => props.theme.colors.white};
   }
 
   .carousel {

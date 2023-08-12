@@ -61,6 +61,9 @@ const Course = (): JSX.Element => {
       }
       <div className="content">
         <h2 className="title">Einzellektionen & Pakete der<br />Fahrschule Milestone</h2>
+        <div className="desc">
+          Wir haben für alle das passende Angebot. Profitiere von attraktiven Lektionspreisen in Form von Pakete, oder buche genau die Anzahl Lektionen die dir noch fehlen für den erfolgreichen Abschluss deiner Ausbildung.
+        </div>
         <div className="list">
         {list.map((data, index) =>
           <div key={index} className={`one ${index === 1 ? 'spec' : ''}`}>

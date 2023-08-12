@@ -71,10 +71,7 @@ const Register = (): JSX.Element => {
   return (
     <RegisterWrapper id="termine" className="register">
       <div className="content">
-        <div className="title">
-          <h2>Termine & Anmeldung</h2>
-          <img src={Images.UnderlineGreen} alt="" />
-        </div>
+        <h2 className="title">Termine & Anmeldung</h2>
         <div className="filter">
           <div className="box opened">
             <div className="selected-wrapper">

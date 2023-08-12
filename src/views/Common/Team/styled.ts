@@ -59,6 +59,7 @@ export const TeamWrapper = styled.div`
         &.full {
           .detail {
             height: auto;
+            margin-top: 15px;
           }
           
           > button {
@@ -71,14 +72,16 @@ export const TeamWrapper = styled.div`
           position: relative;
           color: ${props => props.theme.colors.black_primary};
           font-size: 24px;
-          font-weight: 600;
+          font-weight: 700;
           line-height: 1.5;
           margin-top: 20px;
 
           &::after {
             position: absolute;
             width: 69px;
-            border-bottom: 4px solid ${props => props.theme.colors.black_primary};
+            height: 4px;
+            background-color: ${props => props.theme.colors.black_primary};
+            border-radius: 4px;
             content: '';
             left: 0;
             bottom: 0;
@@ -87,59 +90,59 @@ export const TeamWrapper = styled.div`
 
         > .desc {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 25px;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 1.4;
           text-align: left;
+          margin-top: 20px;
         }
 
         > .detail {
           color: ${props => props.theme.colors.black};
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 300;
           line-height: 1.4;
-          margin-top: 15px;
-          height: 96px;
+          height: 0px;
           overflow: hidden;
 
           > ul {
             list-style: disc;
             margin-left: 20px;
           }
-
           
         }
 
         > .email {
           color: ${props => props.theme.colors.green_primary};
-          font-size: 18px;
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 600;
           line-height: 1.4;
-          margin-top: 5px;
+          margin-top: 20px;
         }
 
         > .phone {
           color: ${props => props.theme.colors.green_primary};
-          font-size: 18px;
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 600;
           line-height: 1.4;
         }
 
         > button {
           color: ${props => props.theme.colors.green_primary};
-          font-size: 18px;
-          font-weight: 500;
+          font-size: 16px;
+          font-weight: 600;
           line-height: 1.4;
           display: flex;
           align-items: center;
           column-gap: 10px;
-          margin-top: 15px;
+          margin-top: 30px;
           border: 0;
           ouline: 0;
           cursor: pointer;
 
           > svg {
             transition: all .3s ease;
+            margin-top: 3px;
           }
         }
       }

@@ -1,61 +1,42 @@
 import styled from "styled-components";
 
 export const OurCourseWrapper = styled.div`
-  padding: 110px 0 30px;
+  padding: 65px 0 30px;
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
 
     display: flex;
     flex-direction: column;
-    column-gap: 100px;
+    column-gap: 120px;
     row-gap: 30px;
   }
 
   .article {
-    .title {
-      position: relative;
-      display: inline-block;
-
-      > h2 {
-        color: ${props => props.theme.colors.black_primary};
-        font-size: 35px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
-        line-height: 1.2;
-      }
-
-      > img {
-        position: absolute;
-        right: 0;
-        bottom: -40px;
-      }
-    }
-
     .desc {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
-      line-height: 1.4;
-      margin-top: 50px;
+      line-height: 1.2;
+      margin-top: 30px;
     }
 
     .list {
-      margin-top: 20px;
+      margin-top: 15px;
       display: flex;
       flex-direction: column;
-      row-gap: 30px;
+      row-gap: 25px;
       .one {
         > h5 {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 26px;
+          font-size: 24px;
           font-family: ${props => props.theme.fonts.roboto_condensend};
-          font-weight: 700;
+          font-weight: 600;
           line-height: 120%;
         }
 
         > .detail {
           color: ${props => props.theme.colors.black};
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 300;
           line-height: 1.4;
           margin-top: 10px;
@@ -73,7 +54,7 @@ export const OurCourseWrapper = styled.div`
       font-size: 14px;
       font-weight: 300;
       line-height: 1.2;
-      margin-top: 30px;
+      margin-top: 15px;
     }
   }
 
@@ -81,8 +62,7 @@ export const OurCourseWrapper = styled.div`
     margin-top: 20px; 
     > h4 {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 26px;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
+      font-size: 24px;
       font-weight: 700;
       line-height: 1.2;
     }
@@ -91,13 +71,17 @@ export const OurCourseWrapper = styled.div`
       position: relative;
       
       .map {
-        margin-top: 30px;
+        margin-top: 15px;
         .container {
           width: 100%;
           height: 352px;
-          border-radius: 10px;
+          border-radius: 20px;
           overflow: hidden;
           max-width: unset;
+
+          > img {
+            width: 100%;
+          }
         }
       }
 
@@ -125,20 +109,8 @@ export const OurCourseWrapper = styled.div`
           color: ${props => props.theme.colors.black_primary};
           text-align: center;
           font-size: 16px;
-          font-weight: 700;
+          font-weight: 600;
           line-height: 1.4;
-        }
-      }
-    }
-  }
-
-  @media (min-width: ${props => props.theme.breakpoints.tablet}) {
-    .info {
-      .wrapper {
-        .control {
-          > h5 {
-            font-size: 18px;
-          }
         }
       }
     }
@@ -159,16 +131,8 @@ export const OurCourseWrapper = styled.div`
       flex-direction: row;
     }
 
-    .article {
-      .title {
-        > h2 {
-          font-size: 45px;
-        }
-      }
-    }
-
     .info {
-      margin-top: 90px; 
+      margin-top: 70px; 
       .wrapper {
         .map {
           .container {

@@ -52,13 +52,13 @@ const Intro = (): JSX.Element => {
               <div className="list">
               {items.map((data, index) =>
                 <div key={index} className="one">
-                  <div className="icon">
-                    <img src={Icons.Check} alt="" />
-                  </div>
-                  <div className="contt">
+                  <div className="top">
+                    <div className="icon">
+                      <img src={Icons.Check} alt="" />                      
+                    </div>
                     <h5 dangerouslySetInnerHTML={{ __html: data.title }}></h5>
-                    <div className="desc">{data.desc}</div>
                   </div>
+                  <div className="desc">{data.desc}</div>
                 </div>
               )}
               </div>

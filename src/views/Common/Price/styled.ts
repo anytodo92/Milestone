@@ -6,43 +6,22 @@ export const PriceWrapper = styled.div`
     margin: 0 ${props => props.theme.margins.primary}px;
   }
 
-  .title {
-    position: relative;
-    display: inline-block;
-
-    > h2 {
-      color: ${props => props.theme.colors.black_primary};
-      font-size: 35px;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    > img {
-      position: absolute;
-      left: 0;
-      bottom: -30px;
-      max-width: unset;
-    }
-  }
-
   .list {
-    margin-top: 50px;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 20px;
-    row-gap: 10px;
+    column-gap: 30px;
+    row-gap: 20px;
 
     .one {
       border-radius: 10px;
       background-color: ${props => props.theme.colors.gray_primary};
       padding: 20px;
 
-      > h5 {
+      .desc {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 20px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 600;
         line-height: 1.2;
       }
 
@@ -51,11 +30,17 @@ export const PriceWrapper = styled.div`
         justify-content: space-between;
         margin-top: 10px;
 
+        > h5 {
+          color: ${props => props.theme.colors.black_primary};
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 1.2;
+        }
+
         > p {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 26px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 300;
           line-height: 1.2;
         }
       }

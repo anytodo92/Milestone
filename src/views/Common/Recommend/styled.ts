@@ -26,7 +26,6 @@ export const RecommendWrapper = styled.div`
     .one {
       border-radius: 30px;
       background: ${props => props.theme.colors.white};
-      box-shadow: 0px 0px 8px 0px rgba(43, 43, 43, 0.19);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -68,15 +67,17 @@ export const RecommendWrapper = styled.div`
           position: relative;
           color: ${props => props.theme.colors.black_primary};
           font-size: 24px;
-          font-weight: 600;
+          font-weight: 700;
           line-height: 1.5;
           text-align: center;
           display: inline-block;
 
           &::after {
             content: "";
-            border-bottom: 4px solid ${props => props.theme.colors.black_primary};
+            background-color: ${props => props.theme.colors.black_primary};
+            border-radius: 4px;
             width: 69px;
+            height: 4px;
             display: inline-block;
             position: absolute;
             left: 0;

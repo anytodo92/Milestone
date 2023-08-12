@@ -3,6 +3,7 @@ import OurCourse from "../Common/OurCourse";
 import Register from "../Common/Register";
 import Requirement from "../Common/Requirement";
 import ShapeTop from "../Common/ShapeTop";
+import ShapeBottom from "../Common/ShapeBottom";
 import Reservation from "../Common/Reservation";
 import Contact from "../Common/Contact";
 
@@ -107,13 +108,23 @@ const Motrrad = () => {
       <Banner data={bannerData} />
       <OurCourse data={ourCourseData} />
       <Register />
-      <ShapeTop
-        bgColor="#f8f8f8"
+      <ShapeBottom
+        bgColor="#f4f4f4"
         fillColor="#fff"
         height={60}
       />
       <Requirement data={requirementData} />
+      <ShapeBottom
+        bgColor="#fff"
+        fillColor="#f4f4f4"
+        height={60}
+      />
       <Reservation data={reservationData} />
+      <ShapeBottom
+        bgColor="#f4f4f4"
+        fillColor="#fff"
+        height={60}
+      />
       <Contact />
     </MotrradWrapper>
   );

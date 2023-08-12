@@ -1,48 +1,29 @@
 import styled from "styled-components";
 
 export const TutorialWrapper = styled.div`
-  padding: 90px 0 20px;
+  padding: 65px 0 70px;
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
 
     display: flex;
     flex-direction: column;
-    column-gap: 100px;
+    column-gap: 80px;
     row-gap: 30px;
   }
 
   .article {
-    .title {
-      position: relative;
-      display: inline-block;
-
-      > h2 {
-        color: ${props => props.theme.colors.black_primary};
-        font-size: 35px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
-        line-height: 1.2;
-      }
-
-      > img {
-        position: absolute;
-        right: 0;
-        bottom: -30px;
-      }
-    }
-
     .desc {
-      padding-bottom: 40px;
+      padding-bottom: 30px;
       color: ${props => props.theme.colors.black_primary};
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       line-height: 1.4;
-      margin-top: 60px;
+      margin-top: 20px;
 
       a {
         color: ${props => props.theme.colors.green_primary};
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 600;
       }
       border-bottom: 1px solid #c5c5c5;
     }
@@ -62,7 +43,6 @@ export const TutorialWrapper = styled.div`
           > h5 {
             color: ${props => props.theme.colors.green_primary};
             font-size: 20px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
             font-weight: 700;
             line-height: 1.2;
           }
@@ -74,9 +54,9 @@ export const TutorialWrapper = styled.div`
 
         .detail {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 300;
-          line-height: 1.4;
+          line-height: 1.2;
           padding: 0;
           height: 0;
           overflow: hidden;
@@ -104,18 +84,17 @@ export const TutorialWrapper = styled.div`
       .container {
         width: 100%;
         height: 446px;
-        border-radius: 10px;
+        border-radius: 20px;
         overflow: hidden;
         max-width: unset;
       }
     }
 
     .info {
-      margin-top: 30px;
+      margin-top: 20px;
       > h5 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 26px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
+        font-size: 24px;
         font-weight: 700;
         line-height: 1.2;
       }
@@ -132,6 +111,7 @@ export const TutorialWrapper = styled.div`
 
         > a {
           color: ${props => props.theme.colors.green_primary};
+          font-weight: 600;
         }
       }
     }

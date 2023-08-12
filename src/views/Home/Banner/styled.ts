@@ -56,7 +56,7 @@ export const BannerWrapper = styled.div`
     .desc {
       font-size: 20px;
       font-weight: 700;
-      line-height: 1.2;
+      line-height: 1;
     }
 
     .title {
@@ -65,7 +65,7 @@ export const BannerWrapper = styled.div`
       > h1 {
         font-size: 40px;
         font-weight: 800;
-        line-height: 1.2;
+        line-height: 1;
       }
 
       > svg {
@@ -95,7 +95,7 @@ export const BannerWrapper = styled.div`
       .title {
         > svg {
           left: 150px;
-          top: 60px;
+          bottom: -5px;
         }
       }
     }
