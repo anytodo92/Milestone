@@ -75,8 +75,8 @@ export const RegisterWrapper = styled.div`
               display: inline-flex;
               align-items: center;
               color: #838383;
-              font-size: 18px;
-              font-weight: 400;
+              font-size: 16px;
+              font-weight: 300;
               line-height: 1.5;
             }
           }

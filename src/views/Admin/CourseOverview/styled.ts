@@ -41,9 +41,8 @@ export const CourseListWrapper = styled.div`
 
           > label {
             color: ${props => props.theme.colors.black_primary};
-            font-size: 20px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 600;
             line-height: 1.2;
             margin-top: 5px;
           }
@@ -53,9 +52,8 @@ export const CourseListWrapper = styled.div`
             border-radius: 10px;
             background-color: ${props => props.theme.colors.green_primary};
             color: ${props => props.theme.colors.white};
-            font-size: 18px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 600;
             line-height: 1.2;
           }
         }
@@ -87,8 +85,8 @@ export const CourseListWrapper = styled.div`
               display: inline-flex;
               align-items: center;
               color: #838383;
-              font-size: 18px;
-              font-weight: 400;
+              font-size: 16px;
+              font-weight: 300;
               line-height: 1.5;
             }
           }
@@ -132,8 +130,8 @@ export const CourseListWrapper = styled.div`
 
       .checkbox-wrapper {
         color: #838383;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 300;
         line-height: 1.5;
       }
     }
@@ -142,7 +140,6 @@ export const CourseListWrapper = styled.div`
     background-color: ${props => props.theme.colors.gray_primary};
     padding: 28px;
     border-radius: 10px;
-    font-family: ${props => props.theme.fonts.roboto_condensend};
     font-size: 22px;
     font-weight: 700;
     line-height: 26px;
@@ -199,9 +196,8 @@ export const CourseListWrapper = styled.div`
         background-color: ${props => props.theme.colors.green_primary};
         padding: 7px 30px;
         color: ${props => props.theme.colors.white};
-        font-size: 18px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 600;
         line-height: 1.2;
         display: inline-block;
       }
@@ -217,25 +213,24 @@ export const CourseListWrapper = styled.div`
 
         .txt {
           color: ${props => props.theme.colors.green_primary};
-          font-size: 18px;
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 600;
           line-height: 1.4;
         }
       }
 
       .info1 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 22px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 800;
         line-height: 1.2;
         text-align: right;
       }
 
       .info2 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 18px;
-        font-weight: 700;
+        font-size: 14px;
+        font-weight: 300;
         line-height: 1.4;
         text-align: right;
 
@@ -261,14 +256,13 @@ export const CourseListWrapper = styled.div`
           }
           .date {
             color: ${props => props.theme.colors.black_primary};
-            font-size: 22px;
-            font-family: ${props => props.theme.fonts.roboto_condensend};
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: 800;
             line-height: 1.2;
           }
           .time {
             color: ${props => props.theme.colors.black_primary};
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 300;
             line-height: 1.4;
           }
@@ -291,7 +285,7 @@ export const CourseListWrapper = styled.div`
           .col {
             > p {
               color: ${props => props.theme.colors.black_primary};
-              font-size: 18px;
+              font-size: 16px;
               font-weight: 300;
               line-height: 1.4;
               &:nth-child(2) {
@@ -299,9 +293,8 @@ export const CourseListWrapper = styled.div`
               }
               &.bold {
                 color: ${props => props.theme.colors.black_primary};
-                font-family: ${props => props.theme.fonts.roboto_condensend};
-                font-size: 22px;
-                font-weight: 700;
+                font-size: 18px;
+                font-weight: 800;
                 line-height: 1.2;
               }
             }
@@ -315,9 +308,8 @@ export const CourseListWrapper = styled.div`
               height: 46px;
               border-radius: 46px;
               color: ${props => props.theme.colors.green_primary};
-              font-size: 18px;
-              font-family: ${props => props.theme.fonts.roboto_condensend};
-              font-weight: 700;
+              font-size: 16px;
+              font-weight: 600;
               line-height: 1.2;
               padding: 0 30px;
               cursor: pointer;
@@ -339,11 +331,10 @@ export const CourseListWrapper = styled.div`
           height: 46px;
           border-radius: 46px;
           color: ${props => props.theme.colors.white};
-          font-size: 18px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 600;
           line-height: 1.2;
-          padding: 0 55px;
+          padding: 0 40px;
           cursor: pointer;
           border: 0;
           outline: 0;
@@ -450,8 +441,7 @@ export const CourseListWrapper = styled.div`
         display: none;
         margin-top: 50px;
         .title {
-          font-size: 26px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
+          font-size: 24px;
           font-weight: 700;
           line-height: 1.2;
           color: ${props => props.theme.colors.green_primary};
@@ -472,8 +462,8 @@ export const CourseListWrapper = styled.div`
       height: 46px;
       border-radius: 46px;
       color: ${props => props.theme.colors.green_primary};
-      font-size: 22px;
-      font-weight: 700;
+      font-size: 16px;
+      font-weight: 600;
       line-height: 1.4;
       cursor: pointer;
       border: 0;
@@ -502,6 +492,10 @@ export const CourseListWrapper = styled.div`
       margin-top: 10px;
       display: flex;
       justify-content: flex-start;
+
+      button {
+        padding: 0 35px;
+      }
     }
     .check {
       display: grid;
@@ -514,7 +508,7 @@ export const CourseListWrapper = styled.div`
         
         .txt {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 300;
           line-height: 1.4;
           margin-top: 15px;
@@ -606,7 +600,7 @@ export const CourseListWrapper = styled.div`
       .form {
         row-gap: 10px;
         .row10 {
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 0.8fr 0.8fr 1fr;
         }
       }
       .check {

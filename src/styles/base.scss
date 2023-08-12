@@ -130,7 +130,7 @@ a.anim-link {
           color: #777;
           margin-top: 5px;
 
-          &:placeholder {
+          &::placeholder {
             color: #a0a0a0;
           }
         }
