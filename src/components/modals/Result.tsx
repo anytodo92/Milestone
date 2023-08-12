@@ -13,28 +13,15 @@ const ResultWrapper = styled.div`
     position: relative;
     .category {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 20px;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
-      font-weight: 700;
+      font-size: 24px;
+      font-weight: 800;
       line-height: 1.2;
     }
 
     .title {
-      display: inline-block;
-      position: relative;
-      > h2 {
-        color: ${props => props.theme.colors.black_primary};
-        font-size: 45px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
-        line-height: 1.2;
-      }
-      > img {
-        position: absolute;
-        right: -20px;
-        bottom: -40px;
-      }
+      margin-top: 10px;
     }
+
     .btn-close {
       position: absolute;
       cursor: pointer;
@@ -67,11 +54,10 @@ const ResultWrapper = styled.div`
     border-radius: 20px;
     background-color: ${props => props.theme.colors.green_primary};
     color: ${props => props.theme.colors.white};
-    font-size: 18px;
-    font-family: ${props => props.theme.fonts.roboto_condensend};
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 600;
     line-height: 1.2;
-    padding: 0 46px;
+    padding: 0 43px;
     margin-top: 30px;
     cursor: pointer;
   }
@@ -92,10 +78,7 @@ const Result = ({ opened, onClose }: ResultProps): JSX.Element => {
       <ResultWrapper>
         <div className="header">
           <p className="category">Unverbindliche Anfrage</p>
-          <div className="title">
-            <h2>Vielen Dank für deine Anfrage</h2>
-            <img src={Images.UnderlineGreen} alt="" />
-          </div>
+          <h2 className="title">Vielen Dank für deine Anfrage</h2>
           <button className="btn-close" onClick={() => {
             (document.querySelector("body") as any).style.overflow = "unset";
             onClose();

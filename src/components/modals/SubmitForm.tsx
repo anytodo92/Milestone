@@ -8,34 +8,21 @@ const SubmitFormWrapper = styled.div`
   
   background-color: ${props => props.theme.colors.white};
   border-radius: 30px;
-  padding: 30px 40px;
+  padding: 36px 43px;
 
   > .header{
     position: relative;
     .category {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 20px;
-      font-family: ${props => props.theme.fonts.roboto_condensend};
-      font-weight: 700;
+      font-size: 24px;
+      font-weight: 800;
       line-height: 1.2;
     }
 
     .title {
-      display: inline-block;
-      position: relative;
-      > h2 {
-        color: ${props => props.theme.colors.black_primary};
-        font-size: 45px;
-        font-family: ${props => props.theme.fonts.roboto_condensend};
-        font-weight: 700;
-        line-height: 1.2;
-      }
-      > img {
-        position: absolute;
-        right: -20px;
-        bottom: -25px;
-      }
+      margin-top: 10px;
     }
+
     .btn-close {
       position: absolute;
       cursor: pointer;
@@ -54,10 +41,9 @@ const SubmitFormWrapper = styled.div`
   }
 
   .help-text {
-   margin-top: 50px;
+    margin-top: 50px;
     color: #333;
     font-size: 18px;
-    font-family: ${props => props.theme.fonts.roboto_condensend};
     font-weight: 700;
     line-height: 1.5;
 
@@ -67,7 +53,7 @@ const SubmitFormWrapper = styled.div`
   }
   
   .yform {
-    margin-top: 10px;
+    margin-top: 30px;
 
     max-height: 420px;
     overflow-y: auto;
@@ -109,7 +95,7 @@ const SubmitFormWrapper = styled.div`
     .types {
       .cate {
         color: ${props => props.theme.colors.green_primary};
-        font-size: 18px;
+        font-size: 16px;
         font-family: ${props => props.theme.fonts.roboto_condensend};
         font-weight: 700;
         line-height: 1.5;
@@ -119,7 +105,7 @@ const SubmitFormWrapper = styled.div`
         color: #838383;
         font-size: 16px;
         font-weight: 300;
-        line-height: 1.4;
+        line-height: 1.5;
       }
 
       .row1 {
@@ -140,6 +126,9 @@ const SubmitFormWrapper = styled.div`
       margin-top: 15px;
       > button {
         border-radius: 15px;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0 43px;
       }
     }
 
@@ -153,8 +142,6 @@ const SubmitFormWrapper = styled.div`
         .col {
           .row1 {
             flex-direction: row;
-
-            
           }
         }
       }
@@ -187,10 +174,7 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
       <SubmitFormWrapper>
         <div className="header">
           <p className="category">Unverbindliche Anfrage</p>
-          <div className="title">
-            <h2>Probelektion: CHF 55.-</h2>
-            <img src={Images.UnderlineGreen} alt="" />
-          </div>
+          <h2 className="title">Probelektion: CHF 55.-</h2>
           <button className="btn-close" onClick={() => {
             (document.querySelector("body") as any).style.overflow = "unset";
             onClose();
@@ -198,7 +182,6 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
             <img src={Icons.Close_1} alt="" />
           </button>
         </div>
-        <p className="help-text"></p>
         <div className="yform">
           <div className="form">
             <div className="col">
