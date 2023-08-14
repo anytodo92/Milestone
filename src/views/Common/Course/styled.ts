@@ -9,7 +9,7 @@ export const CourseWrapper = styled.div`
 
   .desc {
     max-width: 1052px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 19px;
     color: ${props => props.theme.colors.black_primary};
@@ -21,9 +21,8 @@ export const CourseWrapper = styled.div`
     grid-template-columns: 1fr;
 
     .one {
-      margin-top: 20px;
+      margin-top: 30px;
       .wrapper {
-        margin-top: 50px;
         background-color: #dbe8de;
         border-radius: 10px;
         
@@ -49,13 +48,14 @@ export const CourseWrapper = styled.div`
 
         .pic {
           height: 200px;
+          display: none;
         }
         .article {
           position: relative;
           padding: 35px 35px 130px;
 
           > h5 {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 800;
             line-height: 1.2;
             margin-top: 15px;
@@ -63,17 +63,17 @@ export const CourseWrapper = styled.div`
           }
 
           .desc {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
             line-height: 1.2;
             color: ${props => props.theme.colors.black_primary};
           }
 
           .detail {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
             line-height: 1.4;
-            margin-top: 25px;
+            margin-top: 80px;
             color: ${props => props.theme.colors.black_primary};
 
             > ul {
@@ -90,7 +90,7 @@ export const CourseWrapper = styled.div`
             border-radius: 46px;
             background-color: ${props => props.theme.colors.green_primary};
             color: ${props => props.theme.colors.white};
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 600;
             line-height: 1.2;
             padding: 0 23px;
@@ -113,6 +113,7 @@ export const CourseWrapper = styled.div`
             border-radius: 0 0 10px 10px;
             overflow: hidden;
             position: relative;
+            display: block;
             > img {
               width: 100%;
               height: 100%;
@@ -128,7 +129,7 @@ export const CourseWrapper = styled.div`
           }
 
           .article {
-            padding: 60px 35px 50px;
+            padding: 60px 35px 0;
             background-color: ${props => props.theme.colors.green_primary};
             border-radius: 10px 10px 0 0;
             > h5, .detail, .desc {
@@ -144,7 +145,7 @@ export const CourseWrapper = styled.div`
             }
 
             > button {
-              margin-top: 40px;
+              margin-top: 290px;
               background-color: ${props => props.theme.colors.white};
               color: ${props => props.theme.colors.black_primary};
             }
@@ -167,16 +168,54 @@ export const CourseWrapper = styled.div`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
-    .title {
-      > h2 {
-        font-size: 45px;
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    .desc {
+      font-size: 16px;
+    }
+
+    .list {
+      .one {
+        .wrapper {
+          .article {
+            > h5 {
+              font-size: 24px;
+            }
+
+            .desc {
+              font-size: 18px;
+            }
+
+            .detail {
+              font-size: 16px;
+            }
+
+            > button {
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .list {
       grid-template-columns: 1fr 1fr 1fr;
 
       .one {
+        .wrapper {
+          margin-top: 50px;
+
+          .pic {
+            display: block;
+          }
+
+          .article {
+            .detail {
+              margin-top: 25px;
+            }
+          }
+        }
         &.spec {
           .wrapper {
             position: absolute;
@@ -190,6 +229,13 @@ export const CourseWrapper = styled.div`
                 object-fit: cover;
                 object-position: 0 0;
                 top: -5px;
+              }
+            }
+
+            .article {
+              padding: 60px 35px 50px;
+              > button {
+                margin-top: 40px;
               }
             }
           }

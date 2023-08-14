@@ -16,9 +16,13 @@ body {
 
 h2.title {
   font-weight: 800;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 1;
   color: #0c0c0c;
+
+  @media (min-width: 570px) {
+    font-size: 40px;
+  }
 }
 
 a.anim-link {
@@ -126,7 +130,7 @@ a.anim-link {
           height: 52px;
           background-color: #fff;
           padding: 0 12px;
-          font-size: 16px;
+          font-size: 14px;
           color: #777;
           margin-top: 5px;
 
@@ -152,7 +156,7 @@ a.anim-link {
       border-radius: 46px;
       background-color: #84af8c;
       color: #fff;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 600;
       line-height: 1.2;
       padding: 0 80px;
@@ -165,9 +169,32 @@ a.anim-link {
   .desc {
     color: #646464;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     margin-top: 20px;
+  }
+
+  @media (min-width: 570px) {
+
+    .yform {
+      .form {
+        .col {
+          .group {
+            input, select, textarea {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .submit {
+      button {
+        font-size: 16px;
+      }
+    }
+    .desc {
+      font-size: 16px;
+    }
   }
 }
 

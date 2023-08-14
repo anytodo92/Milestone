@@ -48,6 +48,10 @@ const Intro = (): JSX.Element => {
             <div className="desc">
               Wie begleiten dich von A - Z und kümmern uns um alle Belangen auf dem Weg zu deinem Führerschein. 
             </div>
+            <div className="pic">
+              <div className="bg1" style={{ backgroundImage: `url(${Images.Thumb_3})` }}></div>
+              <div className="bg2" style={{ backgroundImage: `url(${Images.Thumb_1})` }}></div>
+            </div>
             <div className="panel">
               <div className="list">
               {items.map((data, index) =>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ReservationWrapper = styled.div`
-  padding: 57px 0 40px;
+  padding: 0px;
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
 
@@ -13,7 +13,7 @@ export const ReservationWrapper = styled.div`
 
   .pic {
     position: relative;
-    margin-top: 70px;
+    margin-top: 30px;
     padding-bottom: 70px;
 
     .bg1, .bg2 {
@@ -43,19 +43,19 @@ export const ReservationWrapper = styled.div`
         padding: 35px 35px 0 35px;
         
         > h5 {
-          font-size: 24px;
+          font-size: 22px;
           font-weight: 700;
           line-height: 1.2;
           margin-top: 30px;
         }
         .desc {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;        
           line-height: 1.2;
           margin-top: 20px;
         }
         .detail {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           line-height: 1.4;
           margin-top: 15px;
@@ -67,12 +67,31 @@ export const ReservationWrapper = styled.div`
           outline: 0;
           background-color: ${props => props.theme.colors.green_primary};
           color: ${props => props.theme.colors.white};
-          font-size: 18px;
+          font-size: 12px;
           font-weight: 600;
           line-height: 1.2;
           padding: 0 23px;
           margin-top: 30px;
           cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    .article {
+      .panel {
+        .contt {
+          > h5 {
+            font-size: 24px;
+          }
+          .desc, detail {
+            font-size: 16px;
+          }
+
+          > button {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -110,13 +129,7 @@ export const ReservationWrapper = styled.div`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
-    .article {
-      .title {
-        > h2 {
-          font-size: 45px;
-        }
-      }
-    }
+    padding: 57px 0 40px;
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {

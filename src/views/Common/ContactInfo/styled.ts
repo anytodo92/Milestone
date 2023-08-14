@@ -31,7 +31,7 @@ export const ContactInfoWrapper = styled.div`
         > h3 {
           position: relative;
           color: ${props => props.theme.colors.green_primary};
-          font-size: 40px;
+          font-size: 25px;
           font-weight: 700;
           letter-spacing: 0.8px;
         }
@@ -39,11 +39,27 @@ export const ContactInfoWrapper = styled.div`
 
       > p {
         color: ${props => props.theme.colors.black};
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
         line-height: 28px;
         letter-spacing: -0.4px;
         margin-top: 10px;
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    .list {
+      .one {
+        .title {
+          > h3 {
+            font-size: 40px;
+          }
+        }
+
+        > p {
+          font-size: 16px;
+        }
       }
     }
   }

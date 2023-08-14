@@ -8,7 +8,7 @@ export const TeamWrapper = styled.div`
 
     > .desc {
       font-weight: 300;
-      font-size: 18px;
+      font-size: 14px;
       line-height: 1.2;
       color: ${props => props.theme.colors.black_primary};
       margin-top: 20px;
@@ -71,7 +71,7 @@ export const TeamWrapper = styled.div`
         > h2 {
           position: relative;
           color: ${props => props.theme.colors.black_primary};
-          font-size: 24px;
+          font-size: 22px;
           font-weight: 700;
           line-height: 1.5;
           margin-top: 20px;
@@ -90,7 +90,7 @@ export const TeamWrapper = styled.div`
 
         > .desc {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           line-height: 1.4;
           text-align: left;
@@ -99,7 +99,7 @@ export const TeamWrapper = styled.div`
 
         > .detail {
           color: ${props => props.theme.colors.black};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           line-height: 1.4;
           height: 0px;
@@ -114,7 +114,7 @@ export const TeamWrapper = styled.div`
 
         > .email {
           color: ${props => props.theme.colors.green_primary};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;
           line-height: 1.4;
           margin-top: 20px;
@@ -122,14 +122,14 @@ export const TeamWrapper = styled.div`
 
         > .phone {
           color: ${props => props.theme.colors.green_primary};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;
           line-height: 1.4;
         }
 
         > button {
           color: ${props => props.theme.colors.green_primary};
-          font-size: 16px;
+          font-size: 12px;
           font-weight: 600;
           line-height: 1.4;
           display: flex;
@@ -137,7 +137,7 @@ export const TeamWrapper = styled.div`
           column-gap: 10px;
           margin-top: 30px;
           border: 0;
-          ouline: 0;
+          outline: 0;
           cursor: pointer;
 
           > svg {
@@ -161,7 +161,7 @@ export const TeamWrapper = styled.div`
       border-radius: 46px;
       background-color: ${props => props.theme.colors.green_primary};
       color: ${props => props.theme.colors.white};
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 600;
       line-height: 1.2;
       padding: 0 23px;
@@ -192,12 +192,37 @@ export const TeamWrapper = styled.div`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
-    .title {
-      > h2 {
-        font-size: 45px;
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    .content {
+      .desc {
+        font-size: 16px;
       }
     }
+    .list {
+      .one {
+        .wrapper {
+          > h2 {
+            font-size: 24px;
+          }
+
+          > .desc, 
+          > .detail,
+          > .email,
+          > .phone
+          > button {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .buttons {
+      > a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .list {
       grid-template-columns: 1fr 1fr 1fr 1fr;
 

@@ -15,7 +15,7 @@ export const TutorialWrapper = styled.div`
     .desc {
       padding-bottom: 30px;
       color: ${props => props.theme.colors.black_primary};
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       line-height: 1.4;
       margin-top: 20px;
@@ -42,7 +42,7 @@ export const TutorialWrapper = styled.div`
 
           > h5 {
             color: ${props => props.theme.colors.green_primary};
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             line-height: 1.2;
           }
@@ -54,7 +54,7 @@ export const TutorialWrapper = styled.div`
 
         .detail {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           line-height: 1.2;
           padding: 0;
@@ -94,7 +94,7 @@ export const TutorialWrapper = styled.div`
       margin-top: 20px;
       > h5 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
         line-height: 1.2;
       }
@@ -105,13 +105,44 @@ export const TutorialWrapper = styled.div`
         }
         
         color: ${props => props.theme.colors.black_primary};
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
         line-height: 1.4;
 
         > a {
           color: ${props => props.theme.colors.green_primary};
           font-weight: 600;
+        }
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    .article {
+      .desc {
+        font-size: 16px;
+      }
+
+      .accordion {
+        .one {
+          .subject {
+            > h5 {
+              font-size: 20px;
+            }
+          }
+          .detail {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .location {
+      .info {
+        > h5 {
+          font-size: 24px;
+        }
+        > p {
+          font-size: 16px;
         }
       }
     }

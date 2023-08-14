@@ -35,15 +35,7 @@ export const ContactFormWrapper = styled.div`
       margin-top: 20px;
     }
   }
-
-  @media (min-width: ${props => props.theme.breakpoints.tablet_md}) {
-    .title {
-      > img {
-        transform: translate(53%);
-      }
-    }
-  }
-
+  
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .yform {
       .form {

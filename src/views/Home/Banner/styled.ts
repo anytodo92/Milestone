@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import { Images } from "../../../utils/assets";
 export const BannerWrapper = styled.div`
-  
-  background-color: ${props => props.theme.colors.green_primary};
   .bg {
-    display: none;
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -27,11 +24,10 @@ export const BannerWrapper = styled.div`
     }
 
     .lt {
-      display: none;
       position: absolute;
       left: 0;
       top: 0;
-      width: 35%;
+      width: 85%;
       height: 100%;
       background-image: url(${Images.Bg_7});
       background-position: 0 0;
@@ -43,8 +39,11 @@ export const BannerWrapper = styled.div`
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
     position: relative;
-    padding: 140px 0 30px;
-
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
   }
 
   .summary {  
@@ -63,21 +62,21 @@ export const BannerWrapper = styled.div`
       position: relative;
       margin-top: 15px;
       > h1 {
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 800;
-        line-height: 1;
+        line-height: 1.2;
       }
 
       > svg {
         position: absolute;
-        left: 150px;
+        left: 85px;
         bottom: -10px;
       }
     } 
 
     .detail {
-      font-size: 16px;
-      font-weight: 400;
+      font-size: 14px;
+      font-weight: 300;
       line-height: 1.2;
       margin-top: 40px;
       max-width: 529px;
@@ -90,13 +89,23 @@ export const BannerWrapper = styled.div`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.tablet}) {
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
     .summary {
       .title {
+        > h1 {
+          font-size: 40px;
+          line-height: 1;
+        }
+
         > svg {
           left: 150px;
-          bottom: -5px;
+          bottom: -10px;
         }
+      }
+
+      .detail {
+        font-size: 16px;
+        font-weight: 400;
       }
     }
   }
@@ -104,12 +113,7 @@ export const BannerWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     height: 100vh;
     background-color: transparent;
-    .content {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 0;
-    }
+    
     .bg {
       display: block;
 
@@ -121,6 +125,8 @@ export const BannerWrapper = styled.div`
 
     .summary {
       width: 65%;
+
+      
     }
 
   }

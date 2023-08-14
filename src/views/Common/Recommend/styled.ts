@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const RecommendWrapper = styled.div`
-  padding: 40px 0 80px;
+  padding: 40px 0 ;
   background-color: ${props => props.theme.colors.gray_primary};
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
 
     > .desc {
       font-weight: 300;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.2;
       color: ${props => props.theme.colors.black_primary};
       margin-top: 20px;
@@ -66,7 +66,7 @@ export const RecommendWrapper = styled.div`
         > h2 {
           position: relative;
           color: ${props => props.theme.colors.black_primary};
-          font-size: 24px;
+          font-size: 22px;
           font-weight: 700;
           line-height: 1.5;
           text-align: center;
@@ -88,7 +88,7 @@ export const RecommendWrapper = styled.div`
         > .desc {
           color: #5E5E5E;
           text-align: center;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           line-height: 1.2;
           margin-top: 20px;
@@ -106,7 +106,7 @@ export const RecommendWrapper = styled.div`
             border-radius: 46px;
             background-color: ${props => props.theme.colors.green_primary};
             color: ${props => props.theme.colors.white};
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 600;
             line-height: 1.2;
             padding: 0 23px;
@@ -130,12 +130,34 @@ export const RecommendWrapper = styled.div`
     
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.tablet_md}) {
-    .title {
-      > img {
-        transform: translate(50%);
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    .content {
+      > .desc {
+        font-size: 16px;
       }
     }
+    .list {
+      .one {
+        .article {
+          > h2 {
+            font-size: 24px;
+          }
+
+          > .desc {
+            font-size: 16px;
+          }
+
+          .buttons {
+            > a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet_md}) {
     .list {
       .one {
         .pic {
@@ -154,6 +176,7 @@ export const RecommendWrapper = styled.div`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    padding: 40px 0 80px;
     .title {
       > h2 {
         font-size: 45px;

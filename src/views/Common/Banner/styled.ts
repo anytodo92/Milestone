@@ -27,21 +27,21 @@ export const BannerWrapper = styled.section`
     max-width: 877px;
     > h1 {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 40px;
+      font-size: 25px;
       font-weight: 800;
       line-height: 1.2;
     }
 
     > .desc {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 700;
       line-height: 1.2;
     }
 
     > .detail {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       line-height: 1.2;
       margin-top: 35px;
@@ -64,12 +64,29 @@ export const BannerWrapper = styled.section`
       border-radius: 46px;
       background-color: ${props => props.theme.colors.green_primary};
       color: ${props => props.theme.colors.white};
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 600;
       line-height: 1.2;
       padding: 0 40px;
       margin-top: 35px;
       cursor: pointer;
+    }
+  }
+
+  @media(min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    .summary {
+      > h1 {
+        font-size: 40px;
+      }
+      > .desc {
+        font-size: 20px;
+      }
+      > .detail {
+        font-size: 16px;
+      }
+      > a {
+        font-size: 16px;
+      }
     }
   }
 

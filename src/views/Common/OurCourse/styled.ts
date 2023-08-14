@@ -14,7 +14,7 @@ export const OurCourseWrapper = styled.div`
   .article {
     .desc {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       line-height: 1.2;
       margin-top: 30px;
@@ -28,7 +28,7 @@ export const OurCourseWrapper = styled.div`
       .one {
         > h5 {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 24px;
+          font-size: 22px;
           font-family: ${props => props.theme.fonts.roboto_condensend};
           font-weight: 600;
           line-height: 120%;
@@ -36,7 +36,7 @@ export const OurCourseWrapper = styled.div`
 
         > .detail {
           color: ${props => props.theme.colors.black};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           line-height: 1.4;
           margin-top: 10px;
@@ -51,7 +51,7 @@ export const OurCourseWrapper = styled.div`
 
     .txt {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 300;
       line-height: 1.2;
       margin-top: 15px;
@@ -62,7 +62,7 @@ export const OurCourseWrapper = styled.div`
     margin-top: 20px; 
     > h4 {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 700;
       line-height: 1.2;
     }
@@ -108,7 +108,7 @@ export const OurCourseWrapper = styled.div`
         > h5 {
           color: ${props => props.theme.colors.black_primary};
           text-align: center;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;
           line-height: 1.4;
         }
@@ -116,12 +116,41 @@ export const OurCourseWrapper = styled.div`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.tablet_md}) {
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
     .article {
-      .title {
-        > img {
-          transform: translate(50%);
+      .desc {
+        font-size: 16px;
+      }
+
+      .list {
+        .one {
+          > h5 {
+            font-size: 24px;
+          }
+
+          > .detail {
+            font-size: 16px;
+          }
         }
+      }
+
+      .txt {
+        font-size: 14px;
+      }
+    }
+
+    .info {
+      > h4 {
+        font-size: 24px;
+      }
+
+      .wrapper {
+        .control {
+          > h5 {
+            font-size: 16px;
+          }
+        }
+
       }
     }
   }
