@@ -19,18 +19,18 @@ export const FooterWrapper = styled.footer`
         display: flex;
         flex-direction: column;
         column-gap: 25px;
-        row-gap: 30px;
+        row-gap: 25px;
         .col {
           flex: unset;
           > p, a.link {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
             line-height: 1.5;
             color: ${props => props.theme.colors.white};
           }
 
           > h5 {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 600;
             padding-bottom: 20px;
             color: ${props => props.theme.colors.white};
@@ -53,10 +53,34 @@ export const FooterWrapper = styled.footer`
       .content {
         display: flex;
         height: 60px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
         line-height: 1.5;
         align-items: center;
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    > section {
+      &:first-child {
+        .content {
+          .col {
+            > p, a.link {
+              font-size: 16px;
+            }
+
+            > h5 {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        .content {
+          font-size: 16px;
+        }
       }
     }
   }

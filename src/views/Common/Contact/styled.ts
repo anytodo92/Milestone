@@ -9,18 +9,18 @@ export const ContactWrapper = styled.div`
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 30px;
     column-gap: 70px;
   }
 
-  .pic {
-    align-self: center;
-  }
-
   .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     > .desc {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       line-height: 1.2;
       margin-top: 30px;
@@ -31,7 +31,7 @@ export const ContactWrapper = styled.div`
       border-radius: 46px;
       background-color: ${props => props.theme.colors.green_primary};
       color: ${props => props.theme.colors.white};
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 600;
       line-height: 1.2;
       padding: 0 40px;
@@ -43,12 +43,14 @@ export const ContactWrapper = styled.div`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.tablet_md}) {
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
     .article {
-      .title {
-        > img {
-          transform: translate(20%);
-        }
+      > .desc {
+        font-size: 16px
+      }
+
+      > a {
+        font-size: 16px;
       }
     }
   }
@@ -57,13 +59,8 @@ export const ContactWrapper = styled.div`
     .content {
       flex-direction: row;
     }
-
     .article {
-      .title {
-        > h2 {
-          font-size: 45px;
-        }
-      }
+      align-items: flex-start;
     }
   }
 

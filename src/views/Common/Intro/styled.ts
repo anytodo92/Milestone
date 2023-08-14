@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const IntroWrapper = styled.div`
   background-color: ${props => props.theme.colors.gray_primary};
-  padding: 140px 0 0;
+  padding: 40px 0 0;
 
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
@@ -17,9 +17,10 @@ export const IntroWrapper = styled.div`
   }
 
   .pic {
+    display: none;
     position: relative;
     margin-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 
     .bg1, .bg2 {
       background-position: center center;
@@ -28,15 +29,15 @@ export const IntroWrapper = styled.div`
       background-size: cover;
     }
     .bg1 {
-      width: 209px;
-      height: 303px;
+      width: 182px;
+      height: 264px;
     }
 
     .bg2 {
-      width: 225px;
-      height: 300px;
-      margin-top: -335px;
-      margin-left: 136px;
+      width: 195px;
+      height: 261px;
+      margin-top: -295px;
+      margin-left: 115px;
     }
   }
 
@@ -44,10 +45,14 @@ export const IntroWrapper = styled.div`
     > .desc {
       margin-top: 20px;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.2;
       max-width: 517px;
       color: ${props => props.theme.colors.black_primary};
+    }
+
+    .pic {
+      display: block;
     }
 
     .panel {
@@ -78,7 +83,7 @@ export const IntroWrapper = styled.div`
             }
 
             > h5 {
-              font-size: 24px;
+              font-size: 22px;
               font-weight: 600;
               color: ${props => props.theme.colors.black_primary};
               line-height: 1.2;
@@ -89,11 +94,49 @@ export const IntroWrapper = styled.div`
           }
           
           > .desc {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
             color: ${props => props.theme.colors.black_primary};
             line-height: 1.4;
             margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    padding: 140px 0 0;
+    .pic {
+      padding-bottom: 70px;
+      .bg1 {
+        width: 209px;
+        height: 303px;
+      }
+
+      .bg2 {
+        width: 225px;
+        height: 300px;
+        margin-top: -335px;
+        margin-left: 136px;
+      }
+    }
+    .article {
+      .desc {
+        font-size: 16px;
+      }
+
+      .panel {
+        .list {
+          .one {
+            .top {
+              > h5 {
+                font-size: 24px;
+              }
+            }
+            .desc {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -137,26 +180,38 @@ export const IntroWrapper = styled.div`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
-    .article {
-      > .title {
-        > h2 {
-          font-size: 45px;
-        }
-      }
-    }
-  }
   
   @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
     .wrapper {
       flex-direction: row;
     }
     .pic {
+      display: block;
       padding-bottom: 0;
+
+      .bg1 {
+        width: 349px;
+        height: 506px;
+      }
+
+      .bg2 {
+        width: 375px;
+        height: 500px;
+        margin-top: -558px;
+        margin-left: 227px;
+      }
     }
-    .panel {      
-      max-width: unset;
+
+    .article {
+      .panel {      
+        max-width: unset;
+      }
+
+      .pic {
+        display: none;
+      }
     }
+    
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {

@@ -44,7 +44,7 @@ export const RequirementWrapper = styled.div`
     .desc {
       padding-bottom: 40px;
       color: ${props => props.theme.colors.black_primary};
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       line-height: 1.4;
       margin-top: 25px;
@@ -70,7 +70,7 @@ export const RequirementWrapper = styled.div`
 
           > h5 {
             color: ${props => props.theme.colors.green_primary};
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             line-height: 1.2;
           }
@@ -82,7 +82,7 @@ export const RequirementWrapper = styled.div`
 
         .detail {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           line-height: 1.4;
           padding: 0;
@@ -106,11 +106,22 @@ export const RequirementWrapper = styled.div`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.tablet_md}) {
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
     .article {
-      .title {
-        > img {
-          transform: translate(50%);
+      .desc {
+        font-size: 16px;
+      }
+
+      .accordion {
+        .one {
+          .subject {
+            > h5 {
+              font-size: 20px;
+            }
+          }
+          .detail {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -119,14 +130,6 @@ export const RequirementWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .content {
       flex-direction: row;
-    }
-
-    .article {
-      .title {
-        > h2 {
-          font-size: 45px;
-        }
-      }
     }
   }
 

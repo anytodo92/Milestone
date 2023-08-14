@@ -31,7 +31,7 @@ export const RegisterWrapper = styled.div`
 
           > label {
             color: ${props => props.theme.colors.black_primary};
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             line-height: 1.2;
             margin-top: 5px;
@@ -42,7 +42,7 @@ export const RegisterWrapper = styled.div`
             border-radius: 10px;
             background-color: ${props => props.theme.colors.green_primary};
             color: ${props => props.theme.colors.white};
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             line-height: 1.2;
           }
@@ -75,7 +75,7 @@ export const RegisterWrapper = styled.div`
               display: inline-flex;
               align-items: center;
               color: #838383;
-              font-size: 16px;
+              font-size: 14px;
               font-weight: 300;
               line-height: 1.5;
             }
@@ -116,7 +116,7 @@ export const RegisterWrapper = styled.div`
     background-color: ${props => props.theme.colors.gray_primary};
     padding: 28px;
     border-radius: 10px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 26px;
     color: ${props => props.theme.colors.black_primary};
@@ -176,7 +176,7 @@ export const RegisterWrapper = styled.div`
         background-color: ${props => props.theme.colors.green_primary};
         padding: 7px 30px;
         color: ${props => props.theme.colors.white};
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         line-height: 1.2;
         display: inline-block;
@@ -193,7 +193,7 @@ export const RegisterWrapper = styled.div`
 
         .txt {
           color: ${props => props.theme.colors.green_primary};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;
           line-height: 1.4;
         }
@@ -201,7 +201,7 @@ export const RegisterWrapper = styled.div`
 
       .info1 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 800;
         line-height: 1.2;
         text-align: right;
@@ -209,7 +209,7 @@ export const RegisterWrapper = styled.div`
 
       .info2 {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 300;
         line-height: 1.4;
         text-align: right;
@@ -232,13 +232,13 @@ export const RegisterWrapper = styled.div`
           }
           .date {
             color: ${props => props.theme.colors.black_primary};
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 800;
             line-height: 1.2;
           }
           .time {
             color: ${props => props.theme.colors.black_primary};
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
             line-height: 1.4;
           }
@@ -251,7 +251,7 @@ export const RegisterWrapper = styled.div`
           border-radius: 46px;
           background-color: ${props => props.theme.colors.green_primary};
           color: ${props => props.theme.colors.white};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;
           line-height: 1.2;
           padding: 0 40px;
@@ -355,7 +355,7 @@ export const RegisterWrapper = styled.div`
         display: none;
         margin-top: 35px;
         .title {
-          font-size: 24px;
+          font-size: 22px;
           font-weight: 700;
           line-height: 1.2;
           color: ${props => props.theme.colors.green_primary};
@@ -379,7 +379,7 @@ export const RegisterWrapper = styled.div`
       height: 46px;
       border-radius: 46px;
       color: ${props => props.theme.colors.green_primary};
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 600;
       line-height: 1.4;
       cursor: pointer;
@@ -425,7 +425,7 @@ export const RegisterWrapper = styled.div`
         
         .txt {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           line-height: 1.4;
           margin-top: 15px;
@@ -439,12 +439,98 @@ export const RegisterWrapper = styled.div`
     }
   }
 
-  @media(min-width: ${props => props.theme.breakpoints.tablet_md}) {
-    .title {
-      > img {
-        transform: translate(50%);
+  @media(min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    .filter {
+      .box {
+        .selected-wrapper {
+          .tags {
+            > label {
+              font-size: 16px;
+            }
+
+            .item {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .all-wrapper {
+          .list1 {
+            .one {
+              > label {
+                font-size: 16px;
+              }
+            }
+          }
+        }
       }
     }
+    .no-list {
+      font-size: 22px;
+    }
+    .list {
+      > .one {
+        .mark {
+          font-size: 16px;
+        }
+
+        .address {
+          .txt {
+            font-size: 16px;
+          }
+        }
+
+        .info1 {
+          font-size: 18px;
+        }
+
+        .info2 {
+          font-size: 14px;
+        }
+
+        .hist {
+          > .one {
+            .date {
+              font-size: 18px;
+            }
+            .time {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .buttons {
+          > button {
+            font-size: 16px;
+          }
+        }
+
+        .row3 {
+          .title {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .more {
+      > button {
+        font-size: 16px;
+      }
+    }
+
+    .yform {
+      .check {
+        .check-wrapper {
+          .txt {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media(min-width: ${props => props.theme.breakpoints.tablet_md}) {
     .list {
       > .one {
         .mobile {
@@ -474,11 +560,6 @@ export const RegisterWrapper = styled.div`
   }
 
   @media(min-width: ${props => props.theme.breakpoints.desktop}) {
-    .title {
-      > h2 {
-        font-size: 45px;
-      }
-    }
     .filter {
       flex-direction: row;
 

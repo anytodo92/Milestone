@@ -20,7 +20,7 @@ export const PriceWrapper = styled.div`
 
       .desc {
         color: ${props => props.theme.colors.black_primary};
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         line-height: 1.2;
       }
@@ -32,14 +32,14 @@ export const PriceWrapper = styled.div`
 
         > h5 {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 800;
           line-height: 1.2;
         }
 
         > p {
           color: ${props => props.theme.colors.black_primary};
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           line-height: 1.2;
         }
@@ -47,21 +47,26 @@ export const PriceWrapper = styled.div`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.tablet_md}) {
-    .title {
-      > img {
-        right: unset;
-        left: 40px;
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    .list {
+      .one {
+        .desc {
+          font-size: 16px;
+        }
+
+        .info {
+          > h5 {
+            font-size: 18px;
+          }
+          >p {
+            font-size: 16px;
+          }
+        }
       }
     }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
-    .title {
-      > h2 {
-        font-size: 45px;
-      }
-    }
     .list {
       grid-template-columns: 1fr 1fr;
     }
