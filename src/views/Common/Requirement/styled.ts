@@ -41,6 +41,7 @@ export const RequirementWrapper = styled.div`
   }
 
   .article {
+    margin-top: 20px;
     .desc {
       padding-bottom: 40px;
       color: ${props => props.theme.colors.black_primary};
@@ -130,6 +131,10 @@ export const RequirementWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .content {
       flex-direction: row;
+    }
+
+    .article {
+      margin-top: 0;
     }
   }
 

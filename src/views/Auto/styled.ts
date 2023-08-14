@@ -1,6 +1,17 @@
 import styled from "styled-components";
 
 export const AutoWrapper = styled.div`
+  .tutorial {
+    @media(max-width: ${props => props.theme.breakpoints.desktop}) {
+      padding-bottom: 40px;
+
+      & + .shape-bot {
+        > svg {
+          height: 40px;
+        }
+      }
+    }
+  }
   .course {
     background-color: ${props => props.theme.colors.gray_primary};
   }
@@ -18,6 +29,16 @@ export const AutoWrapper = styled.div`
           > path {
             fill: ${props => props.theme.colors.white};
           }
+        }
+      }
+    }
+
+    @media(max-width: ${props => props.theme.breakpoints.desktop}) {
+      padding-bottom: 20px;
+
+      & + .shape-bot {
+        > svg {
+          height: 40px;
         }
       }
     }

@@ -14,7 +14,7 @@ const SubmitFormWrapper = styled.div`
     position: relative;
     .category {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 800;
       line-height: 1.2;
     }
@@ -103,7 +103,7 @@ const SubmitFormWrapper = styled.div`
 
       .checkbox-wrapper {
         color: #838383;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
         line-height: 1.5;
       }
@@ -117,7 +117,7 @@ const SubmitFormWrapper = styled.div`
     }
 
     .error {
-      font-size: 14px;
+      font-size: 12px;
       margin-top: 15px;
       color: ${props => props.theme.colors.red_primary};
     }
@@ -126,12 +126,37 @@ const SubmitFormWrapper = styled.div`
       margin-top: 15px;
       > button {
         border-radius: 15px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         padding: 0 43px;
       }
     }
 
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    > .header {
+      .category {
+        font-size: 24px;
+      }
+    }
+    .yform {
+      .types {
+        .cate {
+          font-size: 16px;
+        }
+      }
+
+      .error {
+        font-size: 14px;
+      }
+
+      .submit {
+        > button {
+          font-size: 16px;
+        }
+      }
+    }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {

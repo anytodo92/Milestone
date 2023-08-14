@@ -6,4 +6,14 @@ export const PriceWrapper = styled.div`
       padding-bottom: 150px;
     }
   }
+
+  .price {
+    @media(max-width: 1024px) {
+      & ~ .shape-bot {
+        > svg {
+          height: 40px;
+        }
+      }
+    }
+  }
 `
