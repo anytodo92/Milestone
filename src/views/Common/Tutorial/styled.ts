@@ -53,14 +53,46 @@ export const TutorialWrapper = styled.div`
         }
 
         .detail {
-          color: ${props => props.theme.colors.black_primary};
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 1.2;
           padding: 0;
           height: 0;
           overflow: hidden;
           transition: all .5s ease;
+
+          .text {
+            color: ${props => props.theme.colors.black_primary};
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.2;
+          }
+
+          .thumb {
+            margin-top: 37px;
+            position: relative;
+            > p {
+              color: ${props => props.theme.colors.black_primary};
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 1.2;
+            }
+            > a {
+              position: relative;
+              text-decoration: none;
+
+              > img {
+                display: inline;
+                margin-top: 10px;
+                border-radius: 15px;
+                width: 165px;
+                max-width: unset;
+              }
+              > svg {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
         }
 
         &.active {
@@ -131,7 +163,9 @@ export const TutorialWrapper = styled.div`
             }
           }
           .detail {
-            font-size: 16px;
+            .text, .thumb>p {
+              font-size: 16px;
+            }
           }
         }
       }

@@ -29,8 +29,7 @@ export const OurCourseWrapper = styled.div`
         > h5 {
           color: ${props => props.theme.colors.black_primary};
           font-size: 22px;
-          font-family: ${props => props.theme.fonts.roboto_condensend};
-          font-weight: 600;
+          font-weight: 700;
           line-height: 120%;
         }
 

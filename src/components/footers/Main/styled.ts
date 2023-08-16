@@ -42,6 +42,24 @@ export const FooterWrapper = styled.footer`
               text-decoration: none;
             }
           }
+
+          &:last-child {
+            flex:1;
+            display: flex;
+            justify-content: flex-start;
+            column-gap: 25px;
+
+            > a {
+              text-decoration: none;
+
+              img {
+                width: 92px;
+                height: 92px;
+
+              }
+            }
+            
+          }
         }
         
       }
@@ -91,8 +109,13 @@ export const FooterWrapper = styled.footer`
         .content {
           flex-direction: row;
           .col {
-            &:last-child {
+            &:nth-child(3) {
               margin-left: 13px;
+            }
+
+            &:last-child {
+              margin-right: 120px;
+              justify-content: flex-end;
             }
           }
         }

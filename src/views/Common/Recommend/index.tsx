@@ -46,25 +46,29 @@ const Recommend = (): JSX.Element => {
         <div className="desc">
         In unserem Kursangebot findest du alle benötigten Kurse die du für den erfolgreichen Abschluss deiner Fahrprüfung benötigst. Alle unsere Kurse finden in kleinen Gruppen statt, damit du maximal profitierst und wir individuell auf dich und deine Fragen eingehen können.
         </div>
-        <div className="list">
-        {list.map((data, index) =>
-          <div key={index} className="one">
-            <div className="pic">
-              <img src={data.image} alt="" />
-              <div className="icon">
-                <img src={data.icon} alt="" />
+      </div>
+      <div className="slide">
+        <div className="list">          
+          {list.map((data, index) =>
+            <div key={index} className="one">
+              <div className="wrapper">
+                <div className="pic">
+                  <img src={data.image} alt="" />
+                  <div className="icon">
+                    <img src={data.icon} alt="" />
+                  </div>
+                </div>
+                <div className="article">
+                  <h2>{data.title}</h2>
+                  <div className="desc">{data.description}</div>
+                  <div className="buttons">
+                    <a href={data.link1}>{data.buttonText1}</a>
+                    <a href={data.link2} className="o-line">{data.buttonText1}</a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="article">
-              <h2>{data.title}</h2>
-              <div className="desc">{data.description}</div>
-              <div className="buttons">
-                <a href={data.link1}>{data.buttonText1}</a>
-                <a href={data.link2} className="o-line">{data.buttonText1}</a>
-              </div>
-            </div>
-          </div>
-        )}
+          )}
         </div>
       </div>
     </RecommendWrapper>

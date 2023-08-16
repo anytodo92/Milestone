@@ -15,138 +15,150 @@ export const TeamWrapper = styled.div`
     }
   }
 
-  .content1 {
-    margin: 0 ${props => props.theme.margins.primary}px;
+  .slide {
     overflow: hidden;
   }
 
   .list {
-    display: grid;
-    grid-template-columns: 1fr;
     margin-top: 80px;
-    row-gap: 50px;
+    overflow-x: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
     .one {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .pic {
-        position: relative;
-        margin-bottom: 15px;
-        > img {
-          position: relative;
-          width: 240px;
-          height: 240px;
-          border-radius: 100%;
-          border: 2px solid ${props => props.theme.colors.green_primary};
-          background-color: #fff;
-          max-width: unset;
-        }
-
-        .bg {
-          position: absolute;
-          top: -20px;
-          left: 20px;
-          width: 210px;
-          height: 280px;
-          border-radius: 210px;
-          transform: rotate(45deg);
-          background-color: ${props => props.theme.colors.green_primary};
-        }
-      }
-
+      flex: 1;
       .wrapper {
-        max-width: 360px;
-        &.full {
-          .detail {
-            height: auto;
-            margin-top: 15px;
+        min-width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: ${props => props.theme.margins.primary}px;
+        max-width: 430px;
+
+        .pic {
+          position: relative;
+          margin-bottom: 15px;
+
+          > img {
+            position: relative;
+            width: 240px;
+            height: 240px;
+            border-radius: 100%;
+            border: 2px solid ${props => props.theme.colors.green_primary};
+            background-color: #fff;
+            max-width: unset;
           }
-          
+
+          .bg {
+            position: absolute;
+            top: -17px;
+            left: 17px;
+            width: 210px;
+            height: 280px;
+            border-radius: 210px;
+            transform: rotate(45deg);
+            background-color: ${props => props.theme.colors.green_primary};
+          }
+        }
+
+        .article {
+          margin: 0 30px;
+          width: 80%;
+          &.full {
+            .detail {
+              height: auto;
+              margin-top: 15px;
+            }
+            
+            > button {
+              > svg {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          > h2 {
+            position: relative;
+            color: ${props => props.theme.colors.black_primary};
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-top: 20px;
+
+            &::after {
+              position: absolute;
+              width: 69px;
+              height: 4px;
+              background-color: ${props => props.theme.colors.black_primary};
+              border-radius: 4px;
+              content: '';
+              left: 0;
+              bottom: 0;
+            }
+          }
+
+          > .desc {
+            color: ${props => props.theme.colors.black_primary};
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.4;
+            text-align: left;
+            margin-top: 20px;
+          }
+
+          > .detail {
+            color: ${props => props.theme.colors.black};
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.4;
+            height: 0px;
+            overflow: hidden;
+
+            > ul {
+              list-style: disc;
+              margin-left: 20px;
+            }
+            
+          }
+
+          > .email {
+            color: ${props => props.theme.colors.green_primary};
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-top: 20px;
+          }
+
+          > .phone {
+            color: ${props => props.theme.colors.green_primary};
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.4;
+          }
+
           > button {
+            color: ${props => props.theme.colors.green_primary};
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.4;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            margin-top: 30px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+
             > svg {
-              transform: rotate(180deg);
+              transition: all .3s ease;
+              margin-top: 3px;
             }
           }
         }
-        > h2 {
-          position: relative;
-          color: ${props => props.theme.colors.black_primary};
-          font-size: 22px;
-          font-weight: 700;
-          line-height: 1.5;
-          margin-top: 20px;
-
-          &::after {
-            position: absolute;
-            width: 69px;
-            height: 4px;
-            background-color: ${props => props.theme.colors.black_primary};
-            border-radius: 4px;
-            content: '';
-            left: 0;
-            bottom: 0;
-          }
-        }
-
-        > .desc {
-          color: ${props => props.theme.colors.black_primary};
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 1.4;
-          text-align: left;
-          margin-top: 20px;
-        }
-
-        > .detail {
-          color: ${props => props.theme.colors.black};
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 1.4;
-          height: 0px;
-          overflow: hidden;
-
-          > ul {
-            list-style: disc;
-            margin-left: 20px;
-          }
-          
-        }
-
-        > .email {
-          color: ${props => props.theme.colors.green_primary};
-          font-size: 14px;
-          font-weight: 600;
-          line-height: 1.4;
-          margin-top: 20px;
-        }
-
-        > .phone {
-          color: ${props => props.theme.colors.green_primary};
-          font-size: 14px;
-          font-weight: 600;
-          line-height: 1.4;
-        }
-
-        > button {
-          color: ${props => props.theme.colors.green_primary};
-          font-size: 12px;
-          font-weight: 600;
-          line-height: 1.4;
-          display: flex;
-          align-items: center;
-          column-gap: 10px;
-          margin-top: 30px;
-          border: 0;
-          outline: 0;
-          cursor: pointer;
-
-          > svg {
-            transition: all .3s ease;
-            margin-top: 3px;
-          }
-        }
+        
       }
-      
     }
     
   }
@@ -175,17 +187,19 @@ export const TeamWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
     .list {
       .one {
-        .pic {
-          > img {
-            width: 343px;
-            height: 343px;
-          }
-          .bg {
-            top: -30px;
-            left: 20px;
-            width: 300px;
-            height: 400px;
-            border-radius: 300px;
+        .wrapper {
+          .pic {
+            > img {
+              width: 298px;
+              height: 298px;
+            }
+            .bg {
+              top: -27px;
+              left: 18px;
+              width: 270px;
+              height: 350px;
+              border-radius: 270px;
+            }
           }
         }
       }
@@ -224,57 +238,38 @@ export const TeamWrapper = styled.div`
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     .list {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
 
       .one {
-        .pic {
-          > img {
-            width: 216px;
-            height: 216px;
+        .wrapper {
+          .pic {
+            > img {
+              width: 343px;
+              height: 343px;
+            }
+
+            .bg {
+              top: -30px;
+              left: 20px;
+              width: 300px;
+              height: 400px;
+              border-radius: 300px;
+            }
           }
 
-          .bg {
-            top: -18px;
-            left: 18px;
-            width: 189px;
-            height: 252px;
-            border-radius: 189px;
+          .article {
+            > h2 {
+              font-size: 25px;
+            }
           }
         }
-        .wrapper {
-          max-width: 220px;
-          > h2 {
-            font-size: 30px;
-          }
-        }
-      }
+      }      
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
-    .list {
-      .one {
-        .pic {
-          > img {
-            width: 240px;
-            height: 240px;
-          }
-
-          .bg {
-            top: -20px;
-            left: 20px;
-            width: 210px;
-            height: 280px;
-            border-radius: 210px;
-          }
-        }
-        .wrapper {
-          max-width: 260px;
-          > h2 {
-            font-size: 35px;
-          }
-        }
-      }
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    .slide {
+      width: auto;
+      margin: 0 ${props => props.theme.margins.primary}px;
     }
   }
 
@@ -284,37 +279,10 @@ export const TeamWrapper = styled.div`
       width: ${props => props.theme.maxWidth}px;
       margin: 0 auto;
     }
-
-    .content1 {
-      width: auto;
-      margin: 0 ${props => props.theme.margins.primary}px;
-    }
-
-    .list {
-      .one {
-        .pic {            
-          > img {
-            width: 298px;
-            height: 298px;
-          }
-
-          .bg {
-            top: -27px;
-            left: 18px;
-            width: 270px;
-            height: 350px;
-            border-radius: 270px;
-          }
-        }
-        .wrapper {
-          max-width: 324px;
-        }
-      }
-    }
   }
 
   @media (min-width: 1780px) {
-    .content1 {
+    .slide {
       width: 1740px;
       margin: 0 auto;
     }

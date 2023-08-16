@@ -14,6 +14,7 @@ import Thumb_5 from "../assets/images/thumb-5.png";
 import Thumb_6 from "../assets/images/thumb-6.png";
 import Thumb_7 from "../assets/images/thumb-7.png";
 import Thumb_8 from "../assets/images/thumb-8.png";
+import Thumb_9 from "../assets/images/thumb-9.png";
 import UnderlineGreen from "../assets/images/underline-green.svg";
 import UnderlineWhite from "../assets/images/underline-white.svg";
 import Bg_1 from "../assets/images/bg-1.png";
@@ -43,6 +44,9 @@ import Check from "../assets/images/check.svg";
 import Envelope from "../assets/images/envelope.svg";
 import Phone_2 from "../assets/images/phone-2.svg";
 import Ribbon from "../assets/images/ribbon.svg";
+import Tiktok from "../assets/images/tiktok.png";
+import Instagram from "../assets/images/instagram.png";
+
 export const Backgrounds = {
   
 };
@@ -91,8 +95,11 @@ export const Images = {
   Thumb_6,
   Thumb_7,
   Thumb_8,
+  Thumb_9,
   UnderlineGreen,
   UnderlineWhite,
   Mask,  
   Phone,
+  Tiktok,
+  Instagram,
 }

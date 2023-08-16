@@ -39,6 +39,14 @@ const Footer = (): JSX.Element => {
               <a className="link" href="/abg">Abg</a>
             </p>
           </div>
+          <div className="col">
+            <a target="_blank" href="https://www.instagram.com/mateen_fahrschulemilestone/">
+            <img src={Images.Instagram} alt="" />
+            </a>
+            <a target="_blank" href="https://www.tiktok.com/@mateen_fahrschulems">
+            <img src={Images.Tiktok} alt="" />
+            </a>
+          </div>
         </div>
       </section>
       <section>
