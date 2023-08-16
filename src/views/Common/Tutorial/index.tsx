@@ -11,6 +11,8 @@ const Tutorial = (): JSX.Element => {
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
       `,
+      video_link: 'https://www.instagram.com/reel/CWjDVc_IMes/?igshid=NjFiZTE0ZDQ0ZQ%3D%3D',
+      thumb_image: Images.Thumb_9,
     },
     {
       id: 2,
@@ -46,17 +48,27 @@ const Tutorial = (): JSX.Element => {
           </div>
           <div className="accordion">
           {list.map((data, index) =>
-            <div key={index} className="one">
+            <div key={index} className="one active">
               <div className="subject">
                 <h5>{data.title}</h5>
                 <span>
                   <img src={Icons.ArrowDown} alt="" />
                 </span>
               </div>
-              <div
-                className="detail"
-                dangerouslySetInnerHTML={{ __html: data.description }}
-              ></div>
+              <div className="detail">
+                <div className="text" dangerouslySetInnerHTML={{ __html: data.description }}></div>
+                {(data.video_link && data.thumb_image)&&
+                  <div className="thumb">
+                    <p>Zum Video:</p>
+                    <a href={data.video_link} target="_blank">
+                      <img src={data.thumb_image} alt="" />
+                      <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M24.9023 49.8047C38.5254 49.8047 49.8047 38.501 49.8047 24.9023C49.8047 11.2793 38.501 0 24.8779 0C11.2793 0 0 11.2793 0 24.9023C0 38.501 11.3037 49.8047 24.9023 49.8047ZM24.9023 45.6543C13.3789 45.6543 4.1748 36.4258 4.1748 24.9023C4.1748 13.3789 13.3545 4.15039 24.8779 4.15039C36.4014 4.15039 45.6543 13.3789 45.6543 24.9023C45.6543 36.4258 36.4258 45.6543 24.9023 45.6543ZM20.3369 34.4482L34.2285 26.2207C35.2539 25.6348 35.2295 24.2188 34.2285 23.6084L20.3369 15.3809C19.2871 14.7705 17.8955 15.2344 17.8955 16.4307V33.3984C17.8955 34.5703 19.1895 35.1318 20.3369 34.4482Z" fill="white" fill-opacity="0.85"/>
+                      </svg>
+                    </a>
+                  </div>
+                }
+              </div>
             </div>
           )}
           </div>

@@ -13,7 +13,7 @@ const ResultWrapper = styled.div`
     position: relative;
     .category {
       color: ${props => props.theme.colors.black_primary};
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 800;
       line-height: 1.2;
     }
@@ -41,7 +41,7 @@ const ResultWrapper = styled.div`
 
   .txt {
     color: ${props => props.theme.colors.black_primary};
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.4;
     margin-top: 50px;
@@ -54,12 +54,26 @@ const ResultWrapper = styled.div`
     border-radius: 20px;
     background-color: ${props => props.theme.colors.green_primary};
     color: ${props => props.theme.colors.white};
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1.2;
     padding: 0 43px;
     margin-top: 30px;
     cursor: pointer;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.tablet_sm}) {
+    > .header {
+      .category {
+        font-size: 24px;
+      }
+    }
+    .txt {
+      font-size: 16px;
+    }
+    > button {
+      font-size: 16px;
+    }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {

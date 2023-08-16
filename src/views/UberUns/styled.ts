@@ -17,8 +17,15 @@ export const UberUnsWrapper = styled.div`
           }
         }
       }
+    }
 
-      
+    @media (max-width: 1024px) {
+      padding: 60px 0 20px;
+      & + .shape-bot {
+        > svg {
+          height: 60px;
+        }
+      }
     }
   }
   .team {
@@ -26,16 +33,25 @@ export const UberUnsWrapper = styled.div`
     background-color: ${props => props.theme.colors.gray_primary};
 
     .list {
-      column-gap: 30px;
       .one {
-        background-color: ${props => props.theme.colors.white};
-        padding: 60px 0 30px;
-        border-radius: 30px;
+        .wrapper {
+          background-color: ${props => props.theme.colors.white};
+          padding: 60px 0 30px;
+          border-radius: 30px;
+        }
+      }
+    }
+
+    @media (max-width: 1024px) {
+      & + .shape-bot {
+        > svg {
+          height: 40px;
+        }
       }
     }
 
     @media (min-width: 1780px) {
-      .content1 {
+      .slide {
         width: 1740px;
         margin: 0 auto;
         .list {
