@@ -34,11 +34,9 @@ export const UberUnsWrapper = styled.div`
 
     .list {
       .one {
-        .wrapper {
-          background-color: ${props => props.theme.colors.white};
-          padding: 60px 0 30px;
-          border-radius: 30px;
-        }
+        background-color: ${props => props.theme.colors.white};
+        padding: 60px 0 30px;
+        border-radius: 30px;
       }
     }
 

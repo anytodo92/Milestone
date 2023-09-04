@@ -18,4 +18,27 @@ export const HomeWrapper = styled.div`
       height: 40px;
     }
   }
+
+  .team {
+    padding-bottom: 20px;
+    .slide {
+      .list {
+        .one {
+          padding-top: 20px;
+          .article {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+          }
+        }
+      }
+    }
+    @media (min-width: 1780px) {
+      .slide {
+        .list {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 `;

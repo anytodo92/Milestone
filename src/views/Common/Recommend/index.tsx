@@ -1,9 +1,72 @@
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
 import { Images, Icons } from "../../../utils/assets";
 import {
   RecommendWrapper
 } from "./styled";
 
 const Recommend = (): JSX.Element => {
+  const [sliderRef, instanceRef] = useKeenSlider(
+    {
+      mode: "free",
+      slides: {
+        perView: 1,
+        spacing: 40
+      },
+      breakpoints: {
+        "(min-width: 375px)": {
+          slides: {
+            perView: 1.2,
+            spacing: 40
+          },
+        },
+        "(min-width: 480px)": {
+          slides: {
+            perView: 1.3,
+            spacing: 40
+          },
+        },
+        "(min-width: 570px)": {
+          slides: {
+            perView: 1.5,
+            spacing: 40
+          },
+        },
+        "(min-width: 768px)": {
+          slides: {
+            perView: 2,
+            spacing: 40
+          },
+        },        
+        "(min-width: 900px)": {
+          slides: {
+            perView: 2.3,
+            spacing: 40
+          },
+        },
+        "(min-width: 1024px)": {
+          slides: {
+            perView: 2.6,
+            spacing: 40
+          },
+        },
+
+        "(min-width: 1280px)": {
+          slides: {
+            perView: 3,
+            spacing: 40
+          },
+        },
+      },
+      slideChanged() {
+        console.log('slide changed')
+      },
+    },
+    [
+      // add plugins here
+    ]
+  )
+
   const list = [
     {
       id: 1,
@@ -48,23 +111,21 @@ const Recommend = (): JSX.Element => {
         </div>
       </div>
       <div className="slide">
-        <div className="list">          
+        <div className="list keen-slider" ref={sliderRef}>          
           {list.map((data, index) =>
-            <div key={index} className="one">
-              <div className="wrapper">
-                <div className="pic">
-                  <img src={data.image} alt="" />
-                  <div className="icon">
-                    <img src={data.icon} alt="" />
-                  </div>
+            <div key={index} className="one keen-slider__slide">
+              <div className="pic">
+                <img src={data.image} alt="" />
+                <div className="icon">
+                  <img src={data.icon} alt="" />
                 </div>
-                <div className="article">
-                  <h2>{data.title}</h2>
-                  <div className="desc">{data.description}</div>
-                  <div className="buttons">
-                    <a href={data.link1}>{data.buttonText1}</a>
-                    <a href={data.link2} className="o-line">{data.buttonText1}</a>
-                  </div>
+              </div>
+              <div className="article">
+                <h2>{data.title}</h2>
+                <div className="desc">{data.description}</div>
+                <div className="buttons">
+                  <a href={data.link1}>{data.buttonText1}</a>
+                  <a href={data.link2} className="o-line">{data.buttonText1}</a>
                 </div>
               </div>
             </div>
