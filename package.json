@@ -17,6 +17,7 @@
     "@react-google-maps/api": "^2.18.1",
     "@reduxjs/toolkit": "^1.9.1",
     "formik": "^2.2.9",
+    "keen-slider": "^6.8.6",
     "lord-icon-element": "^4.0.3",
     "lottie-web": "^5.10.2",
     "moment": "^2.29.4",
