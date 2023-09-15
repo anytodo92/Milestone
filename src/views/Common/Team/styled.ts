@@ -178,8 +178,8 @@ export const TeamWrapper = styled.div`
             height: 298px;
           }
           .bg {
-            top: -27px;
-            left: 18px;
+            top: -25px;
+            left: 16px;
             width: 270px;
             height: 350px;
             border-radius: 270px;
