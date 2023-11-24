@@ -30,6 +30,37 @@ const Banner = (): JSX.Element => {
             </div>
           </div>
         </div>
+        <div className="mark">
+          <div className="wrapper">
+            <a href="/ratenzahlung" aria-label="Ratenzahlung">
+              <svg xmlns="http://www.w3.org/2000/svg" width="281" height="280" viewBox="0 0 281 280" fill="none">
+                <g filter="url(#filter0_d_4838_6577)">
+                  <circle cx="140.043" cy="137" r="123" fill="white"/>
+                </g>
+                <defs>
+                  <filter id="filter0_d_4838_6577" x="0.0429688" y="0" width="280" height="280" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feMorphology radius="5" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_4838_6577"/>
+                    <feOffset dy="3"/>
+                    <feGaussianBlur stdDeviation="6"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.625558 0 0 0 0 0.625558 0 0 0 0 0.625558 0 0 0 0.59 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4838_6577"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4838_6577" result="shape"/>
+                  </filter>
+                </defs>
+              </svg>
+              <span className="text">JETZT NEU: Ratenzahlung</span>
+              <span className="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 30 21" fill="none">
+                  <line x1="5.17277" y1="2.25882" x2="14.3563" y2="15.1146" stroke="#84AF8C" stroke-width="4" stroke-linecap="round"/>
+                  <line x1="2" y1="-2" x2="17.799" y2="-2" transform="matrix(-0.81371 0.581271 0.581271 0.81371 30.0039 6.39648)" stroke="#84AF8C" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </BannerWrapper>
   );

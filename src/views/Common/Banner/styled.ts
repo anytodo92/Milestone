@@ -21,6 +21,33 @@ export const BannerWrapper = styled.section`
     background-size: cover;
   }
 
+  .mark {
+    padding: 0 0 50px;
+    background-color: transparent;
+    .wrapper{
+      display: inline-block;
+      position: relative;
+      
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(10deg);
+        color: ${props => props.theme.colors.white};
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      .arrow {
+        position: absolute;
+        bottom: 40px;
+        left: 43%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
   .summary {
     padding-top: 250px;
     padding-bottom: 70px;
@@ -91,6 +118,9 @@ export const BannerWrapper = styled.section`
   }
 
   @media(min-width: ${props => props.theme.breakpoints.desktop}) {
+    .mark {
+      padding-top: 200px;
+    }
     .summary {
       margin-left: 100px;
     }

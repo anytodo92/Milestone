@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Images } from "../../../utils/assets";
 export const BannerWrapper = styled.div`
+  background-color: ${props => props.theme.colors.green_primary};
   .bg {
     position: absolute;
     width: 100%;
@@ -42,8 +43,37 @@ export const BannerWrapper = styled.div`
     
     height: 100vh;
     display: flex;
+    flex-direction: column;    
+    justify-content: center;
     align-items: center;
+    row-gap: 10%;
     padding: 0;
+  }
+
+  .mark {
+    background-color: transparent;
+    .wrapper{
+      position: relative;
+      display: inline-block;
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(10deg);
+        color: ${props => props.theme.colors.green_primary};
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      .arrow {
+        position: absolute;
+        bottom: 40px;
+        left: 43%;
+        transform: translateX(-50%);
+      }
+    }
   }
 
   .summary {  
@@ -52,6 +82,7 @@ export const BannerWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .desc {
       font-size: 20px;
       font-weight: 700;
@@ -113,7 +144,11 @@ export const BannerWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     height: 100vh;
     background-color: transparent;
-    
+
+    .content {
+      flex-direction: row;
+    }
+
     .bg {
       display: block;
 

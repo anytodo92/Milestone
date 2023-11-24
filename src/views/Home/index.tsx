@@ -8,6 +8,7 @@ import Recommend from "../Common/Recommend";
 import Carousel from "../Common/Carousel";
 import Team from "../Common/Team";
 import Contact from "../Common/Contact";
+import PackageIntro from "../Common/PackageIntro";
 import {
   Images
 } from "../../utils/assets";
@@ -53,7 +54,22 @@ const Home = (): JSX.Element => {
         name: 'Mateen Saifullah'
       },
     ]
-  }
+  };
+
+  const packageIntroData = {
+    title: "Dein Paket auf Raten",
+    link: {
+      text: "Jetzt beantragen",
+      url: "#",
+    },
+    detail: {
+      title : "3, 6 oder 12 Monate",
+      description: "Verteile die Kosten",
+      detail: `
+      Du möchtest gleich mit einem unserer Pakete durchstarten und die Kosten auf die nächsten Monate verteilen? Kein Problem - wähle ein 5er, 10er oder 20er Abo und beantrage eine Ratenzahlung.
+      `
+    }
+  };
   
   return (
     <HomeWrapper>
@@ -65,6 +81,7 @@ const Home = (): JSX.Element => {
         height={120}
       />
       <Course />
+      <PackageIntro data={packageIntroData} />
       <Reservation data={reservationData} />
       <ShapeBottom
         bgColor="#f4f4f4"
