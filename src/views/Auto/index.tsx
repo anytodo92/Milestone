@@ -6,6 +6,7 @@ import Carousel from "../Common/Carousel";
 import Contact from "../Common/Contact";
 import Banner from "../Common/Banner";
 import Tutorial from "../Common/Tutorial";
+import PackageIntro from "../Common/PackageIntro";
 
 import { Images } from "../../utils/assets";
 import {
@@ -19,6 +20,10 @@ const Auto = (): JSX.Element => {
     Unsere erfahreren Fahreler:innen begleiten dich auf dem gesamten Weg zu deinem Führerschein. Ab der ersten Probelektion bis hin zur Prüfung.
     `,
     buttonText: 'Probelektion buchen',
+    link: {
+      text: "JETZT NEU: Ratenzahlung",
+      url: "/ratenzahlung"
+    }
   }
 
   const reservationData = {
@@ -29,7 +34,22 @@ const Auto = (): JSX.Element => {
     buttonText: 'Jetzt anfragen',
     image1: Images.Thumb_3,
     image2: Images.Thumb_1,
-  }
+  };
+
+  const packageIntroData = {
+    title: "Dein Paket auf Raten",
+    link: {
+      text: "Jetzt beantragen",
+      url: "#",
+    },
+    detail: {
+      title : "3, 6 oder 12 Monate",
+      description: "Verteile die Kosten",
+      detail: `
+      Du möchtest gleich mit einem unserer Pakete durchstarten und die Kosten auf die nächsten Monate verteilen? Kein Problem - wähle ein 5er, 10er oder 20er Abo und beantrage eine Ratenzahlung.
+      `
+    }
+  };
 
   return (
     <AutoWrapper>
@@ -41,6 +61,7 @@ const Auto = (): JSX.Element => {
         height={77}
       />
       <Course />
+      <PackageIntro data={packageIntroData} />
       <Reservation data={reservationData} />      
       <ShapeBottom
         bgColor="#fff"

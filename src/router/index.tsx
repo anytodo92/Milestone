@@ -25,6 +25,7 @@ const DatenschutzPage = lazy(() => import("../views/Datenschutz"));
 const AbgPage = lazy(() => import("../views/Abg"));
 const AdminLoginPage = lazy(() => import("../views/Admin/Login"));
 const AdminCourseOverviewPage = lazy(() => import("../views/Admin/CourseOverview"));
+const RatenzahlungPage = lazy(() => import("../views/Retenzahlung"));
 
 const Home = withLoading(HomePage);
 const Auto = withLoading(AutoPage);
@@ -39,6 +40,7 @@ const Impressum = withLoading(ImpressumPage);
 const Datenschutz = withLoading(DatenschutzPage);
 const AdminLogin = withLoading(AdminLoginPage);
 const AdminCourseOverview = withLoading(AdminCourseOverviewPage);
+const Ratenzahlung = withLoading(RatenzahlungPage);
 
 const router = () => {
   return (
@@ -58,6 +60,7 @@ const router = () => {
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/admin/course-overview" element={<AdminCourseOverview />} />
+          <Route path="/ratenzahlung" element={<Ratenzahlung />} />
         </Route>
       </Routes>
     </BrowserRouter>

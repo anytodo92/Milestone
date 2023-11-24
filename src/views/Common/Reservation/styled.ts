@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ReservationWrapper = styled.div`
-  padding: 0px;
+  padding: 57px 0 0;
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
 
