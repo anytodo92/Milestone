@@ -139,6 +139,22 @@ export const RatenzahlungFormWrapper = styled.section`
   .form {
     margin-top: 50px;
 
+    .alert {
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      
+      &.alert-danger {
+        color: #842029;
+        background-color: #f8d7da;
+      }
+
+      &.alert-success {
+        color: #50cd89;
+        background-color: #e8fff3;
+      }
+    }
     .wrapper {
       background-color: ${props => props.theme.colors.gray_primary};
       border-radius: 20px;
@@ -184,6 +200,12 @@ export const RatenzahlungFormWrapper = styled.section`
 
                 &:placeholder {
                   color: #a0a0a0;
+                }
+              }
+
+              &.error {
+                input {
+                  border: 1px solid red;
                 }
               }
             }
@@ -254,22 +276,52 @@ export const RatenzahlungFormWrapper = styled.section`
         column-gap: 15px;
         row-gap: 15px;
 
-        > button {
-          display: inline-flex;
+        .wrapper2 {
           width: 100%;
-          height: 52px;
-          outline: 0;
-          border-radius: 15px;
-          background-color: #d7d7d7;
-          border: 1px solid #cacaca;
-          align-items: center;
-          justify-content: space-between;
-          padding: 0 15px 0 25px;
-          color: #202020;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 1.5;
-          outline: 0;
+          display: flex;
+          flex-direction: column;
+
+          > button {
+            display: inline-flex;
+            width: 100%;
+            height: 52px;
+            outline: 0;
+            border-radius: 15px;
+            background-color: #d7d7d7;
+            border: 1px solid #cacaca;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px 0 25px;
+            color: #202020;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            outline: 0;
+          }
+
+          .photo-holder {
+            position: relative;
+            margin-top: 30px;
+
+            canvas {
+              width: calc(100% - 10px);
+            }
+            .close {
+              position: absolute;
+              width: 30px;
+              height: 30px;
+              background-color: ${props => props.theme.colors.white};
+              border-radius: 100%;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              border: 0;
+              outline: 0;
+              top: -15px;
+              right: 0px;
+            }
+          }
         }
       }
     }
@@ -291,6 +343,12 @@ export const RatenzahlungFormWrapper = styled.section`
         .checkmark {
           top: 10px;
         }
+      }
+
+      .error {
+        color: red;
+        font-size: 14px;
+        font-weight: 300;
       }
     }
 
