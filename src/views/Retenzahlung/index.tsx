@@ -109,7 +109,7 @@ const Ratenzahlung = (): JSX.Element => {
           )}
           </div>
           <div className="form">
-            <div className="alert alert-danger">error</div>
+            <div className="alert"></div>
             <div className="wrapper">
               <form>
                 <input type="file" name="photo1" />
