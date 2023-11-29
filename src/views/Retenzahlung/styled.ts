@@ -144,7 +144,7 @@ export const RatenzahlungFormWrapper = styled.section`
       border-radius: 10px;
       padding: 10px 15px;
       margin-bottom: 10px;
-      
+
       &.alert-danger {
         color: #842029;
         background-color: #f8d7da;
@@ -169,7 +169,7 @@ export const RatenzahlungFormWrapper = styled.section`
       .fields {
         display: flex;
         flex-direction: column;
-        column-gap: 15px;
+        column-gap: 50px;
         row-gap: 15px;
 
         .lt, .rt {
@@ -280,7 +280,12 @@ export const RatenzahlungFormWrapper = styled.section`
           width: 100%;
           display: flex;
           flex-direction: column;
-
+          &.error {
+            > button {
+              border-color: red;
+            }
+          }
+          
           > button {
             display: inline-flex;
             width: 100%;
@@ -302,7 +307,6 @@ export const RatenzahlungFormWrapper = styled.section`
           .photo-holder {
             position: relative;
             margin-top: 30px;
-
             canvas {
               width: calc(100% - 10px);
             }
@@ -386,8 +390,9 @@ export const RatenzahlungFormWrapper = styled.section`
       .wrapper {
         .fields {
           flex-direction: row;
-
+          
           .lt, .rt {
+            flex: none;
             .rw {
               .form-group {
                 flex: 0;
@@ -403,10 +408,17 @@ export const RatenzahlungFormWrapper = styled.section`
       .capture {
         .action {
           flex-direction: row;
-
-          button {
-            max-width: 294px;
+          column-gap: 15px;
+          .wrapper2 {
+            width: auto;
+            button {
+              width: 294px;
+            }
+            .photo-holder {
+              width:294px;
+            }
           }
+          
         }
       }
 
