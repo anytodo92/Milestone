@@ -27,17 +27,17 @@ const Ratenzahlung = (): JSX.Element => {
     {
       id: 1,
       title: "5er Abo",
-      description: "Ab CHF 156.15 pro Monat",
+      description: "Ab CHF 41.20 pro Monat",
     },
     {
       id: 2,
       title: "10er Abo",
-      description: "Ab CHF 156.15 pro Monat",      
+      description: "Ab CHF 77.85 pro Monat",      
     },
     {
       id: 3,
       title: "20er Abo",
-      description: "Ab CHF 156.15 pro Monat",
+      description: "Ab CHF 146.50 pro Monat",
     }
   ];
 
@@ -177,7 +177,7 @@ const Ratenzahlung = (): JSX.Element => {
                         </svg>
                       </button>
                       <div className="photo-holder" style={{ display: hasPhoto1 ? "inline-block" : "none" }}>
-                        <canvas id="c_photo1"></canvas>
+                        <canvas id="c_photo1" width="320" height="240"></canvas>
                         <button type="button" className="close" onClick={() => setHasPhoto1(false)}>
                           <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414z" fill="#0D0D0D"></path></svg>
                         </button>
@@ -198,7 +198,7 @@ const Ratenzahlung = (): JSX.Element => {
                         </svg>
                       </button>
                       <div className="photo-holder" style={{ display: hasPhoto2 ? "inline-block" : "none" }}>
-                        <canvas id="c_photo2"></canvas>
+                        <canvas id="c_photo2" width="320" height="240"></canvas>
                         <button type="button" className="close" onClick={() => setHasPhoto2(false)}>
                           <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414z" fill="#0D0D0D"></path></svg>
                         </button>

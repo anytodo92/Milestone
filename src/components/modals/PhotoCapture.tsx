@@ -49,7 +49,8 @@ const PhotoCaptureWrapper = styled.div`
   .camera-wrapper {
     width: 99%;
     margin-top: 30px;
-
+    display: flex;
+    justify-content:center;
   }
 
   .action {
@@ -154,8 +155,8 @@ const PhotoCapture = ({ opened, onClose, onTakePhoto }: PhotoCaptureProps): JSX.
   }
 
   function onLoadVideo() {
-    video.setAttribute('width', 640);
-    video.setAttribute('height', 380);
+    video.setAttribute('width', 320);
+    video.setAttribute('height', 240);
     // canvas.setAttribute('width', this.videoWidth);
     // canvas.setAttribute('height', this.videoHeight);
     console.log("loading video...");
@@ -197,8 +198,7 @@ const PhotoCapture = ({ opened, onClose, onTakePhoto }: PhotoCaptureProps): JSX.
     <ModalLayout opened={opened} onClose={onClose}>
       <PhotoCaptureWrapper>
         <div className="header">
-          <h2 className="title">Capture Camera</h2>
-
+          <h2 className="title">Ausweiskopie</h2>
           <button className="btn-close" onClick={() => handleClose()}>
             <img src={Icons.Close_1} alt="" width="30px" />
           </button>
@@ -208,7 +208,7 @@ const PhotoCapture = ({ opened, onClose, onTakePhoto }: PhotoCaptureProps): JSX.
           <video></video>
         </div>
         <div className="action">
-          <button type="button" onClick={handlePhoto}>Take photo</button>
+          <button type="button" onClick={handlePhoto}>Ausweis erfassen</button>
         </div>
       </PhotoCaptureWrapper>
     </ModalLayout>

@@ -222,7 +222,7 @@ export const MainHeaderWrapper = styled.nav`
   }
 
   &.sticky-bar {
-    position: fixed;
+    position: sticky;
     background-color: ${props => props.theme.colors.white};
     margin-top: 0px;
     
