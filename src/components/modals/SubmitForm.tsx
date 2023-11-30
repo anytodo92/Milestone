@@ -82,6 +82,11 @@ const SubmitFormWrapper = styled.div`
       .group {
         width: 100%;
         padding: 0;
+
+        .entry-box {
+          flex-direction: column;
+        }
+        
         > label {
           color: ${props => props.theme.colors.green_primary};
         }
@@ -222,6 +227,22 @@ const SubmitForm = ({ opened, onClose, onSend }: SubmitFormPrps): JSX.Element =>
                   <div className="entry-box">
                     <div className="form-group">
                       <input type="text" placeholder="Name" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row1">
+                <div className="group">
+                  <div className="entry-box">
+                    <div className="form-group">
+                      <input type="text" placeholder="Strasse / Nr" />
+                    </div>
+                  </div>
+                </div>
+                <div className="group">
+                  <div className="entry-box">
+                    <div className="form-group">
+                      <input type="text" placeholder="PLZ / Ort" />
                     </div>
                   </div>
                 </div>
