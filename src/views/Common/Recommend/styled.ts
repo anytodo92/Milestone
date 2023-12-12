@@ -26,6 +26,8 @@ export const RecommendWrapper = styled.div`
       flex-direction: column;
       align-items: center;
       padding: 25px 25px 32px;
+      width: 410px!important;
+      flex-shrink: 0;
       
       position: relative;
 
