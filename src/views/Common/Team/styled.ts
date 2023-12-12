@@ -18,13 +18,15 @@ export const TeamWrapper = styled.div`
   .list {
     margin-top: 80px;
     overflow-x: auto;
+    display: flex;
 
     .one {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 20px;
-    
+      width: 340px!important;
+      flex-shrink: 0;
       .pic {
         position: relative;
         margin-bottom: 15px;
@@ -54,95 +56,104 @@ export const TeamWrapper = styled.div`
       .article {
         margin: 0 30px;
         width: 80%;
+
         &.full {
-          .detail {
-            height: auto;
-            margin-top: 15px;
+          .wrapper {
+            .detail {
+              height: auto;
+              margin-top: 15px;
+            }
+            
+            > button {
+              > svg {
+                transform: rotate(180deg);
+              }
+            }
           }
           
+        }
+
+        .wrapper {
+          display: inline-block;
+          > h2 {
+            position: relative;
+            color: ${props => props.theme.colors.black_primary};
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-top: 20px;
+
+            &::after {
+              position: absolute;
+              width: 69px;
+              height: 4px;
+              background-color: ${props => props.theme.colors.black_primary};
+              border-radius: 4px;
+              content: '';
+              left: 0;
+              bottom: 0;
+            }
+          }
+
+          > .desc {
+            color: ${props => props.theme.colors.black_primary};
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.4;
+            text-align: left;
+            margin-top: 20px;
+          }
+
+          > .detail {
+            color: ${props => props.theme.colors.black};
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.4;
+            height: 0px;
+            overflow: hidden;
+
+            > ul {
+              list-style: disc;
+              margin-left: 20px;
+            }
+            
+          }
+
+          > .email {
+            color: ${props => props.theme.colors.green_primary};
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-top: 20px;
+          }
+
+          > .phone {
+            color: ${props => props.theme.colors.green_primary};
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.4;
+          }
+
           > button {
+            color: ${props => props.theme.colors.green_primary};
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.4;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            margin-top: 30px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+
             > svg {
-              transform: rotate(180deg);
+              transition: all .3s ease;
+              margin-top: 3px;
             }
           }
         }
-        > h2 {
-          position: relative;
-          color: ${props => props.theme.colors.black_primary};
-          font-size: 22px;
-          font-weight: 700;
-          line-height: 1.5;
-          margin-top: 20px;
-
-          &::after {
-            position: absolute;
-            width: 69px;
-            height: 4px;
-            background-color: ${props => props.theme.colors.black_primary};
-            border-radius: 4px;
-            content: '';
-            left: 0;
-            bottom: 0;
-          }
-        }
-
-        > .desc {
-          color: ${props => props.theme.colors.black_primary};
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 1.4;
-          text-align: left;
-          margin-top: 20px;
-        }
-
-        > .detail {
-          color: ${props => props.theme.colors.black};
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 1.4;
-          height: 0px;
-          overflow: hidden;
-
-          > ul {
-            list-style: disc;
-            margin-left: 20px;
-          }
-          
-        }
-
-        > .email {
-          color: ${props => props.theme.colors.green_primary};
-          font-size: 14px;
-          font-weight: 600;
-          line-height: 1.4;
-          margin-top: 20px;
-        }
-
-        > .phone {
-          color: ${props => props.theme.colors.green_primary};
-          font-size: 14px;
-          font-weight: 600;
-          line-height: 1.4;
-        }
-
-        > button {
-          color: ${props => props.theme.colors.green_primary};
-          font-size: 12px;
-          font-weight: 600;
-          line-height: 1.4;
-          display: flex;
-          align-items: center;
-          column-gap: 10px;
-          margin-top: 30px;
-          border: 0;
-          outline: 0;
-          cursor: pointer;
-
-          > svg {
-            transition: all .3s ease;
-            margin-top: 3px;
-          }
-        }
+        
       }
     }
     
@@ -172,6 +183,7 @@ export const TeamWrapper = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
     .list {
       .one {
+        width: 400px!important;
         .pic {
           > img {
             width: 298px;
@@ -197,16 +209,20 @@ export const TeamWrapper = styled.div`
     }
     .list {
       .one {
-        > h2 {
-          font-size: 24px;
-        }
+        .aticle {
+          .wrapper {
+            > h2 {
+              font-size: 24px;
+            }
 
-        > .desc, 
-        > .detail,
-        > .email,
-        > .phone
-        > button {
-          font-size: 16px;
+            > .desc, 
+            > .detail,
+            > .email,
+            > .phone
+            > button {
+              font-size: 16px;
+            }
+          }
         }
       }
     }
@@ -221,8 +237,10 @@ export const TeamWrapper = styled.div`
     .list {
       .one {
         .article {
-          > h2 {
-            font-size: 25px;
+          .wrapper {
+            > h2 {
+              font-size: 25px;
+            }
           }
         }
       }      

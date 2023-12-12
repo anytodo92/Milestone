@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { Images, Icons } from "../../../utils/assets";
@@ -6,66 +7,42 @@ import {
 } from "./styled";
 
 const Recommend = (): JSX.Element => {
+  const [align, setAlign] = useState<string>("flex-start");
   const [sliderRef, instanceRef] = useKeenSlider(
     {
       mode: "free",
       slides: {
-        perView: 1,
+        perView: "auto",
         spacing: 40
       },
-      breakpoints: {
-        "(min-width: 375px)": {
-          slides: {
-            perView: 1.2,
-            spacing: 40
-          },
-        },
-        "(min-width: 480px)": {
-          slides: {
-            perView: 1.3,
-            spacing: 40
-          },
-        },
-        "(min-width: 570px)": {
-          slides: {
-            perView: 1.5,
-            spacing: 40
-          },
-        },
-        "(min-width: 768px)": {
-          slides: {
-            perView: 2,
-            spacing: 40
-          },
-        },        
-        "(min-width: 900px)": {
-          slides: {
-            perView: 2.3,
-            spacing: 40
-          },
-        },
-        "(min-width: 1024px)": {
-          slides: {
-            perView: 2.6,
-            spacing: 40
-          },
-        },
-
-        "(min-width: 1280px)": {
-          slides: {
-            perView: 3,
-            spacing: 40
-          },
-        },
-      },
-      slideChanged() {
-        console.log('slide changed')
-      },
-    },
-    [
-      // add plugins here
-    ]
+    }
   )
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      adjustAlign();
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+
+    adjustAlign();
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
+  const adjustAlign = () => {
+    const $slider = document.querySelector(".recommend .keen-slider");
+    const $items = document.querySelectorAll(".recommend .keen-slider__slide");
+    const innerWidth = $items.length * $items[0].clientWidth + 40 * ($items.length - 1);
+    console.log($slider.clientWidth, innerWidth);
+    if (($slider.clientWidth - 140) >= innerWidth) {
+      setAlign("center");
+    } else {
+      setAlign("flex-start");
+    }
+  }
 
   const list = [
     {
@@ -111,7 +88,7 @@ const Recommend = (): JSX.Element => {
         </div>
       </div>
       <div className="slide">
-        <div className="list keen-slider" ref={sliderRef}>          
+        <div className="list keen-slider" ref={sliderRef} style={{ justifyContent: align }}>          
           {list.map((data, index) =>
             <div key={index} className="one keen-slider__slide">
               <div className="pic">
